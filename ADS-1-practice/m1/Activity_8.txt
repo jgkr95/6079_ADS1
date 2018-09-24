@@ -1,0 +1,1 @@
+﻿Weighted graph with path compression gives better results. In case of Weighted graph, In worst case, it may grow the tree upto N times. But in weighted graph with path compression it takes only log N times only. So weighted graph with path compression.
