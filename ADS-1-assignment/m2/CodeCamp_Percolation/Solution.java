@@ -3,16 +3,28 @@ import java.util.Scanner;
  * Class for percolation.
  */
 class Percolation {
+    /**
+     * { var_description }.
+     */
     private int opensites = 0;
+    /**
+     * { var_description }.
+     */
     private WeightedQuickUnionUF uf;
+    /**
+     * { var_description }.
+     */
     private boolean[][] grid;
+    /**
+     * { var_description }.
+     */
     private int size;
     /**
      * Constructs the object.
      *
      * @param      n     { parameter_description }
      */
-    public Percolation(final int n) {
+    Percolation(final int n) {
         grid = new boolean[n][n];
         uf = new WeightedQuickUnionUF(n * n + 2);
         size = n;
@@ -92,7 +104,7 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         Percolation p = new Percolation(scan.nextInt());
         while (scan.hasNext()) {
