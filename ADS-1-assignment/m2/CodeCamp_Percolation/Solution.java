@@ -12,7 +12,7 @@ class Percolation {
      *
      * @param      n     { parameter_description }
      */
-    public Percolation(int n) {
+    public Percolation(final int n) {
         grid = new boolean[n][n];
         uf = new WeightedQuickUnionUF(n * n + 2);
         size = n;
@@ -23,8 +23,8 @@ class Percolation {
      * @param      row   The row
      * @param      col   The col
      */
-    public void open(int row, int col) {
-        if (grid[row][col]) return;
+    public void open(final int row, final int col) {
+        // if (grid[row][col]) return;
         grid[row][col] = true;
         opensites++;
         if (col + 1 < size && isOpen(row, col + 1)) {
@@ -56,7 +56,7 @@ class Percolation {
      *
      * @return     True if open, False otherwise.
      */
-    public boolean isOpen(int row, int col) {
+    public boolean isOpen(final int row, final int col) {
         return grid[row][col];
 
     }
@@ -78,9 +78,15 @@ class Percolation {
     }
 }
 /**
- * { item_description }
+ * { item_description }.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     /**
      * { function_description }.
      *
