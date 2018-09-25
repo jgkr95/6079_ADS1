@@ -53,7 +53,7 @@ class Percolation {
         return opensites;
     }
     public boolean percolates() {
-        return uf.connected(size, size + 1);
+        return uf.connected(size*size, size*size + 1);
     }
 }
 
