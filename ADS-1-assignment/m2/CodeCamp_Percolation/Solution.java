@@ -33,7 +33,7 @@ class Percolation {
 
 		}
 		if (row != 0 && grid[row - 1][col]) {
-			uf.union((row-1)*grid.length+col, (row-1)*grid.length+col);
+			uf.union(row*grid.length+col, (row-1)*grid.length+col);
 		}
 	}
 	public boolean isOpen(int row, int col) {
