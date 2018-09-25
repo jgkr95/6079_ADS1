@@ -38,6 +38,9 @@ class Percolation {
 		if(row == 0) {
 			uf.union(col,size*size);
 		}
+		if(row == size-1) {
+			uf.union(col,size*size);
+		}
 	}
 	public boolean isOpen(int row, int col) {
 		return grid[row][col];
