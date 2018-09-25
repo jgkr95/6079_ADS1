@@ -1,22 +1,28 @@
-// public class Percolation {
-//    public Percolation(int n)                // create n-by-n grid, with all sites blocked
-//    public    void open(int row, int col)    // open site (row, col) if it is not open already
-//    public boolean isOpen(int row, int col)  // is site (row, col) open?
-//    public boolean isFull(int row, int col)  // is site (row, col) full?
-//    public     int numberOfOpenSites()       // number of open sites
-//    public boolean percolates()              // does the system percolate?
-// }
 import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
 class Percolation {
-    int opensites = 0;
-    WeightedQuickUnionUF uf;
-    boolean[][] grid;
-    int size;
+    private int opensites = 0;
+    private WeightedQuickUnionUF uf;
+    private boolean[][] grid;
+    private int size;
+    /**
+     * Constructs the object.
+     *
+     * @param      n     { parameter_description }
+     */
     public Percolation(int n) {
         grid = new boolean[n][n];
         uf = new WeightedQuickUnionUF(n * n + 2);
         size = n;
     }
+    /**
+     * { function_description }.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     */
     public void open(int row, int col) {
         if (grid[row][col]) return;
         grid[row][col] = true;
@@ -42,22 +48,44 @@ class Percolation {
             uf.union(row * size + col, (size * size) + 1);
         }
     }
+    /**
+     * Determines if open.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     *
+     * @return     True if open, False otherwise.
+     */
     public boolean isOpen(int row, int col) {
         return grid[row][col];
 
     }
-    // public boolean isFull(int row, int col) {
-    //  return (opensites == row - 1 * col - 1);
-    // }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int numberOfOpenSites() {
         return opensites;
     }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean percolates() {
         return uf.connected(size * size, size * size + 1);
     }
 }
-
+/**
+ * { item_description }
+ */
 public final class Solution {
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Percolation p = new Percolation(scan.nextInt());
@@ -67,4 +95,3 @@ public final class Solution {
         System.out.println(p.percolates());
     }
 }
-
