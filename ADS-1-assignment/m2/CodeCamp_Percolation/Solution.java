@@ -21,10 +21,10 @@ class Percolation {
         if (grid[row][col]) return;
         grid[row][col] = true;
         opensites++;
-        if (col < size - 1 && isOpen(row, col + 1)) {
+        if (col-1 < size && isOpen(row, col + 1)) {
             uf.union(row * size + col, row * size + (col + 1));
         }
-        if (row < size - 1 && isOpen(row + 1, col)) {
+        if (row-1 < size&& isOpen(row + 1, col)) {
             uf.union(row * size + col, row + 1 * size + col);
 
         }
@@ -39,7 +39,7 @@ class Percolation {
             uf.union(col, size * size);
         }
         if (row == size - 1) {
-            uf.union(col, size * size + 1);
+            uf.union(col, (size * size) + 1);
         }
     }
     public boolean isOpen(int row, int col) {
