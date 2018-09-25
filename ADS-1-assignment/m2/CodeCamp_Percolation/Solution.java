@@ -15,7 +15,7 @@ class Percolation {
 	public Percolation(int n) {
 		grid = new boolean[n][n];
 		uf = new WeightedQuickUnionUF(n*n+2);
-		size = n*n;
+		size = n;
 	}
 	public void open(int row, int col) {
 		if(grid[row][col]) return;
