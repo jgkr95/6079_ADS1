@@ -18,9 +18,8 @@ class Percolation {
 		size = n*n;
 	}
 	public void open(int row, int col) {
+		if(grid[row][col]) return;
 		grid[row][col] = true;
-		if(row==0) rowcount++;
-		if(row==grid.length-1) bottomrowcount++;
 		opensites++;
 		if (col != grid.length - 1 && grid[row][col + 1]) {
 			uf.union(row*grid.length+col, row*grid.length+(col+1));
