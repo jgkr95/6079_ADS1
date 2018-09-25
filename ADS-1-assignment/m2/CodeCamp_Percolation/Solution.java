@@ -4,25 +4,25 @@ import java.util.Scanner;
  */
 class Percolation {
     /**
-     * { var_description }.
+     * { Number of opened blocks in grid }.
      */
     private int opensites = 0;
     /**
-     * { var_description }.
+     * { object of WeightedQuickUnionUF }.
      */
     private WeightedQuickUnionUF uf;
     /**
-     * { var_description }.
+     * { grid 2d square array with given size }.
      */
     private boolean[][] grid;
     /**
-     * { var_description }.
+     * { size of grid }.
      */
     private int size;
     /**
-     * Constructs the object.
+     * Constructs initiliases the object.
      *
-     * @param      n     { parameter_description }
+     * @param      n     { size oof the grid }
      */
     Percolation(final int n) {
         grid = new boolean[n][n];
@@ -30,10 +30,10 @@ class Percolation {
         size = n;
     }
     /**
-     * { function_description }.
+     * { opens the blocks and sends them for union operation }.
      *
-     * @param      row   The row
-     * @param      col   The col
+     * @param      row   The row is of integer type
+     * @param      col   The col is of integer type
      */
     public void open(final int row, final int col) {
         // if (grid[row][col]) return;
@@ -61,7 +61,7 @@ class Percolation {
         }
     }
     /**
-     * Determines if open.
+     * Determines if open or not.
      *
      * @param      row   The row
      * @param      col   The col
@@ -73,24 +73,24 @@ class Percolation {
 
     }
     /**
-     * { function_description }.
+     * { returns the number of open blocks }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { integer varibale of opensites }
      */
     public int numberOfOpenSites() {
         return opensites;
     }
     /**
-     * { function_description }.
+     * { Determines whether the grid percolates or not }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { true if percolates else false }
      */
     public boolean percolates() {
         return uf.connected(size * size, size * size + 1);
     }
 }
 /**
- * { item_description }.
+ * { Solution to read input }.
  */
 public final class Solution {
     /**
@@ -100,7 +100,7 @@ public final class Solution {
 
     }
     /**
-     * { function_description }.
+     * { main method to handle input }.
      *
      * @param      args  The arguments
      */
