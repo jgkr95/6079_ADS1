@@ -21,19 +21,19 @@ class Percolation {
 		if(grid[row][col]) return;
 		grid[row][col] = true;
 		opensites++;
-		if (col != grid.length - 1 && grid[row][col + 1]) {
-			uf.union(row*grid.length+col, row*grid.length+(col+1));
+		if (col != size - 1 && grid[row][col + 1]) {
+			uf.union(row*size+col, row*size+(col+1));
 		}
-		if (row != grid.length - 1 && grid[row + 1][col]) {
-			uf.union(row*grid.length+col, row+1*grid.length+col);
+		if (row != size - 1 && grid[row + 1][col]) {
+			uf.union(row*size+col, row+1*size+col);
 
 		}
 		if (col != 0 && grid[row][col - 1]) {
-			uf.union(row*grid.length+col, row*grid.length+(col-1));
+			uf.union(row*size+col, row*size+(col-1));
 
 		}
 		if (row != 0 && grid[row - 1][col]) {
-			uf.union(row*grid.length+col, (row-1)*grid.length+col);
+			uf.union(row*size+col, (row-1)*size+col);
 		}
 	}
 	public boolean isOpen(int row, int col) {
