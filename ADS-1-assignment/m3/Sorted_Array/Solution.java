@@ -10,7 +10,7 @@ public class Solution {
         int sizeofsecondarray = scan.nextInt();
         int[] firstarray = new int[sizeoffirstarray];
         int[] secondarray =  new int[sizeofsecondarray];
-        scan.nextLine();
+        // scan.nextLine();
         String data1 = scan.nextLine();
         String data2 = scan.nextLine();
         String[] array1 = data1.split(",");
