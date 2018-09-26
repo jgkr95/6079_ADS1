@@ -11,20 +11,17 @@ public class Solution {
         int[] firstarray = new int[sizeoffirstarray];
         int[] secondarray =  new int[sizeofsecondarray];
         scan.nextLine();
-        String data1 = scan.nextLine();
-        String data2 = scan.nextLine();
-        String[] array1 = data1.split(",");
-        String[] array2 = data2.split(",");
-        if(!data1.equals(null)) {
-        for(int i=0;i<array1.length;i++) {
-            System.out.println(array1[i]);
-            firstarray[i] = Integer.parseInt(array1[i].trim());
-        } }
-        if(!data2.equals(null)) {
-        for(int i=0;i<array2.length;i++) {
-            System.out.println(array2[i]);
-            secondarray[i] = Integer.parseInt(array2[i].trim());
-        } }
+        String[] data1 = scan.nextLine().split(",");
+        String[] data2 = scan.nextLine().split(",");
+        for(int i=0;i<data1.length;i++) {
+            System.out.println(data1[i]);
+            firstarray[i] = Integer.parseInt(data1[i].trim());
+        }
+
+        for(int i=0;i<data2.length;i++) {
+            System.out.println(data2[i]);
+            secondarray[i] = Integer.parseInt(data2[i].trim());
+        } 
         sort(firstarray,secondarray);
     }
     public static void sort(int[] arr1, int[] arr2) {
