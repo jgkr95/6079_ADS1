@@ -10,16 +10,16 @@ public class Solution {
         int sizeofsecondarray = scan.nextInt();
         int[] firstarray = new int[sizeoffirstarray];
         int[] secondarray =  new int[sizeofsecondarray];
-        // scan.nextLine();
+        scan.nextLine();
         String data1 = scan.nextLine();
         String data2 = scan.nextLine();
         String[] array1 = data1.split(",");
         String[] array2 = data2.split(",");
         for(int i=0;i<array1.length;i++) {
-            firstarray[i] = Integer.parseInt(array1[i]);
+            firstarray[i] = Integer.parseInt(array1[i].trim());
         }
         for(int i=0;i<array2.length;i++) {
-            secondarray[i] = Integer.parseInt(array1[i]);
+            secondarray[i] = Integer.parseInt(array1[i].trim());
         }
         sort(firstarray,secondarray);
     }
