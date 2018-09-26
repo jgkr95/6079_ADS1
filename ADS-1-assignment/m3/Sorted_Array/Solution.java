@@ -26,6 +26,9 @@ public class Solution {
     }
     public static void sort(int[] arr1, int[] arr2) {
         int m=0,n=0;
+        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(arr2));
+
         int[] finalarray = new int[arr2.length+arr1.length];
         for(int i=0;i<arr2.length+arr1.length;i++) {
             if(arr1[m]<arr2[n]) {
