@@ -25,16 +25,16 @@ public class Solution {
         }
         sort(firstarray,secondarray);
     }
-    public static void sort(int[] array1, int[] array2) {
+    public static void sort(int[] arr1, int[] arr2) {
         int m=0,n=0;
-        int[] finalarray = new int[array2.length+array1.length];
-        for(int i=0;i<array2.length+array1.length;i++) {
-            if(array1[m]<=array2[n]) {
-                finalarray[i] = array1[m];
+        int[] finalarray = new int[arr2.length+arr1.length];
+        for(int i=0;i<arr2.length+arr1.length;i++) {
+            if(arr1[m]<=arr2[n]) {
+                finalarray[i] = arr1[m];
                 m = m+1;
             }
-            else if(array1[m]>array2[n]) {
-                finalarray[i] = array2[n];
+            else if(arr1[m]>arr2[n]) {
+                finalarray[i] = arr2[n];
                 n = n+1;
             }
         }
