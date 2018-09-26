@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -15,7 +15,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int sizeofarray = scan.nextInt();
         int key;
@@ -32,7 +32,7 @@ public class Solution {
      *
      * @return     { Count is returned }
      */
-    public static int threesum(int[] array) {
+    public static int threesum(final int[] array) {
         int count = 0;
         int k = 0, j = 0;
         Arrays.sort(array);
