@@ -25,7 +25,7 @@ public class Solution {
         sort(firstarray,secondarray);
     }
     public static void sort(int[] arr1, int[] arr2) {
-        int m=0,n=0;
+try {        int m=0,n=0;
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
 
@@ -42,5 +42,6 @@ public class Solution {
             }
         }
         System.out.println(Arrays.toString(finalarray).replace(", ","").replace("[","").replace("]",""));
-    }
+    }catch(Exception e) {}
+}
 }
