@@ -13,6 +13,7 @@ public class Solution {
         scan.nextLine();
         String[] data1 = scan.nextLine().split(",");
         String[] data2 = scan.nextLine().split(",");
+        System.out.println(data1.length);
         for(int i=0;i<data1.length;i++) {
             System.out.println(data1[i]+"===="+"===");
             firstarray[i] = Integer.parseInt(data1[i].trim());
