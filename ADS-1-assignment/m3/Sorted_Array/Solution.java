@@ -13,7 +13,7 @@ public class Solution {
         scan.nextLine();
         String[] data1 = scan.nextLine().split(",");
         String[] data2 = scan.nextLine().split(",");
-        System.out.println(data1.length);
+        // System.out.println(data1.length);
         for(int i=0;i<sizeoffirstarray;i++) {
             // System.out.println(data1[i]+"===="+"===");
             firstarray[i] = Integer.parseInt(data1[i].trim());
@@ -43,13 +43,13 @@ public class Solution {
             }
         }
         if(arr1.length>arr2.length) {
-            while(i<=size) {
+            while(i<size) {
                 finalarray[i++] = arr1[m++];
             }
             
         }
         if(arr2.length>arr1.length) {
-            while(i<=size) {
+            while(i<size) {
                 finalarray[i++] = arr2[n++];
             }
             
