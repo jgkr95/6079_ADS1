@@ -15,14 +15,16 @@ public class Solution {
         String data2 = scan.nextLine();
         String[] array1 = data1.split(",");
         String[] array2 = data2.split(",");
+        if(!data1.equals(null)) {
         for(int i=0;i<array1.length;i++) {
             System.out.println(array1[i]);
             firstarray[i] = Integer.parseInt(array1[i].trim());
-        }
+        } }
+        if(!data2.equals(null)) {
         for(int i=0;i<array2.length;i++) {
             System.out.println(array2[i]);
             secondarray[i] = Integer.parseInt(array2[i].trim());
-        }
+        } }
         sort(firstarray,secondarray);
     }
     public static void sort(int[] arr1, int[] arr2) {
