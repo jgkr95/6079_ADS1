@@ -32,11 +32,11 @@ public class Solution {
         int[] finalarray = new int[size];
         for(int i=0;i<size;i++) {
             System.out.println(arr1[m]);
-            if(arr1[m]<arr2[n]) {
+            if(arr1[m]<arr2[n]&&m<arr1.length) {
                 finalarray[i] = arr1[m];
                 m = m+1;
             }
-            else if(arr1[m]>arr2[n]) {
+            else if(arr1[m]>arr2[n]&&n<arr2.length) {
                 finalarray[i] = arr2[n];
                 n = n+1;
             }
