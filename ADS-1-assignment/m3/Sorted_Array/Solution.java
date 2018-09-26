@@ -31,7 +31,7 @@ public class Solution {
         int size =  arr1.length + arr2.length;
         int[] finalarray = new int[size];
         for(int i=0;i<size;i++) {
-            System.out.println(arr1[m]);
+            System.out.println(m+" "+n);
             if(arr1[m]<arr2[n]&&m<arr1.length) {
                 finalarray[i] = arr1[m];
                 m = m+1;
