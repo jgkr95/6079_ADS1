@@ -28,7 +28,7 @@ public class Solution {
         int m=0,n=0;
         int[] finalarray = new int[arr2.length+arr1.length];
         for(int i=0;i<arr2.length+arr1.length;i++) {
-            if(arr1[m]<=arr2[n]) {
+            if(arr1[m]<arr2[n]) {
                 finalarray[i] = arr1[m];
                 m = m+1;
             }
