@@ -25,12 +25,12 @@ public class Solution {
         sort(firstarray,secondarray);
     }
     public static void sort(int[] arr1, int[] arr2) {
-try {        int m=0,n=0;
+       int m=0,n=0;
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
-
-        int[] finalarray = new int[arr2.length+arr1.length];
-        for(int i=0;i<arr2.length+arr1.length;i++) {
+        int size =  arr1.length + arr2.length;
+        int[] finalarray = new int[size];
+        for(int i=0;i<size;i++) {
             System.out.println(arr1[m]);
             if(arr1[m]<arr2[n]) {
                 finalarray[i] = arr1[m];
@@ -42,6 +42,5 @@ try {        int m=0,n=0;
             }
         }
         System.out.println(Arrays.toString(finalarray).replace(", ","").replace("[","").replace("]",""));
-    }catch(Exception e) {}
-}
+   }
 }
