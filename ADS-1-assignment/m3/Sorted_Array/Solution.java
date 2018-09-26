@@ -26,21 +26,33 @@ public class Solution {
         sort(firstarray,secondarray);
     }
     public static void sort(int[] arr1, int[] arr2) {
-       int m=0,n=0;
+       int m=0,n=0,i=0;
         // System.out.println(Arrays.toString(arr1));
         // System.out.println(Arrays.toString(arr2));
         int size =  arr1.length + arr2.length;
         int[] finalarray = new int[size];
-        for(int i=0;i<size;i++) {
+        while(m<arr1.length&&n<arr2.length) {
             // System.out.println(m+" "+n);
-            if(n<arr2.length&&m<arr1.length&&arr1[m]<arr2[n]) {
-                finalarray[i] = arr1[m];
+            if(arr1[m]<arr2[n]) {
+                finalarray[i++] = arr1[m];
                 m = m+1;
             }
-            else if(m<arr1.length&&n<arr2.length&&arr1[m]>arr2[n]) {
-                finalarray[i] = arr2[n];
+            else if(arr1[m]>arr2[n]) {
+                finalarray[i++] = arr2[n];
                 n = n+1;
             }
+        }
+        if(arr1.length>arr2.length) {
+            while(i<=size) {
+                finalarray[i++] = arr1[m++];
+            }
+            
+        }
+        if(arr2.length>arr1.length) {
+            while(i<=size) {
+                finalarray[i++] = arr2[n++];
+            }
+            
         }
         System.out.println(Arrays.toString(finalarray).replace(" ","").replace("[","").replace("]",""));
    }
