@@ -21,7 +21,7 @@ public class Solution {
         }
         for(int i=0;i<array2.length;i++) {
             System.out.println(array2[i]);
-            secondarray[i] = Integer.parseInt(array1[i].trim());
+            secondarray[i] = Integer.parseInt(array2[i].trim());
         }
         sort(firstarray,secondarray);
     }
@@ -38,6 +38,6 @@ public class Solution {
                 n = n+1;
             }
         }
-        System.out.println(Arrays.toString(finalarray).replace(" ","").replace("[","").replace("]",""));
+        System.out.println(Arrays.toString(finalarray).replace(", ","").replace("[","").replace("]",""));
     }
 }
