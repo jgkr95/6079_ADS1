@@ -16,9 +16,11 @@ public class Solution {
         String[] array1 = data1.split(",");
         String[] array2 = data2.split(",");
         for(int i=0;i<array1.length;i++) {
+            System.out.println(array1[i]);
             firstarray[i] = Integer.parseInt(array1[i].trim());
         }
         for(int i=0;i<array2.length;i++) {
+            System.out.println(array2[i]);
             secondarray[i] = Integer.parseInt(array1[i].trim());
         }
         sort(firstarray,secondarray);
