@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -15,7 +15,7 @@ public class Solution {
      *
      * @param      args  The arguments of string type
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int sizeoffirstarray = scan.nextInt();
         int sizeofsecondarray = scan.nextInt();
@@ -34,12 +34,12 @@ public class Solution {
         sort(firstarray, secondarray);
     }
     /**
-     * { It will add the sorted arrays in to single array sorted }
+     * { It will add the sorted arrays in to single array sorted }.
      *
      * @param      arr1  The arr1 is sorted array1
      * @param      arr2  The arr2 is sorted array2
      */
-    public static void sort(int[] arr1, int[] arr2) {
+    public static void sort(final int[] arr1, final int[] arr2) {
         int m = 0, n = 0, i = 0;
         int size =  arr1.length + arr2.length;
         int[] finalarray = new int[size];
@@ -65,6 +65,7 @@ public class Solution {
             }
 
         }
-        System.out.println(Arrays.toString(finalarray).replace(" ", "").replace("[", "").replace("]", ""));
+        System.out.println(Arrays.toString(finalarray).
+            replace(" ", "").replace("[", "").replace("]", ""));
     }
 }
