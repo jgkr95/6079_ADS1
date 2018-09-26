@@ -16,12 +16,21 @@ public class Solution {
     }
     public static int threesum(int[] array) {
         int count = 0;
+        int k=0,j=0;
+        Arrays.sort(array);
         for (int i = 0; i < array.length; i++) {
-            for (int j = i + 1; j < array.length; j++) {
-                for (int k = j + 1; k < array.length; k++) {
-                    if (array[i] + array[j] + array[k] == 0) {
-                        count++;
-                    }
+            j = i + 1;
+            k = array.length - 1;
+            while (j < k) {
+                if(array[i]+array[j]+array[k] == 0) {
+                    count++;
+                    j++;
+                    k--;
+                }
+                else if(array[i]+array[j]+array[k]>0) {
+                    k--;
+                } else if(array[i]+array[j]+array[k]<0) {
+                    j++;
                 }
             }
         }
