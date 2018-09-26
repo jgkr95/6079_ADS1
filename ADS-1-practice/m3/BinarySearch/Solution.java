@@ -26,13 +26,12 @@ public class Solution {
             System.out.println("mid " + mid);
             mid = low + (high - low) / 2;
             if (array[mid] == key) {
-
+                index = mid;
                 if (array[mid] == array[mid - 1]) {
-                    index = mid;
-
-                    System.out.println("Key found at index " + mid);
-                    break;
+                    index = mid-1;
                 }
+                System.out.println("Key found at index " + index);
+                break;
             }
             if (key < array[mid]) {
                 high = mid - 1;
