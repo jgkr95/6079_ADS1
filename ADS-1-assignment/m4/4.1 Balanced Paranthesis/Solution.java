@@ -63,8 +63,8 @@ class Stack {
             char compare = data.charAt(i);
             if (compare == '(' || compare == '{' || compare == '[') {
                 push(compare);
-
-            } if (size != 0) {
+            }
+            if (size != 0) {
                 if (compare == ')') {
                     if (braces[size - 1] == '(') {
                         pop(compare);
