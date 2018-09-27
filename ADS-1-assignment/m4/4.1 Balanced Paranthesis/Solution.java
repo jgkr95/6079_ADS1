@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * { item_description }.
+ * { Solution class to read the input }.
  */
 public final class Solution {
     /**
@@ -10,7 +10,7 @@ public final class Solution {
 
     }
     /**
-     * { function_description }.
+     * { this is main method  }.
      *
      * @param      args  The arguments
      */
@@ -28,23 +28,23 @@ public final class Solution {
 
 }
 /**
- * List of .
+ * Stack class starts here.
  */
 class Stack {
     /**
-     * { var_description }.
+     * { data is of string type }.
      */
     private String data;
     /**
-     * { var_description }.
+     * { braces of character array }.
      */
     private char[] braces;
     /**
-     * { var_description }.
+     * { size of braces array }.
      */
     private int size;
     /**
-     * Constructs the object.
+     * Constructs the object and initialise variables.
      *
      * @param      input  The input
      */
@@ -54,9 +54,9 @@ class Stack {
         size = 0;
     }
     /**
-     * { function_description }.
+     * { THis method checks the given string and returns the Yes or NO }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { String value yes or no }
      */
     public String check() {
         for (int i = 0; i < data.length(); i++) {
@@ -86,17 +86,17 @@ class Stack {
         return "NO";
     }
     /**
-     * { function_description }.
+     * { pushes the variable on to the stack }.
      *
-     * @param      in    { parameter_description }
+     * @param      in    { individual character }
      */
     public void push(final char in) {
         braces[size++] = in;
     }
     /**
-     * { function_description }.
+     * Deletes the element from top of the stack.
      *
-     * @param      in    { parameter_description }
+     * @param      in    { indivdual character }
      */
     public void pop(final char in) {
         if (size != 0) {
