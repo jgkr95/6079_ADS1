@@ -1,8 +1,19 @@
 import java.util.Scanner;
+/**
+ * { item_description }.
+ */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
@@ -16,26 +27,41 @@ public final class Solution {
 	}
 
 }
+/**
+ * List of .
+ */
 class stack {
+	/**
+	 * { var_description }.
+	 */
 	private String data;
-	char[] braces;
-	int size;
-
+	/**
+	 * { var_description }.
+	 */
+	private char[] braces;
+	/**
+	 * { var_description }.
+	 */
+	private int size;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      input  The input
+	 */
 	public stack(final String input) {
 		data =  input;
 		braces = new char[data.length()];
 		size = 0;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public String check() {
-		// System.out.println(data+"--"+data.length());
-		for(int i=0;i<data.length();i++) {
-			// System.out.println(data.charAt(i));
-		}
 		for (int i = 0; i < data.length(); i++) {
 			char compare = data.charAt(i);
-			// System.out.println(compare);
 			if (compare == '(' || compare == '{' || compare == '[') {
-				// System.out.println(i+"-----");
 				push(compare);
 
 			} if (size != 0) {
@@ -51,21 +77,27 @@ class stack {
 					if (braces[size - 1] == '[') {
 						pop(compare);
 					}
-				} else {
-					// break;
 				}
 			}
 		}
-		// System.out.println(size+" size");
 		if (size == 0) {
 			return "YES";
 		}
 		return "NO";
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      in    { parameter_description }
+	 */
 	public void push(char in) {
 		braces[size++] = in;
-		// System.out.println(size+":::::::");
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      in    { parameter_description }
+	 */
 	public void pop(char in) {
 		if (size != 0) {
 			size--;
