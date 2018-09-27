@@ -21,7 +21,7 @@ public final class Solution {
         for (int i = 0; i < nooflines; i++) {
 
             String line = scan.next();
-            stack paren = new stack(line);
+            Stack paren = new Stack(line);
             System.out.println(paren.check());
         }
     }
@@ -30,7 +30,7 @@ public final class Solution {
 /**
  * List of .
  */
-class stack {
+class Stack {
     /**
      * { var_description }.
      */
@@ -48,7 +48,7 @@ class stack {
      *
      * @param      input  The input
      */
-    public stack(final String input) {
+    Stack(final String input) {
         data =  input;
         braces = new char[data.length()];
         size = 0;
