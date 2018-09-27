@@ -23,26 +23,28 @@ class stack {
 
 	public stack(final String input) {
 		data =  input;
-		braces = new char[50];
+		braces = new char[200];
 		size = 0; 
 	}
 	public String check() {
 		for(int i=0;i<data.length();i++) {
-			if(data.charAt(i)==('(')||data.charAt(i)==('{')||data.charAt(i)==('{')) {
+			if(data.charAt(i)=='('||data.charAt(i)=='{'||data.charAt(i)=='{') {
 				push(data.charAt(i));
 			}
-			else if(data.charAt(i)==(')')) {
-				if(braces[size]==('(')) {
+			else if(data.charAt(i)==')') {
+				if(braces[size]=='(') {
 					pop(data.charAt(i));
 				}
-			}else if(data.charAt(i)==('}')) {
-				if(braces[size]==('{')) {
+			}else if(data.charAt(i)=='}') {
+				if(braces[size]=='{') {
 					pop(data.charAt(i));
 				}
-			}else if(data.charAt(i)==(']')) {
-				if(braces[size]==('[')) {
+			}else if(data.charAt(i)==']') {
+				if(braces[size]=='[') {
 					pop(data.charAt(i));
 				}
+			} else{
+				return "NO++++";	
 			}
 		}
 		if(size==0) {
