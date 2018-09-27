@@ -27,25 +27,32 @@ class stack {
 		size = 0;
 	}
 	public String check() {
+		// System.out.println(data+"--"+data.length());
+		for(int i=0;i<data.length();i++) {
+			// System.out.println(data.charAt(i));
+		}
 		for (int i = 0; i < data.length(); i++) {
-			if (data.charAt(i) == '(' || data.charAt(i) == '{' || data.charAt(i) == '{') {
-				push(data.charAt(i));
-				System.out.println(i+"-----");
+			char compare = data.charAt(i);
+			// System.out.println(compare);
+			if (compare == '(' || compare == '{' || compare == '[') {
+				// System.out.println(i+"-----");
+				push(compare);
+
 			} if (size != 0) {
-				if (data.charAt(i) == ')') {
+				if (compare == ')') {
 					if (braces[size - 1] == '(') {
-						pop(data.charAt(i));
+						pop(compare);
 					}
-				} else if (data.charAt(i) == '}') {
+				} else if (compare == '}') {
 					if (braces[size - 1] == '{') {
-						pop(data.charAt(i));
+						pop(compare);
 					}
-				} else if (data.charAt(i) == ']') {
+				} else if (compare == ']') {
 					if (braces[size - 1] == '[') {
-						pop(data.charAt(i));
+						pop(compare);
 					}
 				} else {
-					break;
+					// break;
 				}
 			}
 		}
@@ -57,7 +64,7 @@ class stack {
 	}
 	public void push(char in) {
 		braces[size++] = in;
-		System.out.println(size+":::::::");
+		// System.out.println(size+":::::::");
 	}
 	public void pop(char in) {
 		if (size != 0) {
