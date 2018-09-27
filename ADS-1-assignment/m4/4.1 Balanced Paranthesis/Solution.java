@@ -30,8 +30,8 @@ class stack {
 		for(int i=0;i<data.length();i++) {
 			if(data.charAt(i)=='('||data.charAt(i)=='{'||data.charAt(i)=='{') {
 				push(data.charAt(i));
-			}
-			else if(data.charAt(i)==')') {
+			}if(size!=0) {
+			if(data.charAt(i)==')') {
 				if(braces[size-1]=='(') {
 					pop(data.charAt(i));
 				}
@@ -45,7 +45,7 @@ class stack {
 				}
 			} else{
 				return "NO++++";	
-			}
+			}}
 		}
 		if(size==0) {
 			return "YES";
