@@ -23,13 +23,14 @@ class stack {
 
 	public stack(final String input) {
 		data =  input;
-		braces = new char[200];
+		braces = new char[data.length()];
 		size = 0;
 	}
 	public String check() {
 		for (int i = 0; i < data.length(); i++) {
 			if (data.charAt(i) == '(' || data.charAt(i) == '{' || data.charAt(i) == '{') {
 				push(data.charAt(i));
+				System.out.println(i+"-----");
 			} if (size != 0) {
 				if (data.charAt(i) == ')') {
 					if (braces[size - 1] == '(') {
