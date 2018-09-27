@@ -56,6 +56,7 @@ class stack {
 	}
 	public void push(char in) {
 		braces[size++] = in;
+		System.out.println(size+":::::::");
 	}
 	public void pop(char in) {
 		if (size != 0) {
