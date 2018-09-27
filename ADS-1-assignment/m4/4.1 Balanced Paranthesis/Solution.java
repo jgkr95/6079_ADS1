@@ -48,6 +48,7 @@ class stack {
 				}
 			}
 		}
+		System.out.println(size+" size");
 		if (size == 0) {
 			return "YES";
 		}
