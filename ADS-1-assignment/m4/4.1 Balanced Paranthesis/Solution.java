@@ -32,15 +32,15 @@ class stack {
 				push(data.charAt(i));
 			}
 			else if(data.charAt(i)==')') {
-				if(braces[size]=='(') {
+				if(braces[size-1]=='(') {
 					pop(data.charAt(i));
 				}
 			}else if(data.charAt(i)=='}') {
-				if(braces[size]=='{') {
+				if(braces[size-1]=='{') {
 					pop(data.charAt(i));
 				}
 			}else if(data.charAt(i)==']') {
-				if(braces[size]=='[') {
+				if(braces[size-1]=='[') {
 					pop(data.charAt(i));
 				}
 			} else{
