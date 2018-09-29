@@ -1,6 +1,15 @@
 import java.util.Scanner;
+/**
+ * Class for AddLargeNumbers.
+ */
 class AddLargeNumbers {
-
+    /**
+     * { Given is inersted in to linked list}.
+     *
+     * @param      number  The number is of String type
+     *
+     * @return     { object of linked list is returned }
+     */
     public static LinkedList numberToDigits(String number) {
         LinkedList list = new LinkedList();
         for (int i = 0; i < number.length(); i++) {
@@ -9,12 +18,25 @@ class AddLargeNumbers {
         }
         return list;
     }
-
+    /**
+     * { Gives number present in LinkeList object }
+     *
+     * @param      list  The list
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static String digitsToNumber(LinkedList list) {
         String number = list.toStri();
         return number;
     }
-
+    /**
+     * Adds large numbers.
+     *
+     * @param      list1  The list 1 is object
+     * @param      list2  The list 2 is object
+     *
+     * @return     { returns the object of LinkedList i.e result stored linked list }
+     */
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         String number1 = list1.toStri();
         String number2 = list2.toStri();
@@ -48,7 +70,10 @@ class AddLargeNumbers {
             // System.out.println(opTotal%10);
             result.push(opTotal % 10);
             if (opTotal >= 10) carry = 1; else carry = 0;
-        }if (list1.toStri().length() == list2.toStri().length()) result.push(carry);
+        } 
+        if (list1.toStri().length() == list2.toStri().length()) {
+            result.push(carry);
+        }
         while (!result.isempty()) {
             int top = result.top();
             // System.out.println(top);
@@ -59,8 +84,21 @@ class AddLargeNumbers {
 
     }
 }
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**
+     * { this is main method to handle input }.
+     *
+     * @param      args  The arguments are of String array type
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
