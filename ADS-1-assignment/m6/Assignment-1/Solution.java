@@ -16,7 +16,45 @@ class AddLargeNumbers {
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-        return list1;
+        String number1 = list1.toStri();
+        String number2 = list2.toStri();
+        int maxlength = 0;
+        LinkedList resultadded = new LinkedList();
+        Stack stack1 = new Stack(list1.toStri());
+        Stack stack2 = new Stack(list2.toStri());
+        if(list1.toStri().length()>list2.toStri().length()) {
+            maxlength = list1.toStri().length();
+        } else {
+            maxlength = list2.toStri().length();
+        }
+        Stack result = new Stack(maxlength);
+        for(int i=0;i<number1.length();i++) {
+            char digit = number1.charAt(i);
+            stack1.push(Integer.parseInt(String.valueOf(digit)));
+        }
+        for(int i=0;i<number2.length();i++) {
+            char digit1 = number2.charAt(i);
+            stack2.push(Integer.parseInt(String.valueOf(digit1)));
+        }
+        int carry=0, op1=0, op2=0;
+            while (true) {
+                    op1=0;
+                    op2=0;
+                    if (stack1.isempty() && stack2.isempty()) break;
+                    if (!stack1.isempty()) { op1 = stack1.top(); stack1.pop(); }
+                    if (!stack2.isempty()) { op2 = stack2.top(); stack2.pop(); }
+                    int opTotal = 0;
+                    opTotal = op1 + op2 + carry;
+                    result.push(opTotal%10);
+                    if (opTotal >= 10) carry = 1; else carry = 0;
+            }
+        while(!result.isempty()) {
+                int top = result.top(); 
+                result.pop();
+                resultadded.insert(top);            
+        }
+        return resultadded;
+
     }
 }
 

@@ -44,3 +44,29 @@ class LinkedList {
 			// System.out.println(cur.data);
 	}
 }
+class Stack {
+	LinkedList list = new LinkedList();
+	int[] number;
+	int size;
+	Stack(String number1) {
+		number = new int[number1.length()];
+		size = 0;
+	}
+	Stack(int len) {
+		number = new int[len];
+		size = 0;
+	}
+	public void push(int digit) {
+		number[size++] = digit;
+	}
+	public int top() {
+		return number[size-1];
+	}
+	public void pop() {
+		size--;
+	}
+	public boolean isempty() {
+		return size == 0;
+	}
+
+}
