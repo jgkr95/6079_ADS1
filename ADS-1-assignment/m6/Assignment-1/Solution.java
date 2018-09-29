@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for AddLargeNumbers.
  */
-class AddLargeNumbers {
+final class AddLargeNumbers {
     /**
      * Constructs the object.
      */
@@ -25,7 +25,7 @@ class AddLargeNumbers {
         return list;
     }
     /**
-     * { Gives number present in LinkeList object }
+     * { Gives number present in LinkeList object }.
      *
      * @param      list  The list
      *
@@ -41,9 +41,11 @@ class AddLargeNumbers {
      * @param      list1  The list 1 is object
      * @param      list2  The list 2 is object
      *
-     * @return     { returns the object of LinkedList i.e result stored linked list }
+     * @return     { returns the object of LinkedList
+     *  i.e result stored linked list }
      */
-    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+                                                 final LinkedList list2) {
         String number1 = list1.toStri();
         String number2 = list2.toStri();
         int maxlength = 0;
@@ -69,7 +71,9 @@ class AddLargeNumbers {
         while (true) {
             op1 = 0;
             op2 = 0;
-            if (stack1.isempty() && stack2.isempty()) break;
+            if (stack1.isempty() && stack2.isempty()) {
+                break;
+            }
             if (!stack1.isempty()) {
                 op1 = stack1.top();
                 stack1.pop();
@@ -82,7 +86,11 @@ class AddLargeNumbers {
             opTotal = op1 + op2 + carry;
             // System.out.println(opTotal%10);
             result.push(opTotal % ten);
-            if (opTotal >= ten) carry = one; else carry = zero;
+            if (opTotal >= ten)  {
+                carry = one;
+            } else {
+                carry = zero;
+            }
         }
         if (list1.toStri().length() == list2.toStri().length()) {
             result.push(carry);
