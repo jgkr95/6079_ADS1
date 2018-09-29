@@ -53,7 +53,7 @@ class Stack {
 		size = 0;
 	}
 	Stack(int len) {
-		number = new int[len];
+		number = new int[len+1];
 		size = 0;
 	}
 	public void push(int digit) {
