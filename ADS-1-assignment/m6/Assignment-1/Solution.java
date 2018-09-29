@@ -4,13 +4,19 @@ import java.util.Scanner;
  */
 class AddLargeNumbers {
     /**
+     * Constructs the object.
+     */
+    private AddLargeNumbers() {
+
+    }
+    /**
      * { Given is inersted in to linked list}.
      *
      * @param      number  The number is of String type
      *
      * @return     { object of linked list is returned }
      */
-    public static LinkedList numberToDigits(String number) {
+    public static LinkedList numberToDigits(final String number) {
         LinkedList list = new LinkedList();
         for (int i = 0; i < number.length(); i++) {
             char digit = number.charAt(i);
@@ -25,7 +31,7 @@ class AddLargeNumbers {
      *
      * @return     { description_of_the_return_value }
      */
-    public static String digitsToNumber(LinkedList list) {
+    public static String digitsToNumber(final LinkedList list) {
         String number = list.toStri();
         return number;
     }
@@ -37,7 +43,7 @@ class AddLargeNumbers {
      *
      * @return     { returns the object of LinkedList i.e result stored linked list }
      */
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
         String number1 = list1.toStri();
         String number2 = list2.toStri();
         int maxlength = 0;
@@ -58,19 +64,26 @@ class AddLargeNumbers {
             char digit1 = number2.charAt(i);
             stack2.push(Integer.parseInt(String.valueOf(digit1)));
         }
-        int carry = 0, op1 = 0, op2 = 0;
+        final int ten = 10, zero = 0, one = 1;
+        int carry = zero, op1, op2;
         while (true) {
             op1 = 0;
             op2 = 0;
             if (stack1.isempty() && stack2.isempty()) break;
-            if (!stack1.isempty()) { op1 = stack1.top();  stack1.pop(); }
-            if (!stack2.isempty()) { op2 = stack2.top();  stack2.pop(); }
-            int opTotal = 0;
+            if (!stack1.isempty()) {
+                op1 = stack1.top();
+                stack1.pop();
+            }
+            if (!stack2.isempty()) {
+                op2 = stack2.top();
+                stack2.pop();
+            }
+            int opTotal = zero;
             opTotal = op1 + op2 + carry;
             // System.out.println(opTotal%10);
-            result.push(opTotal % 10);
-            if (opTotal >= 10) carry = 1; else carry = 0;
-        } 
+            result.push(opTotal % ten);
+            if (opTotal >= ten) carry = one; else carry = zero;
+        }
         if (list1.toStri().length() == list2.toStri().length()) {
             result.push(carry);
         }
@@ -87,7 +100,7 @@ class AddLargeNumbers {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -99,7 +112,7 @@ public class Solution {
      *
      * @param      args  The arguments are of String array type
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
@@ -115,8 +128,10 @@ public class Solution {
         case "addLargeNumbers":
             pDigits = AddLargeNumbers.numberToDigits(p);
             qDigits = AddLargeNumbers.numberToDigits(q);
-            LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+        LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
             System.out.println(AddLargeNumbers.digitsToNumber(result));
+            break;
+        default:
             break;
         }
     }
