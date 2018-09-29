@@ -22,7 +22,7 @@ class AddLargeNumbers {
         LinkedList resultadded = new LinkedList();
         Stack stack1 = new Stack(list1.toStri());
         Stack stack2 = new Stack(list2.toStri());
-        if(list1.toStri().length()>list2.toStri().length()) {
+        if(list1.toStri().length()>=list2.toStri().length()) {
             maxlength = list1.toStri().length();
         } else {
             maxlength = list2.toStri().length();
