@@ -46,6 +46,7 @@ class Deque<Item> {
 	public void popLeft() {
 		head = head.next;
 		size--;
+		print();
 	}
 	public void popRight() {
 		Node cur = head;
@@ -54,6 +55,7 @@ class Deque<Item> {
 		}
 		cur.next = null;
 		size--;
+		print();
 
 	}
 	public void print() {
