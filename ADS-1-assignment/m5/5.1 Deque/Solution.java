@@ -58,14 +58,20 @@ class Deque<Item> {
 	}
 	public void print() {
 		Node cur = head;
-		System.out.print("[");
-		while(cur.next!=null) {
-			System.out.print(cur.data+", ");
-			cur = cur.next;
+		// String[] content = new String[size];
+		int i = 0;
+		if (size == 0) {
+			System.out.println("[]");
+		} else {
+			System.out.print("[");
+			while (cur.next != null) {
+				
+				System.out.print(cur.data + ", ");
+				cur = cur.next;
+			}
+			System.out.print(cur.data + "]");
+			System.out.println();
 		}
-		System.out.print(cur.data+"]");
-		System.out.println();
-
 	}
 }
 class Solution {
@@ -73,32 +79,32 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		Deque d = new Deque();
 		int n = sc.nextInt();
-		while (n>=0) {
+		while (n >= 0) {
 			String[] str = sc.nextLine().split(" ");
-			switch(str[0]) {
-				case "isEmpty":
+			switch (str[0]) {
+			case "isEmpty":
 				System.out.println(d.isEmpty());
 				break;
-				case "size":
+			case "size":
 				System.out.println(d.size());
 				break;
-				case "pushLeft":
+			case "pushLeft":
 				d.pushLeft(Integer.parseInt(str[1]));
 				break;
-				case "pushRight":
+			case "pushRight":
 				d.pushRight(str[1]);
 				break;
-				case "popLeft":
+			case "popLeft":
 				d.popLeft();
 				break;
-				case "popRight":
+			case "popRight":
 				d.popRight();
 				break;
-				default:
+			default:
 				break;
 			}
 			n--;
 		}
-		
+
 	}
 }
