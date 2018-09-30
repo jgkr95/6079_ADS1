@@ -5,8 +5,14 @@ import java.util.Scanner;
  * @param      <Item>  The item is of Generic type
  */
 class Deque<Item> {
-    Node head;
-    int size;
+    /**
+     * { head is Node object }.
+     */
+    private Node head;
+    /**
+     * { size of deque }.
+     */
+    private int size;
     /**
      * Constructs the object.
      */
@@ -18,9 +24,15 @@ class Deque<Item> {
     /**
      * Class for node.
      */
-    class Node {
-        Node next;
-        Item data;
+    private class Node {
+        /**
+         * { next is Node object }.
+         */
+        private Node next;
+        /**
+         * { data is Item type }.
+         */
+        private Item data;
         /**
          * Constructs the object.
          *
@@ -51,7 +63,7 @@ class Deque<Item> {
      *
      * @param      item  The item
      */
-    public void pushLeft(Item item) {
+    public void pushLeft(final Item item) {
         Node newnode = new Node(item);
         newnode.next = head;
         head = newnode;
@@ -64,7 +76,7 @@ class Deque<Item> {
      *
      * @param      item  The item of Item type
      */
-    public void pushRight(Item item) {
+    public void pushRight(final Item item) {
         Node newnode = new Node(item);
         size++;
         newnode.next = null;
@@ -132,7 +144,7 @@ class Deque<Item> {
 /**
  * Class for solution.
  */
-class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -143,7 +155,7 @@ class Solution {
      *
      * @param      args  The arguments are of String array type
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         Deque d = new Deque();
         int n = sc.nextInt();
