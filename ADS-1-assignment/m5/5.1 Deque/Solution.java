@@ -51,7 +51,7 @@ class Deque<Item> {
 		while (cur.next != null) {
 			cur = cur.next;
 		}
-		cur.next = null;
+		cur = null;
 
 	}
 	public void print() {
@@ -70,8 +70,8 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Deque d = new Deque();
-		int n = Integer.parseInt(sc.nextLine());
-		while (sc.hasNext()) {
+		int n = sc.nextInt();
+		while (n>=0) {
 			String[] str = sc.nextLine().split(" ");
 			switch(str[0]) {
 				case "isEmpty":
@@ -95,6 +95,7 @@ class Solution {
 				default:
 				break;
 			}
+			n--;
 		}
 		
 	}
