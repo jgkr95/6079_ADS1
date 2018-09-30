@@ -24,6 +24,7 @@ class Deque<Item> {
 		newnode.next = head;
 		head = newnode;
 		size++;
+		print();
 
 	}
 	public void pushRight(Item item) {
@@ -40,6 +41,7 @@ class Deque<Item> {
 			}
 			cur.next = newnode;
 		}
+		print();
 	}
 	public void popLeft() {
 		head = head.next;
@@ -50,6 +52,16 @@ class Deque<Item> {
 			cur = cur.next;
 		}
 		cur.next = null;
+
+	}
+	public void print() {
+		Node cur = head;
+		System.out.print("[");
+		while(cur.next!=null) {
+			System.out.print(cur.data+",");
+			cur = cur.next;
+		}
+		System.out.print(cur.data+"]");
 
 	}
 }
