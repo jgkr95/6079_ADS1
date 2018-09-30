@@ -31,18 +31,25 @@ class Josephus {
 		temp.next = head;
 	}
 	public void sword(int total, int killposition) {
-		Node temp1 = head, temp2 = head;
-		int count = 1;
-		while (temp1.next != temp1) {
-			while (count != killposition) {
-				temp2 = temp1;
-				temp1 = temp1.next;
-				count++;
-			}
-			System.out.print(temp1.data + " ");
-			temp2.next = temp1.next;
-			temp1 = temp2.next;
-		}
+		Node temp = head;
+        int counter = 1;
+        int i = 0;
+        while (temp.next != null) {
+            while (counter != killposition) {
+                insert(temp.data);
+                temp = temp.next;
+                // popAtHead();
+                head = head.next;
+                counter++;
+            }
+        System.out.print(temp.data);
+        temp = temp.next;
+        counter = 1;
+        // popAtHead();
+        head = head.next;
+        }
+        System.out.println(temp.data);
+		
 	}
 }
 public final class Solution {
