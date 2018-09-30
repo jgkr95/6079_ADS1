@@ -38,7 +38,7 @@ class Deque<Item> {
          *
          * @param      dataa  The dataa is of Item type
          */
-        Node(Item dataa) {
+        Node(final Item dataa) {
             data = dataa;
         }
     }
