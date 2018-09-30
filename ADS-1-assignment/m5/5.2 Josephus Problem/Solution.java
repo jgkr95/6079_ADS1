@@ -49,6 +49,7 @@ class Josephus {
         head = head.next;
         }
         System.out.print(temp.data);
+        System.out.println();
 		
 	}
 }
