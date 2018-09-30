@@ -24,11 +24,11 @@ class Josephus {
 		}
 	}
 	public void circlepos() {
-		Node temp = head;
-		while (temp.next != null) {
-			temp = temp.next;
-		}
-		temp.next = head;
+		// Node temp = head;
+		// while (temp.next != null) {
+		// 	temp = temp.next;
+		// }
+		// temp.next = head;
 	}
 	public void sword(int total, int killposition) {
 		Node temp = head;
