@@ -45,13 +45,15 @@ class Deque<Item> {
 	}
 	public void popLeft() {
 		head = head.next;
+		size--;
 	}
 	public void popRight() {
 		Node cur = head;
-		while (cur.next != null) {
+		while (cur.next.next != null) {
 			cur = cur.next;
 		}
-		cur = null;
+		cur.next = null;
+		size--;
 
 	}
 	public void print() {
