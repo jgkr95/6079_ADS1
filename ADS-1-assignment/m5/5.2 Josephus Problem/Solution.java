@@ -57,7 +57,7 @@ public final class Solution {
 		Scanner scan = new Scanner(System.in);
 		Josephus jobj = new Josephus();
 		int limit = scan.nextInt();
-		while (limit >= 0) {
+		while (limit > 0) {
 			int total = scan.nextInt();
 			int kill = scan.nextInt();
 			for (int i = 0; i < total; i++) {
