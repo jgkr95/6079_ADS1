@@ -60,7 +60,7 @@ class Deque<Item> {
 		Node cur = head;
 		System.out.print("[");
 		while(cur.next!=null) {
-			System.out.print(cur.data+",");
+			System.out.print(cur.data+", ");
 			cur = cur.next;
 		}
 		System.out.print(cur.data+"]");
