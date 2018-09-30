@@ -42,13 +42,13 @@ class Josephus {
                 head = head.next;
                 counter++;
             }
-        System.out.print(temp.data);
+        System.out.print(temp.data+" ");
         temp = temp.next;
         counter = 1;
         // popAtHead();
         head = head.next;
         }
-        System.out.println(temp.data);
+        System.out.print(temp.data);
 		
 	}
 }
