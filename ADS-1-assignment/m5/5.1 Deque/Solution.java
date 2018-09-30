@@ -62,6 +62,7 @@ class Deque<Item> {
 			cur = cur.next;
 		}
 		System.out.print(cur.data+"]");
+		System.out.println();
 
 	}
 }
