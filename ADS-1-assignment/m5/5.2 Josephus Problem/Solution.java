@@ -6,7 +6,7 @@ class Josephus {
     /**
      * { head is Node object that stores starting address of linked list }.
      */
-    Node head;
+    private Node head;
     /**
      * Class for node.
      */
@@ -14,11 +14,11 @@ class Josephus {
         /**
          * { next is Node object stores next object address }.
          */
-        Node next;
+        private Node next;
         /**
          * { element to be stored }.
          */
-        int data;
+        private int data;
         /**
          * Constructs the object and intialises the data.
          *
@@ -86,6 +86,9 @@ class Josephus {
  * class Solution starts here.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
