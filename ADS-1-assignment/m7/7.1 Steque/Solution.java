@@ -161,13 +161,15 @@ public final class Solution {
         int n = sc.nextInt();
         while (count < n) {
             Steque d = new Steque();
-            String[] str = sc.nextLine().split(" ");
+            String data = sc.nextLine();
+            
             // System.out.println(str[0]+" =======");
-            if (str[0].equals(" ")) {
+            if (data.equals("")||data.equals(null)) {
                 count++;
                 // System.out.println("+++"+str[0]+"++++");
 
             } else {
+                String[] str = data.split(" ");
                 switch (str[0]) {
                 case "push":
                     d.push(Integer.parseInt(str[1]));
