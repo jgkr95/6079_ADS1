@@ -46,6 +46,7 @@ class Steque<Item> {
      * Pushes element to steque.
      *
      * @param      item  The item
+     * Time complexity of this method is O(1)
      */
     public void push(final Item item) {
         Node newnode = new Node(item);
@@ -59,6 +60,7 @@ class Steque<Item> {
      * Pushes element to right.
      *
      * @param      item  The item of Item type
+     * Time complexity of this method is O(N)
      */
     public void enqueue(final Item item) {
         Node newnode = new Node(item);
@@ -78,6 +80,7 @@ class Steque<Item> {
     }
     /**
      * { deletes element from left side }.
+     * Time complexity of this method is O(1)
      */
     public void pop() {
         if (size == 0) {
@@ -90,6 +93,7 @@ class Steque<Item> {
     }
     /**
      * { Deletes a element from right side }.
+     * Time complexity of this method is O(N)
      */
     public void popRight() {
         if (size == 0) {
@@ -106,6 +110,7 @@ class Steque<Item> {
     }
     /**
      * { Prints all the elements of Steque }.
+     * Time complexity of this method is O(N)
      */
     public void print() {
         Node cur = head;
