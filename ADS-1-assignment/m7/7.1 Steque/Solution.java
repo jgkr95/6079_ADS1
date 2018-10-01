@@ -97,7 +97,7 @@ class Steque<Item> {
      */
     public void popLeft() {
         if (size == 0) {
-            System.out.println("Deck is empty");
+            System.out.println("Steque is empty");
         } else {
             head = head.next;
             size--;
@@ -130,13 +130,13 @@ class Steque<Item> {
         if (size == 0) {
             System.out.println("[]");
         } else {
-            System.out.print("[");
+            // System.out.print("[");
             while (cur.next != null) {
 
                 System.out.print(cur.data + ", ");
                 cur = cur.next;
             }
-            System.out.print(cur.data + "]");
+            System.out.print(cur.data);
             System.out.println();
         }
     }
@@ -162,22 +162,16 @@ public final class Solution {
         while (count < n) {
             Steque d = new Steque();
             String[] str = sc.nextLine().split(" ");
-            if (str.equals(" ")) {
+            if (str[0].equals(" ")) {
                 count++;
 
             } else {
                 switch (str[0]) {
-                case "isEmpty":
-                    System.out.println(d.isEmpty());
-                    break;
-                case "size":
-                    System.out.println(d.size());
-                    break;
                 case "push":
                     d.push(Integer.parseInt(str[1]));
                     break;
                 case "enqueue":
-                    d.enqueue(str[1]);
+                    d.enqueue(Integer.parseInt(str[1]));
                     break;
                 case "pop":
                     d.popLeft();
