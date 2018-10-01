@@ -34,16 +34,18 @@ class Josephus {
 		Node temp1 = head, temp2 = head;
 		int counter = 1;
 		int i = 0;
-		while (temp1.next != null) {
+		while (temp1.next != temp1) {
 			while (counter != killposition) {
 				temp2 = temp1;
 				temp1 = temp1.next;
+
 				counter++;
 			}
 			Node killed = temp2.next;
 			System.out.print(killed.data+" ");
 			temp2.next=temp1.next;
 			temp1 = temp2.next;
+			counter = 1;
 		}
 
 	}
