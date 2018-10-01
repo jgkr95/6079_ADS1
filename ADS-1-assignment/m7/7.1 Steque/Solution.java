@@ -162,10 +162,10 @@ public final class Solution {
         while (count < n) {
             Steque d = new Steque();
             String[] str = sc.nextLine().split(" ");
-            System.out.println(str[0]+" =======");
+            // System.out.println(str[0]+" =======");
             if (str[0].equals(" ")) {
                 count++;
-                System.out.println("+++"+str[0]+"++++");
+                // System.out.println("+++"+str[0]+"++++");
 
             } else {
                 switch (str[0]) {
