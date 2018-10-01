@@ -47,15 +47,19 @@ class Josephus {
 			temp1 = temp2.next;
 			counter = 1;
 		}
+		System.out.println(temp1.data);
 
 	}
 }
 public final class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		Josephus jobj = new Josephus();
+		
 		int limit = scan.nextInt();
-		while (limit > 0) {
+		System.out.println(limit);
+		int count = 0;
+		while (count++ < limit) {
+			Josephus jobj = new Josephus();
 			int total = scan.nextInt();
 			int kill = scan.nextInt();
 			for (int i = 0; i < total; i++) {
@@ -63,6 +67,7 @@ public final class Solution {
 			}
 			jobj.circlepos();
 			jobj.sword(total, kill);
+
 		}
 
 	}
