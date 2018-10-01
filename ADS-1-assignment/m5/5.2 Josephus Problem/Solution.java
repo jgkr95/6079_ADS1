@@ -24,33 +24,28 @@ class Josephus {
 		}
 	}
 	public void circlepos() {
-		// Node temp = head;
-		// while (temp.next != null) {
-		// 	temp = temp.next;
-		// }
-		// temp.next = head;
+		Node temp = head;
+		while (temp.next != null) {
+			temp = temp.next;
+		}
+		temp.next = head;
 	}
 	public void sword(int total, int killposition) {
-		Node temp = head;
-        int counter = 1;
-        int i = 0;
-        while (temp.next != null) {
-            while (counter != killposition) {
-                insert(temp.data);
-                temp = temp.next;
-                // popAtHead();
-                head = head.next;
-                counter++;
-            }
-        System.out.print(temp.data+" ");
-        temp = temp.next;
-        counter = 1;
-        // popAtHead();
-        head = head.next;
-        }
-        System.out.print(temp.data);
-        System.out.println();
-		
+		Node temp1 = head, temp2 = head;
+		int counter = 1;
+		int i = 0;
+		while (temp1.next != null) {
+			while (counter != killposition) {
+				temp2 = temp1;
+				temp1 = temp1.next;
+				counter++;
+			}
+			Node killed = temp2.next;
+			System.out.print(killed.data+" ");
+			temp2.next=temp1.next;
+			temp1 = temp2.next;
+		}
+
 	}
 }
 public final class Solution {
