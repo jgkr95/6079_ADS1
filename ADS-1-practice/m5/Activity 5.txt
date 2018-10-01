@@ -1,0 +1,13 @@
+﻿The about code inserts some elements in to a stack. 
+The while loop checks if the  is empty or not.
+ The elements inserted be 4 3 2 1 .
+The dequeue operations removes first inserted elements and push into a stack.
+1 will be removed and pushed into stack.
+Similarly the stack will be in form of   
+4
+3
+2
+1
+So second while loop removes elements from stack and enqueues into a queue.
+So 4 will be removed first.
+The final elements in the queue will be 1 2 3 4
