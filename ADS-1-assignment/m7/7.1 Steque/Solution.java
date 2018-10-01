@@ -43,23 +43,7 @@ class Steque<Item> {
         }
     }
     /**
-     * Determines if empty.
-     *
-     * @return     True if empty, False otherwise.
-     */
-    public boolean isEmpty() {
-        return size == 0;
-    }
-    /**
-     * { Size of the Steque }.
-     *
-     * @return     { size of the Steque }
-     */
-    public int size() {
-        return size;
-    }
-    /**
-     * Pushes a left.
+     * Pushes element to steque.
      *
      * @param      item  The item
      */
@@ -72,7 +56,7 @@ class Steque<Item> {
 
     }
     /**
-     * Pushes a right.
+     * Pushes element to right.
      *
      * @param      item  The item of Item type
      */
@@ -161,33 +145,23 @@ public final class Solution {
         int n = sc.nextInt();
         sc.nextLine();
         Steque d = new Steque();
-        while (sc.hasNext()) {
-            
-            String data = sc.nextLine();
-            
-            // System.out.println(str[0]+" =======");
+        while (sc.hasNext()) {          
+            String data = sc.nextLine();          
             if (data.equals("")||data.equals(null)) {
-                // count++;
                 d = new Steque();
                 System.out.println();
                 continue;
-                // System.out.println("+++"+str[0]+"++++");
 
             } else {
-                // System.out.println(count+"=================================");
                 String[] str = data.split(" ");
                 switch (str[0]) {
                 case "push":
-                    // System.out.println(Integer.parseInt(str[1])+" "+ i++);
                     d.push(Integer.parseInt(str[1]));
-
                     break;
                 case "enqueue":
-                    // System.out.println(Integer.parseInt(str[1])+" " + i++);
                     d.enqueue(Integer.parseInt(str[1]));
                     break;
                 case "pop":
-                    // System.out.println("pop" +" "+ i++);
                     d.pop();
                     break;
                 default:
