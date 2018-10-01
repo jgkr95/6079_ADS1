@@ -95,7 +95,7 @@ class Steque<Item> {
     /**
      * { deletes element from left side }.
      */
-    public void popLeft() {
+    public void pop() {
         if (size == 0) {
             System.out.println("Steque is empty");
         } else {
@@ -109,7 +109,7 @@ class Steque<Item> {
      */
     public void popRight() {
         if (size == 0) {
-            System.out.println("Deck is empty");
+            System.out.println("Steque is empty");
         } else {
             Node cur = head;
             while (cur.next.next != null) {
@@ -178,10 +178,7 @@ public final class Solution {
                     d.enqueue(Integer.parseInt(str[1]));
                     break;
                 case "pop":
-                    d.popLeft();
-                    break;
-                case "popRight":
-                    d.popRight();
+                    d.pop();
                     break;
                 default:
                     break;
