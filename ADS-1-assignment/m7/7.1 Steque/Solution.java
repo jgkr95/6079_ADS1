@@ -60,7 +60,8 @@ class Steque<Item> {
      * Pushes element to right.
      *
      * @param      item  The item of Item type
-     * Time complexity of this method is O(N)
+     * Time complexity of this method is O(N) because we have to move to
+     *  last node using while loop and then insetion takes place.
      */
     public void enqueue(final Item item) {
         Node newnode = new Node(item);
@@ -92,25 +93,9 @@ class Steque<Item> {
         }
     }
     /**
-     * { Deletes a element from right side }.
-     * Time complexity of this method is O(N)
-     */
-    public void popRight() {
-        if (size == 0) {
-            System.out.println("Steque is empty.");
-        } else {
-            Node cur = head;
-            while (cur.next.next != null) {
-                cur = cur.next;
-            }
-            cur.next = null;
-            size--;
-            print();
-        }
-    }
-    /**
      * { Prints all the elements of Steque }.
-     * Time complexity of this method is O(N)
+     * Time complexity of this method is O(N) because we have print
+     *  all elements present in linked list.
      */
     public void print() {
         Node cur = head;
