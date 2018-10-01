@@ -128,7 +128,7 @@ class Steque<Item> {
         // String[] content = new String[size];
         int i = 0;
         if (size == 0) {
-            System.out.println("[]");
+            System.out.println("Steque is empty");
         } else {
             // System.out.print("[");
             while (cur.next != null) {
