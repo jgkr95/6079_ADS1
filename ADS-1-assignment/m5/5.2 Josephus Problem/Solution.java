@@ -54,9 +54,7 @@ class Josephus {
 public final class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		
 		int limit = scan.nextInt();
-		System.out.println(limit);
 		int count = 0;
 		while (count++ < limit) {
 			Josephus jobj = new Josephus();
