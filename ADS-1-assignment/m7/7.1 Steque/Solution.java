@@ -97,7 +97,7 @@ class Steque<Item> {
      */
     public void pop() {
         if (size == 0) {
-            System.out.println("Steque is empty");
+            System.out.println("Steque is empty.");
         } else {
             head = head.next;
             size--;
