@@ -141,13 +141,13 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int count = 0,i=0;
+        int count = 0, i = 0;
         int n = sc.nextInt();
         sc.nextLine();
         Steque d = new Steque();
-        while (sc.hasNext()) {          
-            String data = sc.nextLine();          
-            if (data.equals("")||data.equals(null)) {
+        while (sc.hasNext()) {
+            String data = sc.nextLine();
+            if (data.equals("") || data.equals(null)) {
                 d = new Steque();
                 System.out.println();
                 continue;
