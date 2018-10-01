@@ -157,29 +157,40 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int count = 0;
+        int count = 0,i=0;
         int n = sc.nextInt();
-        while (count < n) {
-            Steque d = new Steque();
+        sc.nextLine();
+        Steque d = new Steque();
+        while (sc.hasNext()) {
+            
             String data = sc.nextLine();
             
             // System.out.println(str[0]+" =======");
             if (data.equals("")||data.equals(null)) {
-                count++;
+                // count++;
+                d = new Steque();
+                continue;
                 // System.out.println("+++"+str[0]+"++++");
 
             } else {
+                // System.out.println(count+"=================================");
                 String[] str = data.split(" ");
                 switch (str[0]) {
                 case "push":
+                    // System.out.println(Integer.parseInt(str[1])+" "+ i++);
                     d.push(Integer.parseInt(str[1]));
+
                     break;
                 case "enqueue":
+                    // System.out.println(Integer.parseInt(str[1])+" " + i++);
                     d.enqueue(Integer.parseInt(str[1]));
                     break;
                 case "pop":
+                    // System.out.println("pop" +" "+ i++);
                     d.pop();
                     break;
+                case "print":
+                    d.print();
                 default:
                     break;
                 }
