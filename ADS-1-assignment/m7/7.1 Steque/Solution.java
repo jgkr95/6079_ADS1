@@ -169,6 +169,7 @@ public final class Solution {
             if (data.equals("")||data.equals(null)) {
                 // count++;
                 d = new Steque();
+                System.out.println();
                 continue;
                 // System.out.println("+++"+str[0]+"++++");
 
@@ -189,8 +190,6 @@ public final class Solution {
                     // System.out.println("pop" +" "+ i++);
                     d.pop();
                     break;
-                case "print":
-                    d.print();
                 default:
                     break;
                 }
