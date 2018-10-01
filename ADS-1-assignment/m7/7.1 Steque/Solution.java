@@ -109,7 +109,7 @@ class Steque<Item> {
      */
     public void popRight() {
         if (size == 0) {
-            System.out.println("Steque is empty");
+            System.out.println("Steque is empty.");
         } else {
             Node cur = head;
             while (cur.next.next != null) {
@@ -128,7 +128,7 @@ class Steque<Item> {
         // String[] content = new String[size];
         int i = 0;
         if (size == 0) {
-            System.out.println("Steque is empty");
+            System.out.println("Steque is empty.");
         } else {
             // System.out.print("[");
             while (cur.next != null) {
