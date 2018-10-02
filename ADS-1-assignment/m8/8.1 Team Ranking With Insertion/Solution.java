@@ -155,8 +155,8 @@ class SelectionSort {
      *
      * @return     sorted array of team objects
      * Time complexity of This method is O(N^2)
-     *  because we are using nested for loops 
-     *  in worst case it may go up to O(N^2)
+     * because we are using nested for loops
+     * in worst case it may go up to O(N^2)
      */
     public Team[] selectionSortt(final Team[] team, final int size) {
         Team[] teams = team;
@@ -171,7 +171,7 @@ class SelectionSort {
                         swap(i, j, teams);
                     } else if (teams[i].getLoses() == teams[j].getLoses()) {
                         if (compareTo(teams[i].getDraws(),
-                                    teams[j].getDraws()) > 0) {
+                                      teams[j].getDraws()) > 0) {
                             swap(i, j, teams);
                         }
                     }
@@ -200,7 +200,6 @@ class SelectionSort {
      * @param      b     { index position }
      *
      * @return     -1 if first element is less, 1 if greater and 0 if equal
-     * 
      */
     public int compareTo(final int a, final int b) {
         if (a < b) {
