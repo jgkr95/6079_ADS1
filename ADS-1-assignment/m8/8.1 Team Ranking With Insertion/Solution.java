@@ -62,8 +62,13 @@ class TeamAdd {
 				if (teams[i].getWins() < teams[j].getWins()) {
 					swap(i, j);
 				} else if (teams[i].getWins() == teams[j].getWins()) {
-					if (teams[i].getLoses() < teams[j].getLoses())
+					if (teams[i].getLoses() > teams[j].getLoses()) {
 						swap(i, j);
+					} else if (teams[i].getLoses() == teams[j].getLoses()) {
+						if (teams[i].getDraws() < teams[j].getDraws()) {
+							swap(i, j);
+						}
+					}
 				}
 			}
 		}
@@ -71,6 +76,6 @@ class TeamAdd {
 	public void print() {
 		for (int i = 0; i < size - 1; i++) {
 			System.out.print(teams[i].getName() + ",");
-		} System.out.println(teams[size-1].getName());
+		} System.out.println(teams[size - 1].getName());
 	}
 }
