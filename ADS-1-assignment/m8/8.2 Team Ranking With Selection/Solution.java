@@ -162,17 +162,17 @@ class Insertionsort {
         Team[] teams = team;
         for (int i = 0; i < size; i++) {
             for (int j = i; j > 0; j--) {
-                if (compareTo(teams[j].getWins(), teams[j - 1].getWins()) < 0) {
-                    swap(j, j - 1, teams);
-                } else if (compareTo(teams[j].getWins(),
-                                     teams[j - 1].getWins()) == 0) {
-                    if (compareTo(teams[j].getLoses(),
-                                  teams[j - 1].getLoses()) > 0) {
-                        swap(j, j - 1, teams);
-                    } else if (compareTo(teams[i].getLoses(), teams[j].getLoses()) == 0) {
-                        if (compareTo(teams[j].getDraws(),
-                                      teams[j - 1].getDraws()) > 0) {
-                            swap(j, j - 1, teams);
+                if (compareTo(teams[j - 1].getWins(), teams[j].getWins()) > 0) {
+                    swap(j - 1, j, teams);
+                } else if (compareTo(teams[j - 1].getWins(),
+                                     teams[j].getWins()) == 0) {
+                    if (compareTo(teams[j - 1].getLoses(),
+                                  teams[j].getLoses()) < 0) {
+                        swap(j - 1, j, teams);
+                    } else if (compareTo(teams[j - 1].getLoses(), teams[j].getLoses()) == 0) {
+                        if (compareTo(teams[j - 1].getDraws(),
+                                      teams[j].getDraws()) > 0) {
+                            swap(j - 1, j, teams);
                         }
                     }
                 }
