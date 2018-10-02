@@ -150,7 +150,7 @@ class SelectionSort {
     /**
      * { function_description }.
      *
-     * @param      teams  The teams
+     * @param      team  The teams
      * @param      size   The size
      *
      * @return     { description_of_the_return_value }
