@@ -20,7 +20,7 @@ public final class Solution {
             String[] tokens = scan.nextLine().split(",");
             addTeam.add(tokens);
         }
-        addTeam.SelectionSort();
+        addTeam.selectionSort();
         addTeam.print();
 
     }
@@ -50,7 +50,7 @@ class Team {
      *
      * @param      info  The information
      */
-    Team(String[] info) {
+    Team(final String[] info) {
         int i = 0;
         name = info[i];
         wins = Integer.parseInt(info[++i]);
@@ -134,7 +134,7 @@ class TeamAdd {
     /**
      * { function_description }.
      */
-    public void SelectionSort() {
+    public void selectionSort() {
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
                 if (teams[i].getWins() < teams[j].getWins()) {
