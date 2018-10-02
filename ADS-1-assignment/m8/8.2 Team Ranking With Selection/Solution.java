@@ -155,22 +155,23 @@ class Insertionsort {
      *
      * @return     sorted array of team objects
      * Time complexity of This method is O(N^2)
-     *  because we are using nested for loops in worst case it may go up to O(N^2)
+     *  because we are using nested for loops
+     *   in worst case it may go up to O(N^2)
      */
     public Team[] insertionsortt(final Team[] team, final int size) {
         Team[] teams = team;
         for (int i = 0; i < size; i++) {
             for (int j = i; j > 0; j--) {
-                if (compareTo(teams[j].getWins(), teams[j - 1].getWins()) > 0) {
+                if (compareTo(teams[j].getWins(), teams[j - 1].getWins()) < 0) {
                     swap(j, j - 1, teams);
                 } else if (compareTo(teams[j].getWins(),
                                      teams[j - 1].getWins()) == 0) {
                     if (compareTo(teams[j].getLoses(),
-                                  teams[j - 1].getLoses()) < 0) {
+                                  teams[j - 1].getLoses()) > 0) {
                         swap(j, j - 1, teams);
                     } else if (teams[i].getLoses() == teams[j].getLoses()) {
                         if (compareTo(teams[j].getDraws(),
-                                      teams[j - 1].getDraws()) > 0) {
+                                      teams[j - 1].getDraws()) < 0) {
                             swap(j, j - 1, teams);
                         }
                     }
