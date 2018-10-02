@@ -169,7 +169,8 @@ class Insertionsort {
                     if (compareTo(teams[j - 1].getLoses(),
                                   teams[j].getLoses()) < 0) {
                         swap(j - 1, j, teams);
-                    } else if (compareTo(teams[j - 1].getLoses(), teams[j].getLoses()) == 0) {
+                    } else if (compareTo(teams[j - 1].getLoses(),
+                                 teams[j].getLoses()) == 0) {
                         if (compareTo(teams[j - 1].getDraws(),
                                       teams[j].getDraws()) > 0) {
                             swap(j - 1, j, teams);
