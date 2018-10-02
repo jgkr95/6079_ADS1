@@ -155,16 +155,20 @@ class SelectionSort {
      *
      * @return     { description_of_the_return_value }
      */
-    public Team[] selectionSortt(Team[] teams, int size) {
+    public Team[] selectionSortt(final Team[] team, final int size) {
+        Team[] teams = new Team[10];
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
                 if (compareTo(teams[i].getWins(), teams[j].getWins()) > 0) {
                     swap(i, j, teams);
-                } else if (compareTo(teams[i].getWins(), teams[j].getWins()) == 0) {
-                    if (compareTo(teams[i].getLoses(), teams[j].getLoses()) < 0) {
+                } else if (compareTo(teams[i].getWins()
+                                                , teams[j].getWins()) == 0) {
+                    if (compareTo(teams[i].getLoses()
+                                    , teams[j].getLoses()) < 0) {
                         swap(i, j, teams);
                     } else if (teams[i].getLoses() == teams[j].getLoses()) {
-                        if (compareTo(teams[i].getDraws(), teams[j].getDraws()) > 0) {
+                        if (compareTo(teams[i].getDraws()
+                                        , teams[j].getDraws()) > 0) {
                             swap(i, j, teams);
                         }
                     }
@@ -174,12 +178,13 @@ class SelectionSort {
         return teams;
     }
     /**
-     * { function_description }.
+     * { function_description }
      *
      * @param      index1  The index 1
      * @param      index2  The index 2
+     * @param      teams   The teams
      */
-    public void swap(final int index1, final int index2, Team[] teams) {
+    public void swap(final int index1, final int index2, final Team[] teams) {
         Team temp;
         temp = teams[index1];
         teams[index1] = teams[index2];
