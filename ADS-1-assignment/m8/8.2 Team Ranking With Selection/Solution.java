@@ -161,17 +161,17 @@ class Insertionsort {
         Team[] teams = team;
         for (int i = 0; i < size; i++) {
             for (int j = i; j > 0; j--) {
-                if (compareTo(teams[i].getWins(), teams[j].getWins()) > 0) {
-                    swap(i, j, teams);
-                } else if (compareTo(teams[i].getWins(),
-                                     teams[j].getWins()) == 0) {
-                    if (compareTo(teams[i].getLoses(),
-                                  teams[j].getLoses()) < 0) {
-                        swap(i, j, teams);
+                if (compareTo(teams[j].getWins(), teams[j - 1].getWins()) > 0) {
+                    swap(j, j - 1, teams);
+                } else if (compareTo(teams[j].getWins(),
+                                     teams[j - 1].getWins()) == 0) {
+                    if (compareTo(teams[j].getLoses(),
+                                  teams[j - 1].getLoses()) < 0) {
+                        swap(j, j - 1, teams);
                     } else if (teams[i].getLoses() == teams[j].getLoses()) {
-                        if (compareTo(teams[i].getDraws(),
-                                    teams[j].getDraws()) > 0) {
-                            swap(i, j, teams);
+                        if (compareTo(teams[j].getDraws(),
+                                      teams[j - 1].getDraws()) > 0) {
+                            swap(j, j - 1, teams);
                         }
                     }
                 }
@@ -199,7 +199,7 @@ class Insertionsort {
      * @param      b     { parameter_description }
      *
      * @return     -1 if first element is less, 1 if greater and 0 if equal
-     * 
+     *
      */
     public int compareTo(final int a, final int b) {
         if (a < b) {
