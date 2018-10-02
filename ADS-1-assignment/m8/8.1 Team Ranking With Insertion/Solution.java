@@ -113,7 +113,7 @@ class TeamAdd {
         size = zero;
     }
     /**
-     * { function_description }.
+     * adds team objects into teams array.
      *
      * @param      info  The information
      */
@@ -122,14 +122,14 @@ class TeamAdd {
     }
 
     /**
-     * { function_description }.
+     * Sorting based on selection sort algorithm.
      */
     public void selectionSort() {
         SelectionSort sort = new SelectionSort();
         teams = sort.selectionSortt(teams, size);
     }
     /**
-     * { function_description }.
+     * To display elements of the sorted array.
      */
     public void print() {
         for (int i = 0; i < size - 1; i++) {
@@ -148,12 +148,15 @@ class SelectionSort {
 
     }
     /**
-     * { function_description }.
+     * To perform selection sort.
      *
      * @param      team  The teams
      * @param      size   The size
      *
-     * @return     { description_of_the_return_value }
+     * @return     sorted array of team objects
+     * Time complexity of This method is O(N^2)
+     *  because we are using nested for loops 
+     *  in worst case it may go up to O(N^2)
      */
     public Team[] selectionSortt(final Team[] team, final int size) {
         Team[] teams = team;
@@ -178,7 +181,7 @@ class SelectionSort {
         return teams;
     }
     /**
-     * { function_description }.
+     * swapping the team objects.
      *
      * @param      index1  The index 1
      * @param      index2  The index 2
@@ -191,12 +194,13 @@ class SelectionSort {
         teams[index2] = temp;
     }
     /**
-     * { function_description }.
+     * compares two values.
      *
-     * @param      a     { parameter_description }
-     * @param      b     { parameter_description }
+     * @param      a     { index position }
+     * @param      b     { index position }
      *
-     * @return     { description_of_the_return_value }
+     * @return     -1 if first element is less, 1 if greater and 0 if equal
+     * 
      */
     public int compareTo(final int a, final int b) {
         if (a < b) {
