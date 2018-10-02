@@ -126,7 +126,7 @@ class TeamAdd {
      */
     public void selectionSort() {
         SelectionSort sort = new SelectionSort();
-        teams = sort.SelectionSort(teams, size);
+        teams = sort.SelectionSortt(teams, size);
     }
     /**
      * { function_description }.
@@ -148,14 +148,14 @@ class SelectionSort {
 
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      teams  The teams
      * @param      size   The size
      *
      * @return     { description_of_the_return_value }
      */
-    public Team[] SelectionSort(Team[] teams, int size) {
+    public Team[] SelectionSortt(Team[] teams, int size) {
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
                 if (compareTo(teams[i].getWins(), teams[j].getWins()) > 0) {
@@ -186,7 +186,7 @@ class SelectionSort {
         teams[index2] = temp;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      a     { parameter_description }
      * @param      b     { parameter_description }
