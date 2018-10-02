@@ -120,7 +120,7 @@ class TeamAdd {
     public void add(final String[] info) {
         teams[size++] = new Team(info);
     }
-    
+
     /**
      * { function_description }.
      */
@@ -159,13 +159,13 @@ class SelectionSort {
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
                 if (compareTo(teams[i].getWins(), teams[j].getWins()) > 0) {
-                    swap(i, j,teams);
+                    swap(i, j, teams);
                 } else if (compareTo(teams[i].getWins(), teams[j].getWins()) == 0) {
                     if (compareTo(teams[i].getLoses(), teams[j].getLoses()) < 0) {
-                        swap(i, j,teams);
+                        swap(i, j, teams);
                     } else if (teams[i].getLoses() == teams[j].getLoses()) {
                         if (compareTo(teams[i].getDraws(), teams[j].getDraws()) > 0) {
-                            swap(i, j,teams);
+                            swap(i, j, teams);
                         }
                     }
                 }
@@ -179,7 +179,7 @@ class SelectionSort {
      * @param      index1  The index 1
      * @param      index2  The index 2
      */
-    public void swap(final int index1, final int index2,Team[] teams) {
+    public void swap(final int index1, final int index2, Team[] teams) {
         Team temp;
         temp = teams[index1];
         teams[index1] = teams[index2];
@@ -193,12 +193,13 @@ class SelectionSort {
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(int a, int b) {
+    public int compareTo(final int a, final int b) {
         if (a < b) {
             return 1;
         } else if (a == b) {
             return 0;
-        } else
+        } else {
             return -1;
+        }
     }
 }
