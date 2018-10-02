@@ -20,6 +20,7 @@ class Team {
 	private int wins;
 	private int loses;
 	private int draws;
+
 	Team(String[] info) {
 		name = info[0];
 		wins = Integer.parseInt(info[1]);
@@ -61,7 +62,7 @@ class TeamAdd {
 				if (teams[i].getWins() < teams[j].getWins()) {
 					swap(i, j);
 				} else if (teams[i].getWins() == teams[j].getWins()) {
-					if (teams[i].getLoses() > teams[j].getLoses())
+					if (teams[i].getLoses() < teams[j].getLoses())
 						swap(i, j);
 				}
 			}
