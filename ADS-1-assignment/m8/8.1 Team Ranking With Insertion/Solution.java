@@ -18,7 +18,7 @@ public final class Solution {
         TeamAdd addTeam = new TeamAdd();
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
-            addTeam.Add(tokens);
+            addTeam.add(tokens);
         }
         addTeam.SelectionSort();
         addTeam.print();
@@ -51,10 +51,11 @@ class Team {
      * @param      info  The information
      */
     Team(String[] info) {
-        name = info[0];
-        wins = Integer.parseInt(info[1]);
-        loses = Integer.parseInt(info[2]);
-        draws = Integer.parseInt(info[3]);
+        int i = 0;
+        name = info[i];
+        wins = Integer.parseInt(info[++i]);
+        loses = Integer.parseInt(info[++i]);
+        draws = Integer.parseInt(info[++i]);
     }
     /**
      * Gets the wins.
@@ -97,23 +98,25 @@ class TeamAdd {
     /**
      * { var_description }.
      */
-    Team[] teams;
+    private Team[] teams;
     /**
      * { var_description }.
      */
-    int size  = 0;
+    private int size;
     /**
      * Constructs the object.
      */
     TeamAdd() {
-        teams = new Team[10];
+        final int ten = 10, zero = 0;
+        teams = new Team[ten];
+        size = zero;
     }
     /**
      * { function_description }.
      *
      * @param      info  The information
      */
-    public void Add(final String[] info) {
+    public void add(final String[] info) {
         teams[size++] = new Team(info);
     }
     /**
