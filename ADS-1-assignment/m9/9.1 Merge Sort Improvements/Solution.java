@@ -3,12 +3,14 @@ import java.util.Scanner;
  * Class for merge.
  */
 class Merge {
+    /**
+     * { cutoff for insertion sorting }
+     */
     private static final int CUTOFF = 7;
     /**
      * Constructs the object.
      */
     Merge() {
-
     }
     /**
      * { This method copies two arrays elements
@@ -40,7 +42,8 @@ class Merge {
         assert isSorted(newarray, lo, hi);
     }
     /**
-     * { This method copies two arrays elements in to auxilary array by sorting }.
+     * { This method copies two arrays elements
+     * in to auxilary array by sorting }.
      *
      * @param      array     The array is of Comparable array type
      * @param      newarray  The newarray is of Comparable array type
