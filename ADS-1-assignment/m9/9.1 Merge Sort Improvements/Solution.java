@@ -6,10 +6,13 @@ class Merge {
     /**
      * { cutoff for insertion sorting }.
      */
-    private int CUTOFF;
+    private int cutoff;
+    /**
+     * Constructs the object.
+     */
     Merge() {
         final int seven = 7;
-        CUTOFF = seven;
+        cutoff = seven;
     }
     /**
      * { This method copies two arrays elements
@@ -51,7 +54,7 @@ class Merge {
      */
     private void sort(final Comparable[] array,
      final Comparable[] newarray, final int lo, final int hi) {
-        if (hi <= lo + CUTOFF) {
+        if (hi <= lo + cutoff) {
             insertionSort(newarray, lo, hi);
             System.out.println("Insertion sort method invoked...");
             return;
