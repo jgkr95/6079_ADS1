@@ -94,7 +94,7 @@ class Merge {
 	/**
 	 * { swaps the positions of the given index positions }.
 	 *
-	 * @param      a     { Auxilaaary array }
+	 * @param      aux     { Auxilaaary array }
 	 * @param      i     { index position }
 	 * @param      j     { indexposition }
 	 */
@@ -134,10 +134,11 @@ class Merge {
 	 * @return     True if sorted, False otherwise.
 	 */
 	public static boolean isSorted(final Comparable[] aux, final int lo, final int hi) {
-		for (int i = lo + 1; i <= hi; i++)
+		for (int i = lo + 1; i <= hi; i++) {
 			if (less(aux[i], aux[i - 1])) {
 				return false;
 			}
+		}
 		return true;
 	}
 	/**
@@ -168,7 +169,7 @@ public final class Solution {
 
 	}
 	/**
-	 * { main method to handle the input }
+	 * { main method to handle the input }.
 	 *
 	 * @param      args  The arguments of string array type
 	 */
