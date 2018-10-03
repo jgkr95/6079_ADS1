@@ -6,7 +6,11 @@ class Merge {
     /**
      * { cutoff for insertion sorting }.
      */
-    private static final int CUTOFF = 7;
+    private int CUTOFF;
+    Merge() {
+        final int seven = 7;
+        CUTOFF = seven;
+    }
     /**
      * { This method copies two arrays elements
      *  in to auxilary array by sorting }.
@@ -17,7 +21,7 @@ class Merge {
      * @param      mid       The middle is middle index
      * @param      hi        The higher is last index
      */
-    private static void merge(final Comparable[] array,
+    private void merge(final Comparable[] array,
     final Comparable[] newarray, final int lo, final int mid, final int hi) {
         assert isSorted(array, lo, mid);
         assert isSorted(array, mid + 1, hi);
@@ -45,7 +49,7 @@ class Merge {
      * @param      lo        The lower is array starting index
      * @param      hi        The higher is last index
      */
-    private static void sort(final Comparable[] array,
+    private void sort(final Comparable[] array,
      final Comparable[] newarray, final int lo, final int hi) {
         if (hi <= lo + CUTOFF) {
             insertionSort(newarray, lo, hi);
@@ -71,7 +75,7 @@ class Merge {
      *
      * @param      a     is of comparable type
      */
-    public static void sort(final Comparable[] a) {
+    public void sort(final Comparable[] a) {
         Comparable[] aux = a.clone();
         sort(aux, a, 0, a.length - 1);
         assert isSorted(a);
@@ -83,7 +87,7 @@ class Merge {
      * @param      lo    The lower Starting index to sort
      * @param      hi    The higher last index to sort
      */
-    public static void insertionSort(final Comparable[] a,
+    public void insertionSort(final Comparable[] a,
                                  final int lo, final int hi) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1]); j--) {
@@ -98,7 +102,7 @@ class Merge {
      * @param      i     { index position }
      * @param      j     { indexposition }
      */
-    public static void swap(final Comparable[] aux, final int i, final int j) {
+    public void swap(final Comparable[] aux, final int i, final int j) {
         Comparable temp = aux[i];
         aux[i] = aux[j];
         aux[j] = temp;
@@ -111,7 +115,7 @@ class Merge {
      *
      * @return     { true if a is less than b, else false }
      */
-    public static boolean less(final Comparable a, final Comparable b) {
+    public boolean less(final Comparable a, final Comparable b) {
         return a.compareTo(b) < 0;
     }
     /**
@@ -121,7 +125,7 @@ class Merge {
      *
      * @return     True if sorted, False otherwise.
      */
-    public static boolean isSorted(final Comparable[] aux) {
+    public boolean isSorted(final Comparable[] aux) {
         return isSorted(aux, 0, aux.length - 1);
     }
     /**
@@ -133,7 +137,7 @@ class Merge {
      *
      * @return     True if sorted, False otherwise.
      */
-    public static boolean isSorted(final Comparable[] aux,
+    public boolean isSorted(final Comparable[] aux,
                                  final int lo, final int hi) {
         for (int i = lo + 1; i <= hi; i++) {
             if (less(aux[i], aux[i - 1])) {
@@ -149,7 +153,7 @@ class Merge {
      *
      * @return     { String with all auxilary elements }
      */
-    public static Object show(final Object[] aux) {
+    public Object show(final Object[] aux) {
         String s = "[";
         int i;
         for (i = 0; i < aux.length - 1; i++) {
