@@ -4,13 +4,13 @@ import java.util.Scanner;
  */
 class Merge {
     /**
-     * { cutoff for insertion sorting }
+     * { cutoff for insertion sorting }.
      */
     private static final int CUTOFF = 7;
     /**
      * Constructs the object.
      */
-    Merge() {
+    public Merge() {
     }
     /**
      * { This method copies two arrays elements
