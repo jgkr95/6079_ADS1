@@ -8,11 +8,6 @@ class Merge {
      */
     private static final int CUTOFF = 7;
     /**
-     * Constructs the object.
-     */
-    public Merge() {
-    }
-    /**
      * { This method copies two arrays elements
      *  in to auxilary array by sorting }.
      *
