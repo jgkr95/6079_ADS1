@@ -51,6 +51,8 @@ class Merge {
      * @param      newarray  The newarray is of Comparable array type
      * @param      lo        The lower is array starting index
      * @param      hi        The higher is last index
+     * Time complexity of this method is O(NlogN) beacuse of this method ,
+     *  recursion and it calls merge method.
      */
     private void sort(final Comparable[] array,
      final Comparable[] newarray, final int lo, final int hi) {
@@ -89,6 +91,7 @@ class Merge {
      * @param      a     auxilary array
      * @param      lo    The lower Starting index to sort
      * @param      hi    The higher last index to sort
+     * Time complexity of this method O(N^2) because of nested for loops.
      */
     public void insertionSort(final Comparable[] a,
                                  final int lo, final int hi) {
@@ -185,10 +188,9 @@ public final class Solution {
         Merge m = new Merge();
         Scanner s = new Scanner(System.in);
         while (s.hasNextLine()) {
-            String tokens = s.nextLine();
-            String[] lines = tokens.split(",");
-            m.sort(lines);
-            System.out.println(m.show(lines));
+            String[] data = s.nextLine().split(",");
+            m.sort(data);
+            System.out.println(m.show(data));
             System.out.println();
 
         }
