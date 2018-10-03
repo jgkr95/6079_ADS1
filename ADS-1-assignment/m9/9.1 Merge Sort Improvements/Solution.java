@@ -53,7 +53,7 @@ class Merge {
     private static void sort(Comparable[] array, Comparable[] newarray, int lo, int hi) {
         if (hi <= lo + CUTOFF) {
             insertionSort(newarray, lo, hi);
-            // System.out.println("Insertion sort method invoked...");
+            System.out.println("Insertion sort method invoked...");
             return;
         }
         int mid = lo + (hi - lo) / 2;
@@ -64,7 +64,7 @@ class Merge {
             for (int i = lo; i <= hi; i++) {
                 newarray[i] = array[i];
             }
-            // System.out.println("Array is already sorted. So, skipped the call to merge...");
+            System.out.println("Array is already sorted. So, skipped the call to merge...");
             return;
         }
         merge(array, newarray, lo, mid, hi);
