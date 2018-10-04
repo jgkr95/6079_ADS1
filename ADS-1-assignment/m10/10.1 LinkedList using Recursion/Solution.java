@@ -20,7 +20,8 @@ public final class Solution {
             try {
                 switch (tokens[0]) {
                 case "insertAt":
-                    list.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+                    list.insertAt(Integer.parseInt(tokens[1])
+                        , Integer.parseInt(tokens[2]));
                     list.display();
                     break;
 
@@ -90,16 +91,17 @@ class LinkedList<E> {
 
     }
     /**
-     * { function_description }
+     * { Inserts at given position }.
      *
-     * @param      curr       The curr
-     * @param      newNode    The new node
-     * @param      index      The index
-     * @param      currIndex  The curr index
+     * @param      curr       The curr is Node object
+     * @param      newNode    The new node is Node object
+     * @param      index      The index is integer type
+     * @param      currIndex  The curr index is integer type
      *
-     * @return     { description_of_the_return_value }
+     * @return     { Returns the object of node }
      */
-    private Node insertAt(final Node curr, final Node newNode, final int index, final int currIndex) {
+    private Node insertAt(final Node curr, final Node newNode
+        , final int index, final int currIndex) {
         if (curr == null) {
             return newNode;
         } else if (currIndex == index) {
