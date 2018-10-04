@@ -92,7 +92,7 @@ class LinkedList<E> {
      *
      * @throws     Exception  { Throws exception if index is invalid }
      * Time complexity is O(N) because in worst case, it may have
-     * to recurse entire linked list 
+     * to recurse entire linked list
      */
     public void insertAt(final int index, final E data) throws Exception {
 
@@ -112,7 +112,7 @@ class LinkedList<E> {
      * @param      index      The index is integer type
      * @param      currIndex  The curr index is integer type
      * Time complexity is O(N) because in worst case, it may have
-     * to recurse entire linked list 
+     * to recurse entire linked list
      * @return     { Returns the object of node }
      */
     private Node insertAt(final Node curr, final Node newNode,
