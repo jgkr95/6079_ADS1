@@ -18,7 +18,7 @@ class Solution {
 
 					list.reverse();
 
-					// list.display();
+					list.display();
 
 					break;
 				default :
