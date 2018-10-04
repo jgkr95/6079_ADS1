@@ -8,7 +8,7 @@ class Solution{
 			switch(tokens[0]) {
 				case "insertAt":
 				try {
-								list.insertAt(Integer.parseInt(tokens[1]),tokens[2]);
+								list.insertAt(Integer.parseInt(tokens[1]),Integer.parseInt(tokens[2]));
 								list.display();
 							}
 							catch(Exception e) {
@@ -32,18 +32,18 @@ class Solution{
 		}
 	}
 }
-class LinkedList<E>{
+class LinkedList{
 
 	Node head;
 	Node tail;
 	int size;
 	
 	class Node{
-		E data;
+		int data;
 		Node next;
 
-		public Node(E dataa){
-			this.data = dataa;
+		public Node(int data){
+			this.data = data;
 			this.next = null;
 		}
 	}
@@ -54,7 +54,7 @@ class LinkedList<E>{
 		this.size = 0;
 	}
 
-	public void insertAt(int index, E data) throws Exception{
+	public void insertAt(int index, int data) throws Exception{
 
 		if(index < 0 || index > size){
 			throw new Exception("Can't insert at this position.");
@@ -67,7 +67,8 @@ class LinkedList<E>{
 
 	private Node insertAt(Node curr, Node newNode, int index, int currIndex){
 		if(curr == null){
-
+			// newNode.next = head;
+			// System.out.println("yep");
 			return newNode;
 		}
 		else if(currIndex == index){
