@@ -15,7 +15,13 @@ class Solution{
 								break;
 							}
 				case "reverse":
-								// list.reverse();
+							try {
+								list.reverse();
+
+								list.display();
+							} catch(Exception e) {
+								System.out.println(e.getMessage());
+							}
 					break;
 				default : 
 					break;
@@ -55,6 +61,7 @@ class LinkedList<E>{
 
 		head = insertAt(head, new Node(data), index, 0);
 		size++;
+		display();
 
 	}
 
