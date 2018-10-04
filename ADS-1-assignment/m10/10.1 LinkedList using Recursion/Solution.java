@@ -1,6 +1,6 @@
 import java.util.Scanner;
-class Solution {
-    public static void main(String[] args) {
+public final class Solution {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         LinkedList list = new LinkedList();
         while (scan.hasNext()) {
@@ -42,7 +42,7 @@ class LinkedList {
         int data;
         Node next;
 
-        public Node(int data) {
+        public Node(final int data) {
             this.data = data;
             this.next = null;
         }
@@ -54,7 +54,7 @@ class LinkedList {
         this.size = 0;
     }
 
-    public void insertAt(int index, int data) throws Exception {
+    public void insertAt(final int index, final int data) throws Exception {
 
         if (index < 0 || index > size) {
             throw new Exception("Can't insert at this position.");
@@ -65,7 +65,7 @@ class LinkedList {
 
     }
 
-    private Node insertAt(Node curr, Node newNode, int index, int currIndex) {
+    private Node insertAt(final Node curr, final Node newNode, final int index, final int currIndex) {
         if (curr == null) {
             // newNode.next = head;
             // System.out.println("yep");
@@ -88,7 +88,7 @@ class LinkedList {
         reverse(head, null);
     }
 
-    private Node reverse(Node curr, Node prev) {
+    private Node reverse(final Node curr, final Node prev) {
 
 
 
