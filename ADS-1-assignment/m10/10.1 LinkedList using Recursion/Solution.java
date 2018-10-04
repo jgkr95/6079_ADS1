@@ -9,6 +9,7 @@ class Solution{
 				case "insertAt":
 				try {
 								list.insertAt(Integer.parseInt(tokens[1]),tokens[2]);
+								list.display();
 							}
 							catch(Exception e) {
 								System.out.println(e.getMessage());
@@ -18,7 +19,7 @@ class Solution{
 							try {
 								list.reverse();
 
-								list.display();
+								// list.display();
 							} catch(Exception e) {
 								System.out.println(e.getMessage());
 							}
@@ -61,14 +62,12 @@ class LinkedList<E>{
 
 		head = insertAt(head, new Node(data), index, 0);
 		size++;
-		display();
 
 	}
 
 	private Node insertAt(Node curr, Node newNode, int index, int currIndex){
 		if(curr == null){
-			// newNode.next = head;
-			// System.out.println("yep");
+
 			return newNode;
 		}
 		else if(currIndex == index){
