@@ -42,7 +42,9 @@ public final class Solution {
     }
 }
 /**
- * LinkedList class starts here.
+ * List of linkeds.
+ *
+ * @param      <E>   { generic type }
  */
 class LinkedList<E> {
     /**
@@ -89,6 +91,8 @@ class LinkedList<E> {
      * @param      data       The data
      *
      * @throws     Exception  { Throws exception if index is invalid }
+     * Time complexity is O(N) because in worst case, it may have
+     * to recurse entire linked list 
      */
     public void insertAt(final int index, final E data) throws Exception {
 
@@ -107,7 +111,8 @@ class LinkedList<E> {
      * @param      newNode    The new node is Node object
      * @param      index      The index is integer type
      * @param      currIndex  The curr index is integer type
-     *
+     * Time complexity is O(N) because in worst case, it may have
+     * to recurse entire linked list 
      * @return     { Returns the object of node }
      */
     private Node insertAt(final Node curr, final Node newNode,
@@ -127,6 +132,8 @@ class LinkedList<E> {
      * { Reverse public method to call reverse recursive method }.
      *
      * @throws     Exception  { throws exception if linked list if empty }
+     * Time complexity of this method is O(1) because
+     * it just calls the reverse recursive method
      */
     public void reverse() throws Exception {
         if (head == null) {
@@ -141,6 +148,8 @@ class LinkedList<E> {
      * @param      prev  The previous is node object
      *
      * @return     { returns the null if next addess if empty, else head }
+     * Time complexity of this method O(N) beacuse
+     * it has to traverse entire linkedlist to reverse the elements.
      */
     private Node reverse(final Node curr, final Node prev) {
         if (curr.next == null) {
