@@ -20,8 +20,8 @@ public final class Solution {
             try {
                 switch (tokens[0]) {
                 case "insertAt":
-                    list.insertAt(Integer.parseInt(tokens[1])
-                        , Integer.parseInt(tokens[2]));
+                    list.insertAt(Integer.parseInt(tokens[1]),
+                                   tokens[2]);
                     list.display();
                     break;
 
@@ -57,10 +57,20 @@ class LinkedList<E> {
      * Class for node.
      */
     class Node {
+        /**
+         * { data to store element }.
+         */
         private E data;
+        /**
+         * { Stores the address of next element }.
+         */
         private Node next;
-
-        public Node(final E dataa) {
+        /**
+         * Constructs the object.
+         *
+         * @param      dataa  The dataa is E generic type
+         */
+        Node(final E dataa) {
             this.data = dataa;
             this.next = null;
         }
@@ -68,7 +78,7 @@ class LinkedList<E> {
     /**
      * Constructs the object.
      */
-    public LinkedList() {
+    LinkedList() {
         this.head = null;
         this.size = 0;
     }
@@ -100,8 +110,8 @@ class LinkedList<E> {
      *
      * @return     { Returns the object of node }
      */
-    private Node insertAt(final Node curr, final Node newNode
-        , final int index, final int currIndex) {
+    private Node insertAt(final Node curr, final Node newNode,
+                          final int index, final int currIndex) {
         if (curr == null) {
             return newNode;
         } else if (currIndex == index) {
@@ -125,7 +135,7 @@ class LinkedList<E> {
         reverse(head, null);
     }
     /**
-     * { Reverses the linked list }
+     * { Reverses the linked list }.
      *
      * @param      curr  The curr is node object
      * @param      prev  The previous is node object
