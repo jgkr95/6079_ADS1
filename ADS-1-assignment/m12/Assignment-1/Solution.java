@@ -118,6 +118,9 @@ class Reserve {
         for(int i=open+sc+bc+st;i<vacancies;i++) {
             for(int j=0;j<size;j++) {
                 rescre[i]=students[j];
+                if(i+1==vacancies) {
+                    break;
+                }
             }
         }
 
