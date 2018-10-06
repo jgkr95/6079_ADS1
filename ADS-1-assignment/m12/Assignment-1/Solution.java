@@ -64,7 +64,7 @@ class Reserve {
                 System.out.println(str);
             }
         } catch (Exception e) {
-            System.out.print("--");
+            System.out.print("");
         }
     }
     public Student[] reservationCreteria() {
@@ -113,6 +113,11 @@ class Reserve {
                     }
 
                 }
+            }
+        }
+        for(int i=open+sc+bc+st;i<vacancies;i++) {
+            for(int j=0;j<size;j++) {
+                rescre[i]=students[j];
             }
         }
 
@@ -191,7 +196,7 @@ class Insertionsort {
                         if (compare(stu[j - 1].getM2(), stud[j].getM2()) > 0) {
                             swap(j - 1, j, stu);
                         } else if (compare(stu[j - 1].getM2(), stud[j].getM2()) == 0) {
-                            if (stu[j - 1].getDob().compareTo(stu[j].getDob()) > 0) {
+                            if (stu[j - 1].getDob().compareTo(stu[j].getDob()) < 0) {
                                 swap(j - 1, j, stu);
                             }
                         }
