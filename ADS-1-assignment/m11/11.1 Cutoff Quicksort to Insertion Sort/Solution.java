@@ -51,9 +51,9 @@ class QuickSort {
         /**.
          * { Sorts the array using insertion sort technique }
          *
-         * @param      arr  The arguments
-         * @param      low  The arguments
-         * @param      high  The arguments
+         * @param      arr  The arguments is comparable array
+         * @param      low  The arguments is integer type
+         * @param      high  The arguments is integre type
          * Time complexity of this method is O(N) because nested loop used
          * in this method.
          */
@@ -69,9 +69,9 @@ class QuickSort {
     /**.
      * { Swaps the positions of the elements }
      *
-     * @param      arr  The arguments
-     * @param      j  The arguments
-     * @param      min  The arguments
+     * @param      arr  The arguments is comparable array
+     * @param      j  The arguments is integer type
+     * @param      min  The arguments is integer type
      */
     public void swap(final Comparable[] arr, final int j, final int min) {
         Comparable temp = arr[j];
