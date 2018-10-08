@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -14,7 +14,7 @@ class Solution {
      *
      * @param      args  The arguments are of String array type
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String type = scan.nextLine();
         int n = scan.nextInt();
