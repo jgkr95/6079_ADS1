@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
-class Solution<K extends Comparable<K>> {
+class Solution {
 	Solution() {
 
 	}
@@ -13,7 +13,8 @@ class Solution<K extends Comparable<K>> {
 		scan.nextLine();
 		for (int i = 0; i < n; i++) {
 			String[] tokens = scan.nextLine().split(",");
-			if(tokens.length==1) {System.out.println("false"); continue;}
+			System.out.println(tokens.length);
+			if(tokens.length==1&&tokens[0].equals("")) {System.out.println("false"); continue;}
 			heap = new Comparable[tokens.length+1];
 			heap[0] = null;
 			for(int j = 0;j<tokens.length;j++) {
@@ -28,7 +29,7 @@ class Solution<K extends Comparable<K>> {
 
 	}
 }
-class MinHeap<K extends Comparable<K>> {
+class MinHeap {
     /**
      * an empty constructor.
      */
@@ -40,7 +41,7 @@ class MinHeap<K extends Comparable<K>> {
      *N is the size of the array.
      * @param  array  which is given as input.
      */
-    public void isMinHeap(final K[] array) {
+    public void isMinHeap(final Comparable[] array) {
         int last = array.length - 1;
         while (last > 1) {
             if (array[last].compareTo(array[last / 2]) >= 0) {
