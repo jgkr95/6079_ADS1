@@ -6,7 +6,7 @@ class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
 
     }
     /**.
@@ -25,8 +25,8 @@ class Solution {
                 String[] tokens = scan.nextLine().split(",");
                 if (tokens.length == 1 && tokens[0].equals("")) {
                     System.out.println("false");
-                     continue;
-                    }
+                    continue;
+                }
                 String[] strHeap = new String[tokens.length + 1];
                 strHeap[0] = null;
                 for (int j = 0; j < tokens.length; j++) {
@@ -41,8 +41,8 @@ class Solution {
                 String[] tokens = scan.nextLine().split(",");
                 if (tokens.length == 1 && tokens[0].equals("")) {
                     System.out.println("false");
-                     continue;
-                    }
+                    continue;
+                }
                 Integer[] intHeap = new Integer[tokens.length + 1];
                 for (int j = 0; j < tokens.length; j++) {
                     intHeap[j + 1] = Integer.parseInt(tokens[j]);
@@ -54,7 +54,10 @@ class Solution {
         case "Double":
             for (int i = 0; i < n; i++) {
                 String[] tokens = scan.nextLine().split(",");
-                if (tokens.length == 1 && tokens[0].equals("")) {System.out.println("false"); continue;}
+                if (tokens.length == 1 && tokens[0].equals("")) {
+                    System.out.println("false");
+                    continue;
+                }
                 Double[] doubleHeap = new Double[tokens.length + 1];
                 for (int j = 0; j < tokens.length; j++) {
                     doubleHeap[j + 1] = Double.parseDouble(tokens[j]);
@@ -66,7 +69,10 @@ class Solution {
         case "Float" :
             for (int i = 0; i < n; i++) {
                 String[] tokens = scan.nextLine().split(",");
-                if (tokens.length == 1 && tokens[0].equals("")) {System.out.println("false"); continue;}
+                if (tokens.length == 1 && tokens[0].equals("")) {
+                    System.out.println("false");
+                    continue;
+                }
                 Float[] heap = new Float[tokens.length + 1];
                 for (int j = 0; j < tokens.length; j++) {
                     heap[j + 1] = Float.parseFloat(tokens[j]);
@@ -74,6 +80,8 @@ class Solution {
                 MinHeap m = new MinHeap();
                 m.isMinHeap(heap);
             } break;
+        default:
+            break;
         }
     }
 }
