@@ -13,6 +13,7 @@ class Solution {
 		for (int i = 0; i < n; i++) {
 			String[] tokens = scan.nextLine().split(",");
 			heap = new Comparable[tokens.length+1];
+			heap[0] = null;
 			for(int j = 0;j<tokens.length;j++) {
 				heap[j+1]=tokens[j];
 			}
