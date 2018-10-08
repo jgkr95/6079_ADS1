@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 class Solution {
 	Solution() {
 
@@ -18,6 +19,7 @@ class Solution {
 				heap[j+1]=tokens[j];
 			}
 			Minheap m = new Minheap(heap);
+			System.out.println(Arrays.toString(heap));
 			System.out.println(m.check());
 
 		}
