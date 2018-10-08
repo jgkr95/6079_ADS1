@@ -5,13 +5,17 @@ class Solution {
 	}
 	public static void main(String[] args) {
 		Comparable[] heap;
+		Comparable[] heapNull = {null};
 		Scanner scan = new Scanner(System.in);
 		scan.nextLine();
 		int n = scan.nextInt();
 		scan.nextLine();
 		for (int i = 0; i < n; i++) {
-
-			heap = scan.nextLine().split(",");
+			String[] tokens = scan.nextLine().split(",");
+			heap = new Comparable[tokens.length+1];
+			for(int j = 0;j<tokens.length;j++) {
+				heap[j+1]=tokens[j];
+			}
 			Minheap m = new Minheap(heap);
 			System.out.println(m.check());
 
