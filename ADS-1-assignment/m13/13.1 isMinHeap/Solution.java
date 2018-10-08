@@ -19,7 +19,7 @@ class Solution {
 				heap[j+1]=tokens[j];
 			}
 			Minheap m = new Minheap(heap);
-			System.out.println(Arrays.toString(heap));
+			// System.out.println(Arrays.toString(heap));
 			System.out.println(m.check());
 
 		}
@@ -34,6 +34,9 @@ class Minheap {
 		size = arr.length;
 	}
 	public boolean check() {
+		if(heapArray.length==2) {
+			return true;
+		}
 		return isMinHeap(1);
 	}
 	private boolean isMinHeap(int k) {
