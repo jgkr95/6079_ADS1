@@ -13,7 +13,7 @@ class Solution {
 		scan.nextLine();
 		for (int i = 0; i < n; i++) {
 			String[] tokens = scan.nextLine().split(",");
-			System.out.println(tokens.length);
+			// System.out.println(tokens.length);
 			if(tokens.length==1&&tokens[0].equals("")) {System.out.println("false"); continue;}
 			heap = new Comparable[tokens.length+1];
 			heap[0] = null;
