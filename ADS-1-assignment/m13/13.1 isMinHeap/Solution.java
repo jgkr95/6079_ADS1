@@ -1,13 +1,19 @@
 import java.util.Scanner;
 /**
  * Class for solution.
- *
- * @param      <E>   { parameter_description }
  */
 class Solution {
+    /**
+     * Constructs the object.
+     */
     Solution() {
 
     }
+    /**.
+     * { Main method to handle input }
+     *
+     * @param      args  The arguments are of String array type
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String type = scan.nextLine();
@@ -71,17 +77,23 @@ class Solution {
         }
     }
 }
+/**
+ * Class for minimum heap.
+ *
+ * @param      <E>   { Generic type }
+ */
 class MinHeap<E extends Comparable<E>> {
     /**
-     * an empty constructor.
+     * Constructs the object.
      */
     MinHeap() {
     }
     /**
-     * checks whether it is min heap or not.
-     * the time complexiety is N.
-     *N is the size of the array.
-     * @param  array  which is given as input.
+     * Determines if minimum heap.
+     *
+     * @param      array  The array is input
+     * THe time complexity of this method is O(N)
+     * Because it checks entire array to check
      */
     public void isMinHeap(final E[] array) {
         int last = array.length - 1;
