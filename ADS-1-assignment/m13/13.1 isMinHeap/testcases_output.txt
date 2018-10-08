@@ -1,17 +1,14 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 true
 false
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at Minheap.greater(Solution.java:41)
-	at Minheap.isMinHeap(Solution.java:36)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.check(Solution.java:30)
-	at Solution.main(Solution.java:16)
+true
+false
+true
+false
 ----------------------------------------
 ########## Testcase 1: Passed ##########
 Expected Output: 
@@ -29,7 +26,7 @@ false
 false
 false
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 true
 true
@@ -40,42 +37,32 @@ false
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
-	at Minheap.greater(Solution.java:41)
-	at Minheap.isMinHeap(Solution.java:37)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.check(Solution.java:30)
-	at Solution.main(Solution.java:16)
+true
+true
+true
+false
+false
+false
+true
+false
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 true
 false
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 324
-	at Minheap.greater(Solution.java:41)
-	at Minheap.isMinHeap(Solution.java:36)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.isMinHeap(Solution.java:38)
-	at Minheap.check(Solution.java:30)
-	at Solution.main(Solution.java:16)
+true
+false
+false
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 true
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Minheap.greater(Solution.java:41)
-	at Minheap.isMinHeap(Solution.java:36)
-	at Minheap.check(Solution.java:30)
-	at Solution.main(Solution.java:16)
+true
+true
+false
 ----------------------------------------
