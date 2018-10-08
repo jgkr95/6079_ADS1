@@ -13,6 +13,7 @@ class Solution<K extends Comparable<K>> {
 		scan.nextLine();
 		for (int i = 0; i < n; i++) {
 			String[] tokens = scan.nextLine().split(",");
+			if(tokens.length==1) {System.out.println("false"); continue;}
 			heap = new Comparable[tokens.length+1];
 			heap[0] = null;
 			for(int j = 0;j<tokens.length;j++) {
