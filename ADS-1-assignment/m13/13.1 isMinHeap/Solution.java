@@ -45,6 +45,6 @@ class Minheap {
 		return isMinHeap(left) && isMinHeap(right);
 	}
 	private boolean greater(int i, int j) {
-		return heapArray[i].compareTo(heapArray[j]) > 0;
+		return heapArray[i].compareTo(heapArray[j]) < 0;
 	}
 }
