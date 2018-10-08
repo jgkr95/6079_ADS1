@@ -45,11 +45,11 @@ class MinHeap<K extends Comparable<K>> {
             if (array[last].compareTo(array[last / 2]) >= 0) {
                 last--;
             } else {
-                System.out.println("true");
+                System.out.println("false");
                 return;
             }
         }
-        System.out.println("false");
+        System.out.println("true");
     }
 }
 // class Minheap {
