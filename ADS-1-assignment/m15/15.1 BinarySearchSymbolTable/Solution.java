@@ -27,7 +27,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     /**
      * Constructs the object.
      *
-     * @param      capacity  The capacity
+     * @param      capacity  The capacity is integer type
      */
     BinarySearchTree(final int capacity) {
         keys = (Key[]) new Comparable[capacity];
@@ -36,7 +36,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     /**
      * size of array.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { The size of the array }
      */
     public int size() {
         return n;
@@ -53,6 +53,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * resize array.
      *
      * @param      capacity  The capacity
+     * Time complexity of this method is O(N).
+     * Beacuse it has to copy the old values new array.
      */
     public void resize(final int capacity) {
         Key[] key = (Key[]) new Comparable[capacity];
@@ -69,6 +71,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @param      k     The key.
      * @param      v     The value.
+     * Time complexity of this method is O(N).
+     * Because in worst case it may traverse entire tree.
      */
     public void put(final Key k, final Value v) {
         if (k == null) {
@@ -139,6 +143,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * @param      k     The key.
      *
      * @return     The value of the given key.
+     * Time complexity of this method is O(N).
+     * Because in worst case it may traverse entire tree.
      */
     public Value get(final Key k) {
         if (isEmpty()) {
@@ -271,7 +277,7 @@ final class Solution {
     private Solution() {
     }
     /**
-     * main function.
+     * main function to handle the input.
      *
      * @param      args  The arguments
      */
