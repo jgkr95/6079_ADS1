@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @param      <Key>    The key
  * @param      <Value>  The value
  */
-class BinarySearchTree<Key extends Comparable<Key>, Value> {
+class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     /**
      * keys array of Key type.
      */
@@ -22,14 +22,14 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     /**
      * Constructs the object.
      */
-    BinarySearchTree() {
+    BinarySearchSymbolTable() {
     }
     /**
      * Constructs the object.
      *
      * @param      capacity  The capacity is integer type
      */
-    BinarySearchTree(final int capacity) {
+    BinarySearchSymbolTable(final int capacity) {
         keys = (Key[]) new Comparable[capacity];
         values = (Value[]) new Object[capacity];
     }
@@ -282,12 +282,12 @@ final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        BinarySearchTree<String, Integer> bst =
-            new BinarySearchTree<String, Integer>();
+        BinarySearchSymbolTable<String, Integer> bst =
+            new BinarySearchSymbolTable<String, Integer>();
         Scanner scan = new Scanner(System.in);
         String data = scan.nextLine();
         String[] tokens = data.split(" ");
-        bst = new BinarySearchTree<String, Integer>(tokens.length);
+        bst = new BinarySearchSymbolTable<String, Integer>(tokens.length);
         for (int i = 0; i < tokens.length; i++) {
             bst.put(tokens[i], i);
         }
