@@ -103,7 +103,7 @@ final class Solution {
         dm.insertAtMin(element);
         double median = element;
         System.out.println(median);
-        for (long i = 1; i < 10; i++) {
+        for (long i = 1; i < 1000; i++) {
             double input = scan.nextDouble();
             if (input > median) {
                 dm.insertAtMin(input);
