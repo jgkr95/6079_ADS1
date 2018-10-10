@@ -58,7 +58,7 @@ class DynamicMedian {
         return maxObj.delMax();
     }
     /**
-     * Deletes the MInimum element from the minHeap
+     * Deletes the MInimum element from the minHeap.
      *
      * @return     { Root node of the MinHeap }
      */
@@ -69,7 +69,8 @@ class DynamicMedian {
      * Gets the minHeap size.
      *
      * @return     The minimum size.
-     */public int getMinSize() {
+     */
+    public int getMinSize() {
         return minObj.size();
     }
     /**
