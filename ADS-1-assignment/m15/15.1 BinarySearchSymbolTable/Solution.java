@@ -296,7 +296,7 @@ final class Solution {
                 System.out.println(bst.floor(inp[1]));
                 break;
             case "rank":
-                // System.out.println(bst.rank(inp[1]));
+                System.out.println(bst.rank(inp[1]));
                 break;
             case "deleteMin":
                 bst.deleteMin();
