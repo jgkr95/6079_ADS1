@@ -119,7 +119,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         return x;
     }
     /**
-     * gets the value of the given key
+     * gets the value of the given key.
      *
      * @param      key   The key is Book object
      *

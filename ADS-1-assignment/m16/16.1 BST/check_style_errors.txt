@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m16/16.1 BST/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m16/16.1 BST/Solution.java:121: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 2 errors.
