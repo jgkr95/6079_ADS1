@@ -27,10 +27,11 @@ class AddStocks {
 	}
 	public void addStock(Stocks s) {
 		stack[size++] = s;
+		System.out.println(size);
 	}
 	public void sort(int n) {
 		for (int i = 0; i < 6; i++) {
-			s.sort(stack, i*n, i*n+n);
+			// s.sort(stack, i*n, i*n+n);
 			for(int j=i*n;j<i*n+5;j++) {
 				System.out.println(stack[j].getName()+" "+stack[j].getChange());
 			}

@@ -72,10 +72,10 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
+1
+MRF 0.48
 Exception in thread "main" java.lang.NullPointerException
-	at AddStocks$Sorting.less(Solution.java:59)
-	at AddStocks$Sorting.sort(Solution.java:47)
-	at AddStocks.sort(Solution.java:33)
+	at AddStocks.sort(Solution.java:36)
 	at Solution.main(Solution.java:16)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -152,10 +152,10 @@ Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
+1
+Larsen & Toubro 4.11
 Exception in thread "main" java.lang.NullPointerException
-	at AddStocks$Sorting.less(Solution.java:59)
-	at AddStocks$Sorting.sort(Solution.java:47)
-	at AddStocks.sort(Solution.java:33)
+	at AddStocks.sort(Solution.java:36)
 	at Solution.main(Solution.java:16)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -237,10 +237,10 @@ WABCO India 0.33
 1
 3
 Your Output: 
+1
+MRF 0.48
 Exception in thread "main" java.lang.NullPointerException
-	at AddStocks$Sorting.less(Solution.java:59)
-	at AddStocks$Sorting.sort(Solution.java:47)
-	at AddStocks.sort(Solution.java:33)
+	at AddStocks.sort(Solution.java:36)
 	at Solution.main(Solution.java:16)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -322,10 +322,10 @@ Chola Inv Fin 1.47
 4
 0
 Your Output: 
+1
+Larsen & Toubro 4.11
 Exception in thread "main" java.lang.NullPointerException
-	at AddStocks$Sorting.less(Solution.java:59)
-	at AddStocks$Sorting.sort(Solution.java:47)
-	at AddStocks.sort(Solution.java:33)
+	at AddStocks.sort(Solution.java:36)
 	at Solution.main(Solution.java:16)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -422,9 +422,9 @@ Schaeffler India
 TTK Prestige
 Tasty Bite Eat
 Your Output: 
+1
+MRF 0.48
 Exception in thread "main" java.lang.NullPointerException
-	at AddStocks$Sorting.less(Solution.java:59)
-	at AddStocks$Sorting.sort(Solution.java:47)
-	at AddStocks.sort(Solution.java:33)
+	at AddStocks.sort(Solution.java:36)
 	at Solution.main(Solution.java:16)
 ----------------------------------------
