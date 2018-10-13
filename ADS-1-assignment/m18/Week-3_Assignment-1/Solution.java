@@ -46,7 +46,7 @@ class AddStocks {
 		public void sort(Stocks[] st,int n) {
 			for (int i = 0; i < size; i++) {
 				for (int j = i + 1; j < size; j++) {
-					if (st[i].getChange() < st[j].getChange()) {
+					if (less(st[i],st[j])) {
 						swap(st[i], st[j]);
 					}
 				}
@@ -59,7 +59,7 @@ class AddStocks {
 		}
 		public boolean less(Stocks s1, Stocks s2) {
 			// System.out.println(s1.getChange() + " " + s2.getChange());
-			if (s1.getChange() - s2.getChange() < 0) {
+			if (s1.getChange() < s2.getChange()) {
 				return true;
 			}
 			if (s1.getChange() - s2.getChange() == 0) {
