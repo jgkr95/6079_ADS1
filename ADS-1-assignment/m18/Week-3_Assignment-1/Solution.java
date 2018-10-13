@@ -34,7 +34,7 @@ class AddStocks {
 		// System.out.println(size);
 	}
 	public void sort(int n) {
-		s.sort(stack,n);
+		stack = s.sort(stack,n);
 		for(int i=size-5;i<size;i++) {
 			System.out.println(stack[i].getName() +" "+ stack[i].getChange());
 		}System.out.println();
@@ -43,7 +43,8 @@ class AddStocks {
 		
 	}
 	class Sorting {
-		public void sort(Stocks[] st,int n) {
+		public Stocks[] sort(Stocks[] sts,int n) {
+			Stocks[] st = sts;
 			for (int i = 0; i < n; i++) {
 									System.out.println(st[i].getChange());
 
@@ -53,6 +54,7 @@ class AddStocks {
 					}
 				}
 			}
+			return st;
 		}
 		public void swap(Stocks s1, Stocks s2) {
 			Stocks temp = s1;
