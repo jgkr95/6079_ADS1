@@ -37,7 +37,7 @@ class AddStocks {
 				System.out.println(stack[j].getName() + " " + stack[j].getChange());
 			}
 			System.out.println();
-			for (int j = i * n - 5; j < i * n; j++) {
+			for (int j = i * (n - 5); j < i * n; j++) {
 				System.out.println(stack[j].getName() + " " + stack[j].getChange());
 			}
 		}
