@@ -13,8 +13,8 @@ public class Solution {
 		for (int i = 0; i < n * 6; i++) {
 			String[] tokens = scan.nextLine().split(",");
 			as.addStock(new Stocks(tokens[0], Double.parseDouble(tokens[1])));
-					}
-					as.sort(n);
+		}
+		as.sort(n);
 
 	}
 }
@@ -28,17 +28,17 @@ class AddStocks {
 	}
 	public void addStock(Stocks s) {
 		stack[size++] = s;
-		System.out.println(size);
+		// System.out.println(size);
 	}
 	public void sort(int n) {
 		for (int i = 0; i < 6; i++) {
-			// s.sort(stack, i*n, i*n+n);
-			for(int j=i*n;j<i*n+5;j++) {
-				System.out.println(stack[j].getName()+" "+stack[j].getChange());
+			s.sort(stack, i*n, i*n+n);
+			for (int j = i * n; j < i * n + 5; j++) {
+				System.out.println(stack[j].getName() + " " + stack[j].getChange());
 			}
 			System.out.println();
-			for(int j=i*n-5;j<i*n;j++) {
-				System.out.println(stack[j].getName()+" "+stack[j].getChange());
+			for (int j = i * n - 5; j < i * n; j++) {
+				System.out.println(stack[j].getName() + " " + stack[j].getChange());
 			}
 		}
 	}
@@ -58,7 +58,7 @@ class AddStocks {
 			s1 = temp;
 		}
 		public boolean less(Stocks s1, Stocks s2) {
-			System.out.println(s1.getChange()+" "+s2.getChange());
+			System.out.println(s1.getChange() + " " + s2.getChange());
 			if (s1.getChange() - s2.getChange() < 0) {
 				return true;
 			}
