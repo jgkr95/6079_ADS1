@@ -65,10 +65,6 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:49:38: Parameter sts should be final. [FinalParameters]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:49:51: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:49:51: Parameter n should be final. [FinalParameters]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:51:45: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:51:46: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:51:49: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:51:50: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:53: Line is longer than 80 characters (found 113). [LineLength]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:55:58: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:55:59: '-' is not followed by whitespace. [WhitespaceAround]
@@ -91,4 +87,4 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:91:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:94:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 91 errors.
+Checkstyle ends with 87 errors.

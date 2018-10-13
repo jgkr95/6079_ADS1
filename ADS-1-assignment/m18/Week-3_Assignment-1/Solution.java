@@ -48,7 +48,7 @@ class AddStocks {
 	class Sorting {
 		public Stocks[] sort(Stocks[] sts,int n) {
 			Stocks[] st = sts;
-			System.out.println(n+" "+size);
+			// System.out.println(n+" "+size);
 			for (int i = 0; i < n; i++) {
 									// System.out.println(st[i].getChange());
 
