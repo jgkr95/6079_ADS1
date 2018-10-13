@@ -34,7 +34,7 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:35:48: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:36:57: '5' is a magic number. [MagicNumber]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:37: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:40:46: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:40:48: '5' is a magic number. [MagicNumber]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:41:35: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:41:37: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:41:38: '<' is not followed by whitespace. [WhitespaceAround]
