@@ -24,7 +24,7 @@ public class Solution {
 class AddStocks {
 	Stocks[] stack;
 	int size;
-	Sorting s = new Sorting();
+	
 	AddStocks(int n) {
 		stack = new Stocks[n];
 		size = 0;
@@ -34,18 +34,21 @@ class AddStocks {
 		// System.out.println(size);
 	}
 	public void sort(int n) {
+		Sorting s = new Sorting();
 		stack = s.sort(stack,n);
 		for(int i=0;i<5;i++) {
 			System.out.println(stack[i].getName() +" "+ stack[i].getChange());
 		}System.out.println();
 		for(int i=n-5;i<n;i++) {
 			System.out.println(stack[i].getName() +" "+ stack[i].getChange());
-		}
+		}System.out.println();
 			
 			
 		
 	}
-	class Sorting {
+	
+}
+class Sorting {
 		public Stocks[] sort(Stocks[] sts,int n) {
 			Stocks[] st = sts;
 			// System.out.println(n+" "+size);
@@ -79,7 +82,6 @@ class AddStocks {
 		}
 
 	}
-}
 
 class Stocks {
 	String name;

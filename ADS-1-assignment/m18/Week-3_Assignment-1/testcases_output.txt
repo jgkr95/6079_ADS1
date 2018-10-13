@@ -83,6 +83,7 @@ HEG Ltd 1.61
 Oracle Fin 0.52
 ICRA 2.84
 Merck Ltd 4.83
+
 MRF 3.48
 3M India 2.56
 Eicher Motors 0.6
@@ -94,6 +95,7 @@ HEG Ltd 2.61
 Oracle Fin 1.52
 ICRA 4.84
 Merck Ltd 5.83
+
 MRF 1.48
 3M India 1.56
 Eicher Motors 1.6
@@ -105,6 +107,7 @@ HEG Ltd 1.61
 Oracle Fin 0.52
 ICRA 3.84
 Merck Ltd 1.83
+
 MRF 3.48
 3M India 2.56
 Eicher Motors -1.6
@@ -116,6 +119,7 @@ HEG Ltd -1.61
 Oracle Fin -0.52
 ICRA -2.84
 Merck Ltd 4.83
+
 MRF 0.48
 3M India 1.56
 Eicher Motors 1.6
@@ -127,6 +131,7 @@ HEG Ltd 1.61
 Oracle Fin 0.52
 ICRA 2.84
 Merck Ltd 4.83
+
 MRF 1.48
 3M India 1.56
 Eicher Motors -1.6
@@ -224,6 +229,7 @@ NIIT Tech 0.21
 Chola Inv Fin 1.47
 Fine Organic Industries Ltd. 2.29
 Ceat 0.23
+
 Larsen & Toubro 4.08
 APL Apollo Tube 2.18
 Vinati Organics 3.03
@@ -235,6 +241,7 @@ NIIT Tech 3.21
 Chola Inv Fin 2.47
 Fine Organic Industries Ltd. 1.29
 Ceat -0.06
+
 Larsen & Toubro 1.11
 APL Apollo Tube 0.18
 Vinati Organics 4.03
@@ -246,6 +253,7 @@ NIIT Tech 0.21
 Chola Inv Fin 4.47
 Fine Organic Industries Ltd. 3.29
 Ceat 0.23
+
 Larsen & Toubro -4.11
 APL Apollo Tube 2.18
 Vinati Organics 1.03
@@ -257,6 +265,7 @@ NIIT Tech 0.34
 Chola Inv Fin 3.47
 Fine Organic Industries Ltd. 3.29
 Ceat 1.23
+
 Larsen & Toubro 3.11
 APL Apollo Tube 2.18
 Vinati Organics 1.03
@@ -268,6 +277,7 @@ NIIT Tech 1.21
 Chola Inv Fin 0.47
 Fine Organic Industries Ltd. 0.29
 Ceat 1.23
+
 Larsen & Toubro 5.11
 APL Apollo Tube 2.18
 Vinati Organics 1.03
@@ -370,6 +380,7 @@ HEG Ltd 1.61
 Oracle Fin 0.52
 ICRA 2.84
 Merck Ltd 4.83
+
 MRF 3.48
 3M India 2.56
 Eicher Motors 0.6
@@ -381,6 +392,7 @@ HEG Ltd 2.61
 Oracle Fin 1.52
 ICRA 4.84
 Merck Ltd 5.83
+
 MRF 1.48
 3M India 1.56
 Eicher Motors 1.6
@@ -392,6 +404,7 @@ HEG Ltd 1.61
 Oracle Fin 0.52
 ICRA 3.84
 Merck Ltd 1.83
+
 MRF 3.48
 3M India 2.56
 Eicher Motors -1.6
@@ -403,6 +416,7 @@ HEG Ltd -1.61
 Oracle Fin -0.52
 ICRA -2.84
 Merck Ltd 4.83
+
 MRF 0.48
 3M India 1.56
 Eicher Motors 1.6
@@ -414,6 +428,7 @@ HEG Ltd 1.61
 Oracle Fin 0.52
 ICRA 2.84
 Merck Ltd 4.83
+
 MRF 1.48
 3M India 1.56
 Eicher Motors -1.6
@@ -516,6 +531,7 @@ NIIT Tech 0.21
 Chola Inv Fin 1.47
 Fine Organic Industries Ltd. 2.29
 Ceat 0.23
+
 Larsen & Toubro 4.08
 APL Apollo Tube 2.18
 Vinati Organics 3.03
@@ -527,6 +543,7 @@ NIIT Tech 3.21
 Chola Inv Fin 2.47
 Fine Organic Industries Ltd. 1.29
 Ceat -0.06
+
 Larsen & Toubro 1.11
 APL Apollo Tube 0.18
 Vinati Organics 4.03
@@ -538,6 +555,7 @@ NIIT Tech 0.21
 Chola Inv Fin 4.47
 Fine Organic Industries Ltd. 3.29
 Ceat 0.23
+
 Larsen & Toubro -4.11
 APL Apollo Tube 2.18
 Vinati Organics 1.03
@@ -549,6 +567,7 @@ NIIT Tech 0.34
 Chola Inv Fin 3.47
 Fine Organic Industries Ltd. 3.29
 Ceat 1.23
+
 Larsen & Toubro 3.11
 APL Apollo Tube 2.18
 Vinati Organics 1.03
@@ -560,6 +579,7 @@ NIIT Tech 1.21
 Chola Inv Fin 0.47
 Fine Organic Industries Ltd. 0.29
 Ceat 1.23
+
 Larsen & Toubro 5.11
 APL Apollo Tube 2.18
 Vinati Organics 1.03
@@ -677,6 +697,7 @@ HEG Ltd 1.61
 Oracle Fin 0.52
 ICRA 2.15
 Merck Ltd 4.83
+
 MRF 3.48
 3M India 2.56
 Eicher Motors 0.0
@@ -688,6 +709,7 @@ HEG Ltd 2.61
 Oracle Fin 1.52
 ICRA 4.0
 Merck Ltd -5.83
+
 MRF 1.48
 3M India -1.56
 Eicher Motors -1.6
@@ -699,6 +721,7 @@ HEG Ltd -1.61
 Oracle Fin -1.61
 ICRA 3.84
 Merck Ltd -1.61
+
 MRF 3.48
 3M India 2.56
 Eicher Motors -1.6
@@ -710,6 +733,7 @@ HEG Ltd -1.61
 Oracle Fin -0.52
 ICRA -2.84
 Merck Ltd 4.83
+
 MRF 0.48
 3M India 1.56
 Eicher Motors 1.6
@@ -721,6 +745,7 @@ HEG Ltd 1.61
 Oracle Fin 0.52
 ICRA 2.84
 Merck Ltd 4.83
+
 MRF 1.48
 3M India 1.56
 Eicher Motors -1.6
