@@ -52,7 +52,7 @@ class AddStocks {
 		public void sort(Stocks[] st, int lo, int hi) {
 			for (int i = lo; i < hi; i++) {
 				for (int j = i + 1; j < hi; j++) {
-					if (less(st[i], st[j])) {
+					if (st[i].getChange() < st[j].getChange()) {
 						swap(st[i], st[j]);
 					}
 				}
