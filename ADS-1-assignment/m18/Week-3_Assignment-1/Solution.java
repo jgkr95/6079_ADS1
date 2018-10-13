@@ -10,7 +10,7 @@ public class Solution {
 		
 		scan.nextLine();
 		// bst = new BinarySearchSymbolTable<String, Integer>(n);
-		for (int i = 0; i <  6; i++) {
+		for (int i = 0; i < 6; i++) {
 			AddStocks as = new AddStocks(n);
 			for(int j=0;j<n;j++) {
 			String[] tokens = scan.nextLine().split(",");
@@ -44,8 +44,9 @@ class AddStocks {
 	}
 	class Sorting {
 		public void sort(Stocks[] st,int n) {
-			for (int i = 0; i < size; i++) {
-				for (int j = i + 1; j < size; j++) {
+			for (int i = 0; i < n; i++) {
+				for (int j = i + 1; j < n; j++) {
+					System.out.println(st[i].getChange());
 					if (less(st[i],st[j])) {
 						swap(st[i], st[j]);
 					}
