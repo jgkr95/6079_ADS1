@@ -73,10 +73,28 @@ Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
 1
-MRF 0.48
-Exception in thread "main" java.lang.NullPointerException
-	at AddStocks.sort(Solution.java:36)
-	at Solution.main(Solution.java:16)
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at AddStocks.addStock(Solution.java:30)
+	at Solution.main(Solution.java:15)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -153,10 +171,28 @@ Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
 1
-Larsen & Toubro 4.11
-Exception in thread "main" java.lang.NullPointerException
-	at AddStocks.sort(Solution.java:36)
-	at Solution.main(Solution.java:16)
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at AddStocks.addStock(Solution.java:30)
+	at Solution.main(Solution.java:15)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -238,10 +274,28 @@ WABCO India 0.33
 3
 Your Output: 
 1
-MRF 0.48
-Exception in thread "main" java.lang.NullPointerException
-	at AddStocks.sort(Solution.java:36)
-	at Solution.main(Solution.java:16)
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at AddStocks.addStock(Solution.java:30)
+	at Solution.main(Solution.java:15)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -323,10 +377,28 @@ Chola Inv Fin 1.47
 0
 Your Output: 
 1
-Larsen & Toubro 4.11
-Exception in thread "main" java.lang.NullPointerException
-	at AddStocks.sort(Solution.java:36)
-	at Solution.main(Solution.java:16)
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at AddStocks.addStock(Solution.java:30)
+	at Solution.main(Solution.java:15)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -423,8 +495,26 @@ TTK Prestige
 Tasty Bite Eat
 Your Output: 
 1
-MRF 0.48
-Exception in thread "main" java.lang.NullPointerException
-	at AddStocks.sort(Solution.java:36)
-	at Solution.main(Solution.java:16)
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at AddStocks.addStock(Solution.java:30)
+	at Solution.main(Solution.java:15)
 ----------------------------------------

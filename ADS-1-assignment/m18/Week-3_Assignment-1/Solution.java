@@ -13,8 +13,9 @@ public class Solution {
 		for (int i = 0; i < n * 6; i++) {
 			String[] tokens = scan.nextLine().split(",");
 			as.addStock(new Stocks(tokens[0], Double.parseDouble(tokens[1])));
-			as.sort(n);
-		}
+					}
+					as.sort(n);
+
 	}
 }
 class AddStocks {
