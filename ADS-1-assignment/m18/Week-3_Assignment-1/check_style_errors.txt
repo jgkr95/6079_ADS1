@@ -47,7 +47,7 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:60:17: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:60:37: Parameter s1 should be final. [FinalParameters]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:60:48: Parameter s2 should be final. [FinalParameters]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:61: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:61: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:76: Missing a Javadoc comment. [JavadocType]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:77:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:77:16: Variable 'name' must be private and have accessor methods. [VisibilityModifier]

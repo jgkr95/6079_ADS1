@@ -58,7 +58,7 @@ class AddStocks {
 			s1 = temp;
 		}
 		public boolean less(Stocks s1, Stocks s2) {
-			System.out.println(s1.getChange() + " " + s2.getChange());
+			// System.out.println(s1.getChange() + " " + s2.getChange());
 			if (s1.getChange() - s2.getChange() < 0) {
 				return true;
 			}
