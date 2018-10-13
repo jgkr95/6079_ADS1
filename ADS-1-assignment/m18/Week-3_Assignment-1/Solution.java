@@ -7,14 +7,17 @@ public class Solution {
 
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
-		AddStocks as = new AddStocks(n * 6);
+		
 		scan.nextLine();
 		// bst = new BinarySearchSymbolTable<String, Integer>(n);
-		for (int i = 0; i < n * 6; i++) {
+		for (int i = 0; i <  6; i++) {
+			AddStocks as = new AddStocks(n);
+			for(int j=0;j<n;j++) {
 			String[] tokens = scan.nextLine().split(",");
 			as.addStock(new Stocks(tokens[0], Double.parseDouble(tokens[1])));
+		}as.sort(n);
 		}
-		as.sort(n);
+		
 
 	}
 }
@@ -23,7 +26,7 @@ class AddStocks {
 	int size;
 	Sorting s = new Sorting();
 	AddStocks(int n) {
-		stack = new Stocks[n*6];
+		stack = new Stocks[n];
 		size = 0;
 	}
 	public void addStock(Stocks s) {
@@ -31,27 +34,18 @@ class AddStocks {
 		// System.out.println(size);
 	}
 	public void sort(int n) {
-		for (int i = 0; i < 6; i++) {
-			s.sort(stack, i*n, i*n+n);
-			for (int j = i * n; j < i * n + 5; j++) {
-				System.out.println(stack[j].getName() + " " + stack[j].getChange());
-			}
-			System.out.println();
-			for (int j = (i * n) - 5; j < i * n; j++) {
-				if(j<0) {
-					for(int k=n-5;k<n;k++) {
-						System.out.println(stack[k].getName() + " " + stack[k].getChange());
-					}
-				}else {
-				System.out.println(stack[j].getName() + " " + stack[j].getChange());
-			}
-			}
-		}
+		s.sort(stack,n);
+		for(int i=size-5;i<size;i++) {
+			System.out.println(stack[i].getName() +" "+ stack[i].getChange());
+		}System.out.println();
+			
+			
+		
 	}
 	class Sorting {
-		public void sort(Stocks[] st, int lo, int hi) {
-			for (int i = lo; i < hi; i++) {
-				for (int j = i + 1; j < hi; j++) {
+		public void sort(Stocks[] st,int n) {
+			for (int i = 0; i < size; i++) {
+				for (int j = i + 1; j < size; j++) {
 					if (st[i].getChange() < st[j].getChange()) {
 						swap(st[i], st[j]);
 					}
