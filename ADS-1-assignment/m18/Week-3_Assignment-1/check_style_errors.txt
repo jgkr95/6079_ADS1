@@ -17,7 +17,9 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:24:17: Variable 's' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:25:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:25:19: Parameter n should be final. [FinalParameters]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:26:36: '20' is a magic number. [MagicNumber]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:26:37: '*' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:26:38: '*' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:26:38: '6' is a magic number. [MagicNumber]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:29:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:29:30: Parameter s should be final. [FinalParameters]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:29:37: 's' hides a field. [HiddenField]
@@ -57,4 +59,4 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:83:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m18/Week-3_Assignment-1/Solution.java:86:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 57 errors.
+Checkstyle ends with 59 errors.

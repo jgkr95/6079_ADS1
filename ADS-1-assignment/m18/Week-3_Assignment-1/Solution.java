@@ -23,7 +23,7 @@ class AddStocks {
 	int size;
 	Sorting s = new Sorting();
 	AddStocks(int n) {
-		stack = new Stocks[20];
+		stack = new Stocks[n*6];
 		size = 0;
 	}
 	public void addStock(Stocks s) {
