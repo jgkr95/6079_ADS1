@@ -45,8 +45,9 @@ class AddStocks {
 	class Sorting {
 		public void sort(Stocks[] st,int n) {
 			for (int i = 0; i < n; i++) {
+									System.out.println(st[i].getChange());
+
 				for (int j = i + 1; j < n; j++) {
-					System.out.println(st[i].getChange());
 					if (less(st[i],st[j])) {
 						swap(st[i], st[j]);
 					}
