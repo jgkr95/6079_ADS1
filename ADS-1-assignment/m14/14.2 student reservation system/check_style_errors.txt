@@ -1,0 +1,12 @@
+Starting audit...
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m14/14.2 student reservation system/Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m14/14.2 student reservation system/Solution.java:179:27: Name 'Reserved' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m14/14.2 student reservation system/Solution.java:188:17: Name 'Reserved' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m14/14.2 student reservation system/Solution.java:229: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m14/14.2 student reservation system/Solution.java:242: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m14/14.2 student reservation system/Solution.java:299: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m14/14.2 student reservation system/Solution.java:417: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m14/14.2 student reservation system/Solution.java:427: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m14/14.2 student reservation system/Solution.java:428: Line is longer than 80 characters (found 106). [LineLength]
+Audit done.
+Checkstyle ends with 9 errors.
