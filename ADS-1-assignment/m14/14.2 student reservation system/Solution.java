@@ -36,24 +36,24 @@ class Student implements Comparable<Student> {
     /**
      * Constructs the object.
      *
-     * @param      namee      The name
-     * @param      dobb       The dob
+     * @param      name1      The name
+     * @param      dob1       The dob
      * @param      sub1        The s 1
      * @param      sub2        The s 2
      * @param      sub3        The s 3
-     * @param      totall     The total
-     * @param      categoryy  The category
+     * @param      total1     The total
+     * @param      category1  The category
      */
-    Student(final String namee, final String dobb, final String sub1,
-            final String sub2, final String sub3, final String totall,
-            final String categoryy) {
-        name = namee;
-        dob = dobb;
+    Student(final String name1, final String dob1, final String sub1,
+            final String sub2, final String sub3, final String total1,
+            final String category1) {
+        name = name1;
+        dob = dob1;
         s1 = Integer.parseInt(sub1);
         s2 = Integer.parseInt(sub2);
         s3 = Integer.parseInt(sub3);
-        total = Integer.parseInt(totall);
-        category = categoryy;
+        total = Integer.parseInt(total1);
+        category = category1;
     }
     /**
      * Gets the name.
@@ -110,12 +110,12 @@ class Student implements Comparable<Student> {
         return day;
     }
     /**
-     *Time complexity is O(1).
      * Method to compare two objects.
      *
      * @param      s    student object
      *
      * @return     integer value
+     * Time complexity is O(1).
      */
     public int compareTo(final Student s) {
         if (this.total > s.total) {
@@ -179,7 +179,7 @@ class Merit {
     private Student[] reserved;
 
     /**
-     * getter func.
+     * Gives the resrved object of index.
      *
      * @param      index  The index
      *
@@ -206,6 +206,7 @@ class Merit {
      * Adds a student.
      *
      * @param      st    student object
+     * Time complexity of this method is O(1)
      */
     public void addStudent(final Student st) {
         students[size++] = st;
@@ -231,19 +232,6 @@ class Merit {
         }
         return str;
     }
-    // /**
-    //  * Returns a string representation of the object.
-    //  *
-    //  * @return     String representation of the object.
-    //  */
-    // public String toString1() {
-    //  String str = "";
-    //  for (int i = 0; i < size; i++) {
-    //      str += students[i].getName() + "," + students[i].getTotal()
-    //             + "," + students[i].getCategory() + "\n";
-    //  }
-    //  return str;
-    // }
     /**
      * Method to swap.
      *
@@ -418,7 +406,7 @@ final class Solution {
                          six = 6;
         int noOfapplied = Integer.parseInt(sc.nextLine());
         int noOfvacancies = Integer.parseInt(sc.nextLine());
-        int noOfunres = Integer.parseInt(sc.nextLine());
+        int noOfOpen = Integer.parseInt(sc.nextLine());
         int noOfBC = Integer.parseInt(sc.nextLine());
         int noOfSC = Integer.parseInt(sc.nextLine());
         int noOfST = Integer.parseInt(sc.nextLine());
@@ -430,7 +418,7 @@ final class Solution {
         }
         m.insertionsort();
         System.out.println(m);
-        m.sortReserve(noOfvacancies, noOfunres, noOfBC, noOfSC, noOfST);
+        m.sortReserve(noOfvacancies, noOfOpen, noOfBC, noOfSC, noOfST);
         for (int i = 0; i < noOfvacancies; i++) {
             System.out.println(m.reserved(i));
         }
