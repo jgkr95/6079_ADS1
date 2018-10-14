@@ -1,7 +1,7 @@
 import java.util.Scanner;
-// /**
-//  * Class for cube sum.
-//  */
+/**
+ * Class for cube sum.
+ */
 class CubeSum implements Comparable<CubeSum> {
     /**
      * sum.
@@ -51,7 +51,7 @@ class CubeSum implements Comparable<CubeSum> {
         this.j = b;
     }
     /**
-     * compares two objects
+     * compares two objects.
      *
      * @param      that  The that
      *
@@ -113,7 +113,7 @@ final class Solution {
                     break;
                 }
             } else {
-                // pair = 1;
+                pair = 1;
             }
             previous = current;
             if (current.getj() < sixHundred) {
