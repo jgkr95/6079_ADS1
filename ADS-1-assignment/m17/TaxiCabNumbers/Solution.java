@@ -8,47 +8,48 @@ class CubeSum implements Comparable<CubeSum> {
      */
     private long sum;
     /**
-     * integer i.
+     * integer firstNumber.
      */
-    private int i;
+    private int firstNumber;
     /**
-     * integer j.
+     * integer secondnumber.
      */
-    private int j;
+    private int secondNumber;
     /**
      * Gets the sum.
      *
      * @return     The sum.
      */
     long getSum() {
-        return this.sum;
+        return sum;
     }
     /**
-     * gets i.
+     * gets firstnumber.
      *
      * @return  integer
      */
     int geti() {
-        return this.i;
+        return firstNumber;
     }
     /**
-     * gets j.
+     * gets secondnumber.
      *
      * @return  integer
      */
     int getj() {
-        return this.j;
+        return secondNumber;
     }
     /**
      * Constructs the object.
      *
-     * @param      a     integer i
-     * @param      b     integer j
+     * @param      a     integer firstnumber
+     * @param      b     integer secondnumber
+     * Time complexity of this method is O(1).
      */
     CubeSum(final int a, final int b) {
         this.sum = a * a * a + b * b * b;
-        this.i = a;
-        this.j = b;
+        this.firstNumber = a;
+        this.secondNumber = b;
     }
     /**
      * compares two objects.
@@ -56,6 +57,7 @@ class CubeSum implements Comparable<CubeSum> {
      * @param      that  The that
      *
      * @return     integer -1,0,1
+     * Time complexity of this method is O(1).
      */
     public int compareTo(final CubeSum that) {
         if (this.sum < that.getSum()) {
