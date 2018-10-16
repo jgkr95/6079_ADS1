@@ -70,15 +70,26 @@ class Sorting {
 		}
 		public boolean less(Stocks s1, Stocks s2) {
 			// System.out.println(s1.getChange() + " " + s2.getChange());
-			if (s1.getChange() < s2.getChange()) {
+			// if (s1.getChange() < s2.getChange()) {
+			// 	return true;
+			// }
+			// if (s1.getChange() - s2.getChange() == 0) {
+			// 	if (s1.getName().compareTo(s2.getName()) > 0) {
+			// 		return true;
+			// 	}
+			// }
+			// return false;
+			if (s1.getChange()<s2.getChange()) {
+				return true;
+				
+			} else if (s1.getChange()>s2.getChange()) {
+				return false;
+				
+			} else if (s1.getName().compareTo(s2.getName()) > 1) {
+				return false;
+			} else {
 				return true;
 			}
-			if (s1.getChange() - s2.getChange() == 0) {
-				if (s1.getName().compareTo(s2.getName()) > 0) {
-					return true;
-				}
-			}
-			return false;
 		}
 
 	}
