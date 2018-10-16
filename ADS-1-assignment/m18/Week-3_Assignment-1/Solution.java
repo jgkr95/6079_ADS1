@@ -30,12 +30,13 @@ class AddStocks {
 		size = 0;
 	}
 	public void addStock(Stocks s) {
+
 		stack[size++] = s;
 		// System.out.println(size);
 	}
 	public void sort(int n) {
 		Sorting s = new Sorting();
-		stack = s.sort(stack,n);
+		s.sort(stack,n);
 		for(int i=0;i<5;i++) {
 			System.out.println(stack[i].getName() +" "+ stack[i].getChange());
 		}System.out.println();
