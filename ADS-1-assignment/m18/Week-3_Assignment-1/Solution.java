@@ -9,7 +9,6 @@ public class Solution {
 		int n = scan.nextInt();
 		
 		scan.nextLine();
-		// bst = new BinarySearchSymbolTable<String, Integer>(n);
 		for (int i = 0; i < 6; i++) {
 			AddStocks as = new AddStocks(n);
 			for(int j=0;j<n;j++) {
@@ -24,78 +23,35 @@ public class Solution {
 class AddStocks {
 	Stocks[] stack;
 	int size;
+	MinPQ<Stocks> min;
+	MaxPQ<Stocks> max;
 	
 	AddStocks(int n) {
 		stack = new Stocks[n];
 		size = 0;
-	}
+		min = new MinPQ<Stocks>(n);
+		max = new MaxPQ<Stocks>(n);
+ 	}
 	public void addStock(Stocks s) {
 
 		stack[size++] = s;
-		// System.out.println(size);
+		min.insert(s);
+		max.insert(s);
 	}
 	public void sort(int n) {
 		Sorting s = new Sorting();
 		s.sort(stack,n);
+
 		for(int i=0;i<5;i++) {
-			System.out.println(stack[i].getName() +" "+ stack[i].getChange());
+			System.out.println(max.delMax());
 		}System.out.println();
 		for(int i=n-5;i<n;i++) {
-			System.out.println(stack[i].getName() +" "+ stack[i].getChange());
+			System.out.println(min.delMin());
 		}System.out.println();
-			
-			
-		
 	}
-	
 }
-class Sorting {
-		public Stocks[] sort(Stocks[] sts,int n) {
-			Stocks[] st = sts;
-			// System.out.println(n+" "+size);
-			for (int i = 0; i < n; i++) {
-									// System.out.println(st[i].getChange());
 
-				for (int j = i; j >0; j--) {
-					if (less(st[i],st[j])) {
-						swap(st[i], st[j]);
-					}
-				}
-			}
-			return st;
-		}
-		public void swap(Stocks s1, Stocks s2) {
-			Stocks temp = s1;
-			s2 = s1;
-			s1 = temp;
-		}
-		public boolean less(Stocks s1, Stocks s2) {
-			// System.out.println(s1.getChange() + " " + s2.getChange());
-			// if (s1.getChange() < s2.getChange()) {
-			// 	return true;
-			// }
-			// if (s1.getChange() - s2.getChange() == 0) {
-			// 	if (s1.getName().compareTo(s2.getName()) > 0) {
-			// 		return true;
-			// 	}
-			// }
-			// return false;
-			if (s1.getChange()<s2.getChange()) {
-				return true;
-				
-			} else if (s1.getChange()>s2.getChange()) {
-				return false;
-				
-			} else if (s1.getName().compareTo(s2.getName()) > 1) {
-				return false;
-			} else {
-				return true;
-			}
-		}
-
-	}
-
-class Stocks {
+class Stocks implements Comparable<Stocks>{
 	String name;
 	double change;
 	Stocks(String name1, double change1) {
@@ -107,5 +63,22 @@ class Stocks {
 	}
 	public String getName() {
 		return name;
+	}
+	public String toString() {
+		return name+" "+change;
+	}
+	public int compareTo(final Stocks that) {
+		if(this.change>that.change) {
+			return 1;
+		} if(this.change<that.change) {
+			return -1;
+		}
+		if(this.getName().compareTo(that.getName())>0) {
+			return 1;
+		}
+		if(this.getName().compareTo(that.getName())<0) {
+			return -1;
+		}
+		return 0;
 	}
 }
