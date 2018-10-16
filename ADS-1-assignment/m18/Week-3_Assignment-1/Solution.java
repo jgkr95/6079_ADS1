@@ -55,7 +55,7 @@ class Sorting {
 			for (int i = 0; i < n; i++) {
 									// System.out.println(st[i].getChange());
 
-				for (int j = i + 1; j < n-1; j++) {
+				for (int j = i; j >0; j--) {
 					if (less(st[i],st[j])) {
 						swap(st[i], st[j]);
 					}
