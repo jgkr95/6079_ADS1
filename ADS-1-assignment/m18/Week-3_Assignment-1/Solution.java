@@ -19,22 +19,22 @@ public class Solution {
             } as.sort(n);
         }
         
-        // while (scan.hasNext()) {
-        //     int n1 = scan.nextInt();
-        // scan.nextLine();
-        //     String[] tokens = scan.nextLine().split(",");
-        //     // as = new AddStocks();
-        //     switch (tokens[0]) {
-        //     case "get" :
-        //         as.get(tokens[1], tokens[2]);
-        //         break;
-        //     case "intersection":
-        //         as.intersection();
-        //         break;
-        //     default:
-        //         break;
-        //     }
-        // }
+        while (scan.hasNext()) {
+            int n1 = scan.nextInt();
+        scan.nextLine();
+            String[] tokens = scan.nextLine().split(",");
+            // as = new AddStocks();
+            switch (tokens[0]) {
+            case "get" :
+                as.get(tokens[1], tokens[2]);
+                break;
+            case "intersection":
+                as.intersection();
+                break;
+            default:
+                break;
+            }
+        }
 
 
     }
