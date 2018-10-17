@@ -6,17 +6,50 @@ public class Solution {
         //           new BinarySearchSymbolTable<String, Integer>();
 
         Scanner scan = new Scanner(System.in);
-        
+
         int n = scan.nextInt();
-        AddStocks as=new AddStocks(n);
+        AddStocks as = new AddStocks(n);
+        Stocks stockdata;
+
+        BinarySearchSymbolTable<String, Integer> maxST =
+            new BinarySearchSymbolTable<String, Integer>();
+        BinarySearchSymbolTable<String, Integer> minST =
+            new BinarySearchSymbolTable<String, Integer>();
 
         scan.nextLine();
         for (int i = 0; i < 6; i++) {
             as = new AddStocks(n);
+            MinPQ<Stocks> min = new MinPQ<Stocks>(n);
+            MaxPQ<Stocks> max = new MaxPQ<Stocks>(n);
             for (int j = 0; j < n; j++) {
                 String[] tokens = scan.nextLine().split(",");
-                as.addStock(new Stocks(tokens[0], Double.parseDouble(tokens[1])));
-            } as.sort(n);
+                // as.addStock(new Stocks(tokens[0], Double.parseDouble(tokens[1])));
+                stockdata = new Stocks(tokens[0], Double.parseDouble(tokens[1]));
+
+            }
+            // as.sort(n);
+            for (int l = 0; l < 5; l++) {
+                Stocks temp = max.delMax();
+                System.out.println(temp);
+                if (maxST.contains(temp.getName())) {
+                    maxST.put(temp.getName(), maxST.get(temp.getName()) + 1);
+                } else {
+                    maxST.put(temp.getName(), 1);
+                    // distinct++;
+                }
+
+            } System.out.println();
+            for (int k = 0; k < n; k++) {
+                Stocks temp1 = min.delMin();
+                System.out.println(temp1);
+                if (minST.contains(temp1.getName())) {
+                    minST.put(temp1.getName(), minST.get(temp1.getName()) + 1);
+                } else {
+                    minST.put(temp1.getName(), 1);
+                    // distinct++;
+                }
+            } System.out.println();
+
         }
         scan.nextLine();
         while (scan.hasNext()) {
@@ -26,10 +59,25 @@ public class Solution {
             // as = new AddStocks();
             switch (tokens[0]) {
             case "get" :
-                as.get(tokens[1], tokens[2]);
+                // as.get(tokens[1], tokens[2]);
+                if (tokens[1].equals("minST")) {
+                    System.out.println(minST.get(tokens[2]));
+                }
+                if (tokens[1].equals("maxST")) {
+                    System.out.println(maxST.get(tokens[2]));
+                }
                 break;
             case "intersection":
-                as.intersection();
+                // as.intersection();
+                ArrayList<String> minkeys = minST.keys();
+                ArrayList<String> maxkeys = maxST.keys();
+                for (String keysMin : minkeys) {
+                    for (String keysMax : maxkeys) {
+                        if (keysMin.equals(keysMax)) {
+                            System.out.println(keysMin);
+                        }
+                    }
+                }
                 break;
             default:
                 break;
