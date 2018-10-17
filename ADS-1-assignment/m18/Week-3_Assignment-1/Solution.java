@@ -67,9 +67,6 @@ class AddStocks {
         max.insert(s);
     }
     public void sort(int n) {
-        Sorting s = new Sorting();
-        s.sort(stack, n);
-
         for (int i = 0; i < 5; i++) {
             Stocks temp = max.delMax();
             System.out.println(temp);
