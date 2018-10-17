@@ -8,7 +8,7 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         
         int n = scan.nextInt();
-        AddStocks as=new AddStocks(n);
+        AddStocks as=new AddStocks();
 
         scan.nextLine();
         for (int i = 0; i < 6; i++) {
@@ -18,8 +18,8 @@ public class Solution {
                 as.addStock(new Stocks(tokens[0], Double.parseDouble(tokens[1])));
             } as.sort(n);
         }
-        // int n1 = scan.nextInt();
-        // scan.nextLine();
+        int n1 = scan.nextInt();
+        scan.nextLine();
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
             // as = new AddStocks();
