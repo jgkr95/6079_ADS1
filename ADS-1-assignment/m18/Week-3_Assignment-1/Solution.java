@@ -25,6 +25,8 @@ public class Solution {
                 String[] tokens = scan.nextLine().split(",");
                 // as.addStock(new Stocks(tokens[0], Double.parseDouble(tokens[1])));
                 stockdata = new Stocks(tokens[0], Double.parseDouble(tokens[1]));
+                min.insert(stockdata);
+                max.insert(stockdata);
 
             }
             // as.sort(n);
