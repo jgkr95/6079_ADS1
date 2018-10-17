@@ -8,7 +8,7 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         
         int n = scan.nextInt();
-        AddStocks as=new AddStocks();
+        AddStocks as=new AddStocks(n);
 
         scan.nextLine();
         for (int i = 0; i < 6; i++) {
