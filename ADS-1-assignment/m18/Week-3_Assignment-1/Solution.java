@@ -41,7 +41,7 @@ public class Solution {
                 }
 
             } System.out.println();
-            for (int k = 0; k < n; k++) {
+            for (int k = 0; k < 5; k++) {
                 Stocks temp1 = min.delMin();
                 System.out.println(temp1);
                 if (minST.contains(temp1.getName())) {
