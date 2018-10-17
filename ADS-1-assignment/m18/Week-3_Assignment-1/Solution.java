@@ -62,10 +62,17 @@ public class Solution {
             case "get" :
                 // as.get(tokens[1], tokens[2]);
                 if (tokens[1].equals("minST")) {
+                    if(minST.get(tokens[2])==null) {
+                        System.out.println(0);
+                    }else {
                     System.out.println(minST.get(tokens[2]));
-                }
+                }}
                 if (tokens[1].equals("maxST")) {
+                    if(maxST.get(tokens[2])==null) {
+                        System.out.println(0);
+                    }else {
                     System.out.println(maxST.get(tokens[2]));
+                }
                 }
                 break;
             case "intersection":
