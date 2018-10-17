@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 Merck Ltd 4.83
 ICRA 2.84
@@ -143,8 +143,12 @@ Honeywell Auto -1.08
 Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
+
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 Larsen & Toubro 4.11
 Vinati Organics 4.03
@@ -289,6 +293,10 @@ NIIT Tech 0.21
 Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
+
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -440,6 +448,11 @@ Honeywell Auto -1.08
 Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
+
+null
+null
+null
+null
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -591,6 +604,11 @@ NIIT Tech 0.21
 Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
+
+null
+null
+null
+null
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -757,4 +775,18 @@ Honeywell Auto -1.08
 Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
+
+null
+null
+null
+null
+null
+null
+null
+null
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BinarySearchSymbolTable.max(BinarySearchSymbolTable.java:171)
+	at BinarySearchSymbolTable.keys(BinarySearchSymbolTable.java:233)
+	at AddStocks.intersection(Solution.java:101)
+	at Solution.main(Solution.java:30)
 ----------------------------------------
