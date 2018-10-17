@@ -18,7 +18,7 @@ public class Solution {
                 as.addStock(new Stocks(tokens[0], Double.parseDouble(tokens[1])));
             } as.sort(n);
         }
-        
+        scan.nextLine();
         while (scan.hasNext()) {
             int n1 = scan.nextInt();
             // scan.nextLine();
