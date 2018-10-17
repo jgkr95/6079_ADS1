@@ -53,9 +53,9 @@ public class Solution {
             } System.out.println();
 
         }
-        
+        int n1 = Integer.parseInt(scan.nextLine());
         while (scan.hasNext()) {
-            int n1 = Integer.parseInt(scan.nextLine());
+            
             String[] tokens = scan.nextLine().split(",");
             // as = new AddStocks();
             switch (tokens[0]) {
