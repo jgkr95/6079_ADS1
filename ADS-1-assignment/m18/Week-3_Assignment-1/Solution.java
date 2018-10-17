@@ -17,9 +17,9 @@ public class Solution {
                 as.addStock(new Stocks(tokens[0], Double.parseDouble(tokens[1])));
             } as.sort(n);
         }
-        int n1 = scan.nextInt();
-        scan.nextLine();
-        for (int i = 0; i < n1; i++) {
+        // int n1 = scan.nextInt();
+        // scan.nextLine();
+        while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
             as = new AddStocks();
             switch (tokens[0]) {
@@ -55,7 +55,7 @@ class AddStocks {
         max = new MaxPQ<Stocks>(n);
     }
     AddStocks() {
-        
+
     }
     public void addStock(Stocks s) {
 
