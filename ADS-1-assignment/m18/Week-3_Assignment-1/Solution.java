@@ -53,10 +53,10 @@ public class Solution {
             } System.out.println();
 
         }
-        scan.nextLine();
+        // scan.nextLine();
         while (scan.hasNext()) {
             int n1 = scan.nextInt();
-            // scan.nextLine();
+            scan.nextLine();
             String[] tokens = scan.nextLine().split(",");
             // as = new AddStocks();
             switch (tokens[0]) {
