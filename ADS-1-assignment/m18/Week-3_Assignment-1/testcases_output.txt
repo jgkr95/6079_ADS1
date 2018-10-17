@@ -146,7 +146,7 @@ WABCO India 0.33
 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:22)
+	at Solution.main(Solution.java:24)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -296,7 +296,7 @@ Chola Inv Fin 1.47
 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:22)
+	at Solution.main(Solution.java:24)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -450,9 +450,12 @@ Tasty Bite Eat 0.23
 WABCO India 0.33
 
 1
-null
-null
-1
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -606,9 +609,12 @@ Vinati Organics 1.03
 Chola Inv Fin 1.47
 
 1
-null
-null
-null
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -777,11 +783,10 @@ Tasty Bite Eat 0.23
 WABCO India 0.33
 
 null
-null
-null
-null
-null
-null
-null
-null
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
