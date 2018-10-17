@@ -441,10 +441,10 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 
+1
 null
 null
-null
-null
+1
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -597,7 +597,7 @@ Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
 
-null
+1
 null
 null
 null
@@ -776,9 +776,4 @@ null
 null
 null
 null
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BinarySearchSymbolTable.max(BinarySearchSymbolTable.java:171)
-	at BinarySearchSymbolTable.keys(BinarySearchSymbolTable.java:233)
-	at AddStocks.intersection(Solution.java:101)
-	at Solution.main(Solution.java:30)
 ----------------------------------------

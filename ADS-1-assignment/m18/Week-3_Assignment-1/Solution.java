@@ -6,8 +6,9 @@ public class Solution {
         //           new BinarySearchSymbolTable<String, Integer>();
 
         Scanner scan = new Scanner(System.in);
-        AddStocks as;
+        
         int n = scan.nextInt();
+        AddStocks as=new AddStocks(n);
 
         scan.nextLine();
         for (int i = 0; i < 6; i++) {
@@ -21,7 +22,7 @@ public class Solution {
         // scan.nextLine();
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
-            as = new AddStocks();
+            // as = new AddStocks();
             switch (tokens[0]) {
             case "get" :
                 as.get(tokens[1], tokens[2]);
@@ -37,6 +38,7 @@ public class Solution {
 
     }
 }
+
 class AddStocks {
     Stocks[] stack;
     int size;
