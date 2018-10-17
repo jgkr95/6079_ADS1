@@ -53,7 +53,7 @@ public class Solution {
             } System.out.println();
 
         }
-        // scan.nextLine();
+        scan.nextLine();
         while (scan.hasNext()) {
             int n1 = scan.nextInt();
             scan.nextLine();
