@@ -7,7 +7,7 @@ public class Solution {
 
         Scanner scan = new Scanner(System.in);
 
-        int n = scan.nextInt();
+        int n = Integer.parseInt(scan.nextLine());
         AddStocks as = new AddStocks(n);
         Stocks stockdata;
 
@@ -16,7 +16,7 @@ public class Solution {
         BinarySearchSymbolTable<String, Integer> minST =
             new BinarySearchSymbolTable<String, Integer>();
 
-        scan.nextLine();
+        
         for (int i = 0; i < 6; i++) {
             as = new AddStocks(n);
             MinPQ<Stocks> min = new MinPQ<Stocks>(n);
@@ -53,10 +53,9 @@ public class Solution {
             } System.out.println();
 
         }
-        scan.nextLine();
+        
         while (scan.hasNext()) {
-            int n1 = scan.nextInt();
-            scan.nextLine();
+            int n1 = Integer.parseInt(scan.nextLine());
             String[] tokens = scan.nextLine().split(",");
             // as = new AddStocks();
             switch (tokens[0]) {
