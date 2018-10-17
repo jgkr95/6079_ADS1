@@ -62,7 +62,7 @@ class AddStocks {
     }
     public void addStock(Stocks s) {
 
-        stack[size++] = s;
+        // stack[size++] = s;
         min.insert(s);
         max.insert(s);
     }
