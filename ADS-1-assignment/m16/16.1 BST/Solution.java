@@ -85,7 +85,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @param      key    The key
      * @param      value  The value
-     * Time comlexity of this method is O(1)
+     * Time comlexity of this method is O(N)
+     * Beacause it is calling put method and it takes O(N)
      */
     public void put(final Book key, final int value) {
          root = put(root, key, value);
