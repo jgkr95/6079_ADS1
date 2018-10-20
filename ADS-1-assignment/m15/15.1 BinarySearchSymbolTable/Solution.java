@@ -37,6 +37,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
      * size of array.
      *
      * @return     { The size of the array }
+     * Time complexity of this method is O(1).
      */
     public int size() {
         return n;
@@ -45,6 +46,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
      * Determines if empty.
      *
      * @return     True if empty, False otherwise.
+     * Time complexity of this method is O(1).
      */
     public boolean isEmpty() {
         return n == 0;
@@ -165,6 +167,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
      * Method to find maximum key.
      *
      * @return     the maximum key.
+     * Time complexity of this metod is O(1)
      */
     public Key max() {
         return keys[n - 1];
@@ -175,6 +178,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
      * @param      key   The key
      *
      * @return     the floor of the key
+     * Time complexity of this mehtod is O(1)
      */
     public Key floor(final Key key) {
         if (key == null) {
@@ -196,6 +200,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
      * @param      key   The key
      *
      * @return     The rank of the given key
+     * Time complexity of this method is O(logN)
      */
     public int rank(final Key key) {
         if (key == null) {
@@ -219,6 +224,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
      * Minimum key.
      *
      * @return     the minimum key
+     * Time complexity of this method is O(1)
      */
     public Key min() {
         return keys[0];
@@ -227,6 +233,8 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
      * Iterate through keys.
      *
      * @return     keys
+     * Time complexity of this method is O(N)
+     * AS it calls keys method again
      */
     public ArrayList<String> keys() {
         return keys(min(), max());
@@ -244,6 +252,8 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
      * @param      hi    The higher
      *
      * @return     keys
+     * Time complexity of this mehtod is O(N)
+     * AS It copies the all keys in to arraylist
      */
     public ArrayList<String> keys(final Key lo, final Key hi) {
         if (lo == null) {
