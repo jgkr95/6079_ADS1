@@ -273,6 +273,8 @@ class Merit {
      * @param      noOfBC         No of bc
      * @param      noOfSC         No of sc
      * @param      noOfST         No of st
+     * Time complexity of this method is O(N)
+     * Because in worst it may traverse entire students array.
      */
     public void sortReserve(final int noOfvacancies, final int noOfunres,
                      final int noOfBC, final int noOfSC, final int noOfST) {
