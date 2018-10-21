@@ -167,7 +167,7 @@ class SelectionSort {
         Team[] teams = team;
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
-                if (compareTo(teams[i], teams[j]) > 0) {
+                if (compareTo(teams[i], teams[j]) < 0) {
                     swap(i, j, teams);
                 }
             }
@@ -197,18 +197,18 @@ class SelectionSort {
      * @return     -1 if first element is less, 1 if greater and 0 if equal
      */
     public int compareTo(final Team a, final Team b) {
-        if (a.getWins() > b.getWins()) {
-            return 1;
-        } else if (a.getWins() < b.getWins()) {
+        if (b.getWins() > a.getWins()) {
             return -1;
-        }else if (a.getLoses() < b.getLoses()) {
-            return 1;
-        } else if (a.getLoses() > b.getLoses()) {
+        } else if (b.getWins() < a.getWins()) {
+            return  1;
+        }else if (b.getLoses() < a.getLoses()) {
             return -1;
-        } else if (a.getDraws() > b.getDraws()) {
-            return 1;
-        }  else if (a.getDraws() < b.getDraws()) {
+        } else if (b.getLoses() > a.getLoses()) {
+            return  1;
+        } else if (b.getDraws() > a.getDraws()) {
             return -1;
+        }  else if (b.getDraws() < a.getDraws()) {
+            return  1;
         }
         return 0;
     }
