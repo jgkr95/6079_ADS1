@@ -62,6 +62,7 @@ class Team {
      * Gets the wins.
      *
      * @return     The wins.
+     * Time complexity of this mehtod is O(1)
      */
     public int getWins() {
         return wins;
@@ -70,6 +71,7 @@ class Team {
      * Gets the loses.
      *
      * @return     The loses.
+     * Time complexity of this mehtod is O(1)
      */
     public int getLoses() {
         return loses;
@@ -78,6 +80,7 @@ class Team {
      * Gets the draws.
      *
      * @return     The draws.
+     * Time complexity of this mehtod is O(1)
      */
     public int getDraws() {
         return draws;
@@ -86,6 +89,7 @@ class Team {
      * Gets the name.
      *
      * @return     The name.
+     * Time complexity of this mehtod is O(1)
      */
     public String getName() {
         return name;
@@ -123,6 +127,7 @@ class TeamAdd {
 
     /**
      * Sorting based on selection sort algorithm.
+     * Time complexity is O(N^2) as it call insertionsortt method
      */
     public void insertionsort() {
         Insertionsort sort = new Insertionsort();
@@ -130,6 +135,7 @@ class TeamAdd {
     }
     /**
      * To display elements of the sorted array.
+     * Time complexity of this mehtod is O(N)
      */
     public void print() {
         for (int i = 0; i < size - 1; i++) {
@@ -175,6 +181,7 @@ class Insertionsort {
      * @param      index1  The index 1
      * @param      index2  The index 2
      * @param      teams   The teams
+     * Time complexity of this mehtod is O(1)
      */
     public void swap(final int index1, final int index2, final Team[] teams) {
         Team temp;
@@ -188,8 +195,8 @@ class Insertionsort {
      * @param      a     { index position }
      * @param      b     { index position }
      *
-     * @return     -1 if first element is less, 1 if greater and 0 if equal
-     *
+     * @return     -1 if first element is less, 1 if greater
+     * Time complexity of this mehtod is O(1)
      */
     public int compareTo(final Team a, final Team b) {
          if (b.getWins() > a.getWins()) {
