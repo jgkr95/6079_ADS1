@@ -62,6 +62,7 @@ class Team {
      * Gets the wins.
      *
      * @return     The wins.
+     * Time complexity of this mehtod is O(1)
      */
     public int getWins() {
         return wins;
@@ -70,6 +71,7 @@ class Team {
      * Gets the loses.
      *
      * @return     The loses.
+     * Time complexity of this mehtod is O(1)
      */
     public int getLoses() {
         return loses;
@@ -78,6 +80,7 @@ class Team {
      * Gets the draws.
      *
      * @return     The draws.
+     * Time complexity of this mehtod is O(1)
      */
     public int getDraws() {
         return draws;
@@ -86,6 +89,7 @@ class Team {
      * Gets the name.
      *
      * @return     The name.
+     * Time complexity of this mehtod is O(1)
      */
     public String getName() {
         return name;
@@ -123,6 +127,7 @@ class TeamAdd {
 
     /**
      * Sorting based on selection sort algorithm.
+     * Time complexity f this mehtod O(N^2)
      */
     public void selectionSort() {
         SelectionSort sort = new SelectionSort();
@@ -162,24 +167,14 @@ class SelectionSort {
         Team[] teams = team;
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
-                if (compareTo(teams[i].getWins(), teams[j].getWins()) > 0) {
+                if (compareTo(teams[i], teams[j]) > 0) {
                     swap(i, j, teams);
-                } else if (compareTo(teams[i].getWins(),
-                                     teams[j].getWins()) == 0) {
-                    if (compareTo(teams[i].getLoses(),
-                                  teams[j].getLoses()) < 0) {
-                        swap(i, j, teams);
-                    } else if (teams[i].getLoses() == teams[j].getLoses()) {
-                        if (compareTo(teams[i].getDraws(),
-                                      teams[j].getDraws()) > 0) {
-                            swap(i, j, teams);
-                        }
-                    }
                 }
             }
         }
         return teams;
     }
+
     /**
      * swapping the team objects.
      *
@@ -201,13 +196,21 @@ class SelectionSort {
      *
      * @return     -1 if first element is less, 1 if greater and 0 if equal
      */
-    public int compareTo(final int a, final int b) {
-        if (a < b) {
+    public int compareTo(final Team a, final Team b) {
+        if (a.getWins() > b.getWins()) {
             return 1;
-        } else if (a == b) {
-            return 0;
-        } else {
+        } else if (a.getWins() > b.getWins()) {
             return -1;
         }
+        if (a.getLoses() < b.getLoses()) {
+            return 1;
+        } else if (a.getLoses() > b.getLoses()) {
+            return -1;
+        }
+        if (a.getDraws() > b.getDraws()) {
+            return 1;
+        }
+        return 0;
     }
 }
+
