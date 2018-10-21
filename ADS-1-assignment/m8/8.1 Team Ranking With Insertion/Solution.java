@@ -203,9 +203,9 @@ class SelectionSort {
             return -1;
         }
         if (a.getLoses() < b.getLoses()) {
-            return 1;
-        } else if (a.getLoses() > b.getLoses()) {
             return -1;
+        } else if (a.getLoses() > b.getLoses()) {
+            return 1;
         }
         if (a.getDraws() > b.getDraws()) {
             return 1;
