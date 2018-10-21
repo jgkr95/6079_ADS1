@@ -166,10 +166,12 @@ class SelectionSort {
     public Team[] selectionSortt(final Team[] team, final int size) {
         Team[] teams = team;
         for (int i = 0; i < size; i++) {
+            int min = i;
             for (int j = i + 1; j < size; j++) {
                 if (compareTo(teams[i], teams[j]) < 0) {
-                    swap(i, j, teams);
+                    min = j;                    
                 }
+                swap(i, min, teams);
             }
         }
         return teams;
@@ -194,7 +196,8 @@ class SelectionSort {
      * @param      a     { index position }
      * @param      b     { index position }
      *
-     * @return     -1 if first element is less, 1 if greater and 0 if equal
+     * @return     -1 if first element is less, 1 if greater
+     * Time complexity of this method is O(1)
      */
     public int compareTo(final Team a, final Team b) {
         if (b.getWins() > a.getWins()) {
