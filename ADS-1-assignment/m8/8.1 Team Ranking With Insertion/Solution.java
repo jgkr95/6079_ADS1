@@ -171,8 +171,8 @@ class SelectionSort {
                 if (compareTo(teams[i], teams[j]) < 0) {
                     min = j;
                 }
-                swap(i, min, teams);
             }
+            swap(i, min, teams);
         }
         return teams;
     }
