@@ -168,7 +168,7 @@ class SelectionSort {
         for (int i = 0; i < size; i++) {
             int min = i;
             for (int j = i + 1; j < size; j++) {
-                if (compareTo(teams[i], teams[j]) < 0) {
+                if (compareTo(teams[i], teams[j]) > 0) {
                     min = j;
                 }
             }
