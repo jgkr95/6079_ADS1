@@ -162,21 +162,9 @@ class Insertionsort {
         Team[] teams = team;
         for (int i = 0; i < size; i++) {
             for (int j = i; j > 0; j--) {
-                if (compareTo(teams[j - 1].getWins(), teams[j].getWins()) > 0) {
+                if (compareTo(teams[j - 1], teams[j]) > 0) {
                     swap(j - 1, j, teams);
-                } else if (compareTo(teams[j - 1].getWins(),
-                                     teams[j].getWins()) == 0) {
-                    if (compareTo(teams[j - 1].getLoses(),
-                                  teams[j].getLoses()) < 0) {
-                        swap(j - 1, j, teams);
-                    } else if (compareTo(teams[j - 1].getLoses(),
-                                 teams[j].getLoses()) == 0) {
-                        if (compareTo(teams[j - 1].getDraws(),
-                                      teams[j].getDraws()) > 0) {
-                            swap(j - 1, j, teams);
-                        }
-                    }
-                }
+                } 
             }
         }
         return teams;
@@ -203,13 +191,20 @@ class Insertionsort {
      * @return     -1 if first element is less, 1 if greater and 0 if equal
      *
      */
-    public int compareTo(final int a, final int b) {
-        if (a < b) {
-            return 1;
-        } else if (a == b) {
-            return 0;
-        } else {
+    public int compareTo(final Team a, final Team b) {
+         if (b.getWins() > a.getWins()) {
             return -1;
+        } else if (b.getWins() < a.getWins()) {
+            return  1;
+        } else if (b.getLoses() < a.getLoses()) {
+            return -1;
+        } else if (b.getLoses() > a.getLoses()) {
+            return  1;
+        } else if (b.getDraws() > a.getDraws()) {
+            return -1;
+        }  else if (b.getDraws() < a.getDraws()) {
+            return  1;
         }
+        return 0;
     }
 }
