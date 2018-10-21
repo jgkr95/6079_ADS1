@@ -166,14 +166,11 @@ class SelectionSort {
     public Team[] selectionSortt(final Team[] team, final int size) {
         Team[] teams = team;
         for (int i = 0; i < size; i++) {
-            int min = i;
             for (int j = i + 1; j < size; j++) {
                 if (compareTo(teams[i], teams[j]) < 0) {
-                    // min = j;
                     swap(i, j, teams);
                 }
             }
-            // swap(i, min, teams);
         }
         return teams;
     }
