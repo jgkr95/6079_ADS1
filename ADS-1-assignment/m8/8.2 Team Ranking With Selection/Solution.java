@@ -162,7 +162,7 @@ class Insertionsort {
         Team[] teams = team;
         for (int i = 0; i < size; i++) {
             for (int j = i; j > 0; j--) {
-                if (compareTo(teams[j - 1], teams[j]) > 0) {
+                if (compareTo(teams[j - 1], teams[j]) < 0) {
                     swap(j - 1, j, teams);
                 } 
             }
