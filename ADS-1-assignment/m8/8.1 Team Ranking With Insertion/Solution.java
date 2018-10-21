@@ -169,10 +169,11 @@ class SelectionSort {
             int min = i;
             for (int j = i + 1; j < size; j++) {
                 if (compareTo(teams[i], teams[j]) < 0) {
-                    min = j;
+                    // min = j;
+                    swap(i, j, teams);
                 }
             }
-            swap(i, min, teams);
+            // swap(i, min, teams);
         }
         return teams;
     }
