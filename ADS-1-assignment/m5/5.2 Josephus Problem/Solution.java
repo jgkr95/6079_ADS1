@@ -48,7 +48,7 @@ class Josephus {
     /**
      * { Connects the head to the last node }.
      */
-    public void circlepos() {
+    public void circlePos() {
         Node temp = head;
         while (temp.next != null) {
             temp = temp.next;
@@ -108,7 +108,7 @@ public final class Solution {
             for (int i = 0; i < total; i++) {
                 jobj.insert(i);
             }
-            jobj.circlepos();
+            jobj.circlePos();
             jobj.sword(kill);
 
         }
