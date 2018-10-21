@@ -23,6 +23,8 @@ class Merge {
      * @param      lo        The lower is array starting index
      * @param      mid       The middle is middle index
      * @param      hi        The higher is last index
+     * Time complexity of this method is O(N)
+     * Because it copies all elements in to a new array.
      */
     private void merge(final Comparable[] array,
     final Comparable[] newarray, final int lo, final int mid, final int hi) {
@@ -79,6 +81,8 @@ class Merge {
      * { calls the above private sort method }.
      *
      * @param      a     is of comparable type
+     * Time complexity of this method is O(NlogN)
+     * Because it is calling again sort method
      */
     public void sort(final Comparable[] a) {
         Comparable[] aux = a.clone();
@@ -107,6 +111,7 @@ class Merge {
      * @param      aux     { Auxilaaary array }
      * @param      i     { index position }
      * @param      j     { indexposition }
+     * Time complexity of this mehtod is O(1)
      */
     public void swap(final Comparable[] aux, final int i, final int j) {
         Comparable temp = aux[i];
@@ -120,6 +125,7 @@ class Merge {
      * @param      b     { comparable element }
      *
      * @return     { true if a is less than b, else false }
+     * Time complexity of this method is O(1)
      */
     public boolean less(final Comparable a, final Comparable b) {
         return a.compareTo(b) < 0;
@@ -158,6 +164,7 @@ class Merge {
      * @param      aux   The auxiliary array
      *
      * @return     { String with all auxilary elements }
+     * Time complexity is O(N),as it has to traverse entire array
      */
     public Object show(final Object[] aux) {
         String s = "[";
