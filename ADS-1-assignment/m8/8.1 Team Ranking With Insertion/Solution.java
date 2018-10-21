@@ -199,18 +199,14 @@ class SelectionSort {
     public int compareTo(final Team a, final Team b) {
         if (a.getWins() > b.getWins()) {
             return 1;
-        } else if (a.getWins() > b.getWins()) {
-            return -1;
-        }
+        } 
         if (a.getLoses() < b.getLoses()) {
-            return -1;
-        } else if (a.getLoses() > b.getLoses()) {
             return 1;
         }
         if (a.getDraws() > b.getDraws()) {
             return 1;
         }
-        return 0;
+        return -1;
     }
 }
 
