@@ -431,7 +431,7 @@ class BinarySearchTree {
      * { Method of rank gives no of left children }.
      * @param      key   The key
      * @param      x     Node object
-     * 
+     *
      * @return     {no of left children}
      * Time complexity of this method is O(log(N)).
      */
