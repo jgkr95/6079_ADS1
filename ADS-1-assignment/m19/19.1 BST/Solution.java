@@ -419,7 +419,6 @@ class BinarySearchTree {
     }
     /**
      * { Gives no of left children }.
-     * 
      * @param      key   The key
      *
      * @return     {no of left children}
@@ -430,7 +429,6 @@ class BinarySearchTree {
     }
     /**
      * { Method of rank gives no of left children }.
-     * 
      * @param      key   The key
      * @param      x     Node object
      * 
