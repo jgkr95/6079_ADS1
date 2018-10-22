@@ -237,7 +237,7 @@ class BinarySearchTree {
         root = put(root, key, val);
     }
     /**
-     * Put method inserts the key and the value
+     * Put method inserts the key and the value.
      * @param      x   parent node.
      * @param      key   The key is Book object.
      * @param      val   The value is Book object.
@@ -261,7 +261,6 @@ class BinarySearchTree {
     }
     /**
      * Gives the minimum element.
-     * 
      * @return minimum element.
      * Time complexity is O(logN) as it is calling min method again.
      */
@@ -387,8 +386,7 @@ class BinarySearchTree {
         return ceiling(x.right, key);
     }
     /**
-     * selects the given key value and gives the 
-     * 
+     * selects the given key and gives the value.
      * @param      k     {Integer}
      *
      * @return     {Book Object}
@@ -399,8 +397,7 @@ class BinarySearchTree {
         return x.key;
     }
     /**
-     * selects the given key value and gives the 
-     * 
+     * selects the given key and gives the value.
      * @param      x     {parent Node}
      * @param      k     {Integer type}
      *
@@ -436,7 +433,7 @@ class BinarySearchTree {
      * 
      * @param      key   The key
      * @param      x     Node object
-     *
+     * 
      * @return     {no of left children}
      * Time complexity of this method is O(log(N)).
      */

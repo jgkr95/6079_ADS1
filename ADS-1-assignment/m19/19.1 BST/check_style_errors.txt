@@ -1,13 +1,6 @@
 Starting audit...
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:239: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:264: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:389: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:390: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:391: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:401: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:402: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:403: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:425: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:422: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:433: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m19/19.1 BST/Solution.java:436: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 3 errors.
