@@ -61,7 +61,7 @@ public final class Solution {
                 break;
             case "deleteMax":
                 bst.deleteMax();
-                break;      
+                break;
             default:
                 break;
             }
