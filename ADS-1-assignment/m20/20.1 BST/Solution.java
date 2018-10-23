@@ -21,7 +21,7 @@ public final class Solution {
             switch (tokens[0]) {
             case "put":
                 Book bookdata = new Book(tokens[1],
-                                         tokens[2], Float.parseFloat(tokens[2 + 1]));
+                                tokens[2], Float.parseFloat(tokens[2 + 1]));
                 bst.put(bookdata, Integer.parseInt(tokens[2 + 2]));
                 break;
             case "get":
@@ -61,7 +61,7 @@ public final class Solution {
                 break;
             case "deleteMax":
                 bst.deleteMax();
-                break;            
+                break;      
             default:
                 break;
             }
@@ -530,8 +530,7 @@ class BinarySearchTree {
         if (x == null) {
             return null;
         }
-        int cmp = key.getName().compareTo(
-                      x.key.getName());
+        int cmp = key.getName().compareTo(x.key.getName());
         if (cmp < 0) {
             x.left = delete(x.left, key);
         } else if (cmp > 0) {
@@ -547,8 +546,7 @@ class BinarySearchTree {
             x.right = deleteMin(temp.right);
             x.left = temp.left;
         }
-        x.size = 1 + size(x.right)
-                 + size(x.left);
+        x.size = 1 + size(x.right) + size(x.left);
         return x;
     }
 }

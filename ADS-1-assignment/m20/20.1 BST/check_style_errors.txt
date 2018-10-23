@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m20/20.1 BST/Solution.java:24: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m20/20.1 BST/Solution.java:64: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
