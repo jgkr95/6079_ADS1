@@ -334,7 +334,7 @@ class BinarySearchTree {
      * @param      key   The key
      *
      * @return floored value of the given key.
-     * Time complexity is O(logN)
+     * Time complexity is O(N)
      */
     private Node floor(final Node x, final Book key) {
         if (x == null) {
@@ -359,7 +359,7 @@ class BinarySearchTree {
      * @param      key   The key
      *
      * @return     { ceiled value of the given key }
-     * Time complexity is O(logN)
+     * Time complexity is O(N)
      */
     public Book ceiling(final Book key) {
         Node x = ceiling(root, key);
@@ -375,7 +375,7 @@ class BinarySearchTree {
      * @param      key   The key
      *
      * @return     { ceiled value of the given key }
-     * Time complexity is O(logN)
+     * Time complexity is O(N)
      */
     private Node ceiling(final Node x, final Book key) {
         if (x == null) {
@@ -400,7 +400,7 @@ class BinarySearchTree {
      * @param      k     {Integer}
      *
      * @return     {Book Object}
-     * Time complexity of this method is O(logN).
+     * Time complexity of this method is O(N).
      */
     public Book select(final int k) {
         Node x = select(root, k);
@@ -412,7 +412,7 @@ class BinarySearchTree {
      * @param      k     {Integer type}
      *
      * @return     {selected node}
-     * Time complexity of this method is O(log(N)).
+     * Time complexity of this method is O(N).
      */
     private Node select(final Node x, final int k) {
         if (x == null) {
@@ -432,7 +432,7 @@ class BinarySearchTree {
      * @param      key   The key
      *
      * @return     {no of left children}
-     * Time complexity is O(logN) as it is calling rank method agaim.
+     * Time complexity is O(N) as it is calling rank method agaim.
      */
     public int rank(final Book key) {
         return rank(key, root);
@@ -443,7 +443,7 @@ class BinarySearchTree {
      * @param      x     Node object
      *
      * @return     {no of left children}
-     * Time complexity of this method is O(log(N)).
+     * Time complexity of this method is O(N).
      */
     private int rank(final Book key, final Node x) {
         if (x == null) {
