@@ -133,7 +133,7 @@ class SeparateChainingHashST {
      *
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
-     * 
+     *
      */
     public void delete(final String key) {
         int i = hash(key);
@@ -177,7 +177,7 @@ final class Solution {
         return "Yes";
     }
 
-    /**
+    /**.
      * Main method to handle the input.
      *
      * @param      args  The arguments are of String array type.
