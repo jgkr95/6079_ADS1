@@ -53,7 +53,6 @@ class SeparateChainingHashST {
 
     /**
      * Returns the number of key-value pairs in this symbol table.
-     * Complexity of the function is 1.
      *
      * @return the number of key-value pairs in this symbol table
      * Time complexity is O(1)
