@@ -47,7 +47,7 @@ class SeparateChainingHashST {
      * Time complexity is O(1)
      */
     private int hash(final String key) {
-        int data = 0x7fffffff;
+        final int data = 0x7fffffff;
         return (key.hashCode() & data) % m;
     }
 
@@ -101,7 +101,7 @@ class SeparateChainingHashST {
         return st[i].get(key);
     }
 
-    /**
+    /**.
      * Inserts the specified key-value pair into
      * the symbol table,overwriting the old
      * value with the new value if the symbol
