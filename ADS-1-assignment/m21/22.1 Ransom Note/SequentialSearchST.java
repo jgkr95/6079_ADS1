@@ -158,7 +158,7 @@ public class SequentialSearchST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     private Node delete(final Node x, final Key key) {
-        if (x == null) { 
+        if (x == null) {
             return null;
         }
         if (key.equals(x.key)) {
