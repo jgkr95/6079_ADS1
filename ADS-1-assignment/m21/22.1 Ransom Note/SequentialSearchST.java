@@ -36,10 +36,10 @@ public class SequentialSearchST<Key, Value> {
          * @param      val   The value
          * @param      next  The next
          */
-        public Node(Key key, Value val, Node next)  {
-            this.key  = key;
-            this.val  = val;
-            this.next = next;
+        public Node(final Key key1,final Value val1,final Node next1)  {
+            this.key  = key1;
+            this.val  = val1;
+            this.next = next1;
         }
     }
     /**
@@ -72,7 +72,7 @@ public class SequentialSearchST<Key, Value> {
      *         {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         if (key == null) throw
          new IllegalArgumentException("argument to contains() is null");
         return get(key) != null;
@@ -87,7 +87,7 @@ public class SequentialSearchST<Key, Value> {
      *     and {@code null} if the key is not in the symbol table
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public Value get(Key key) {
+    public Value get(final Key key) {
         if (key == null) throw 
             new IllegalArgumentException("argument to get() is null");
         for (Node x = first; x != null; x = x.next) {
@@ -110,7 +110,7 @@ public class SequentialSearchST<Key, Value> {
      * @param  val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key,final Value val) {
         if (key == null) throw
          new IllegalArgumentException("first argument to put() is null");
         if (val == null) {
@@ -135,7 +135,7 @@ public class SequentialSearchST<Key, Value> {
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public void delete(Key key) {
+    public void delete(final Key key) {
         if (key == null) throw
          new IllegalArgumentException("argument to delete() is null");
         first = delete(first, key);
@@ -145,7 +145,7 @@ public class SequentialSearchST<Key, Value> {
      * // delete key in linked list beginning at Node x
      * // warning: function call stack too large if table is large
      */
-    private Node delete(Node x, Key key) {
+    private Node delete(final Node x,final Key key) {
         if (x == null) return null;
         if (key.equals(x.key)) {
             n--;
