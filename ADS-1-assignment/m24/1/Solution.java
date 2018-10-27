@@ -12,19 +12,24 @@ class Solution {
 		for (int i = 0; i < queries; i++) {
 			String[] tokens = scan.nextLine().split(" ");
 			Student sObj = as.get(Integer.parseInt(tokens[1]));
-			if (sObj == null) {
-				System.out.println("Student doesn't exists...");
-			}
+			boolean flag=as.contains(Integer.parseInt(tokens[1]));
 			switch (tokens[2]) {
 			case "1":
-				System.out.println(sObj.getName());
-				break;
-			case "2":
-				if (sObj.getTotal() < 1) {
-					System.out.println("Student doesn't exists...");
+				if (flag) {
+					System.out.println(sObj.getName());
 				} else {
-					System.out.println(sObj.getTotal());
+					System.out.println("Student doesn't exists...");
 				}
+
+					break;
+				
+			case "2":
+				if (flag) {
+					System.out.println(sObj.getTotal());
+				}else{
+					System.out.println("Student doesn't exists...");
+				}
+
 				break;
 			default:
 				break;
@@ -75,6 +80,14 @@ class AddStudent {
 			}
 		}
 		return s;
+	}
+	public boolean contains(int roll) {
+		for (int i = 0; i < size; i++) {
+			if (sInfo[i].getRollNumber() == roll) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 }
