@@ -1,2 +1,8 @@
 Starting audit...
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:28:35: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:28:36: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:28:39: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:28:40: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:29:32: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
+Checkstyle ends with 5 errors.

@@ -48,7 +48,7 @@ Your Output:
 45.4
 99.3
 ----------------------------------------
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 Knuth
 100.0
@@ -81,12 +81,10 @@ John
 Hank
 13.3
 Jeannette Caines
-Student doesn't exists...
-Student doesn't exists...
-Student doesn't exists...
-Student doesn't exists...
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:35)
 ----------------------------------------
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 7.213
 Michael Hale
@@ -605,7 +603,7 @@ Kady MacDonald Denton
 Kate Jacoby
 Charles B. Macdonald
 Laura Holmes Haddad
-36.4
+36.40
 Debra W. Haffner
 98.13
 17.86
@@ -634,7 +632,7 @@ Michael Hale
 Taylor Hackford
 36.24
 Katharina Hagena
-35.6
+35.60
 Gracie MacGregor
 David Halberstam
 Michael Haag
@@ -656,8 +654,8 @@ H3CZ
 18.28
 Olivia Mace
 45.32
-68.0
-35.6
+68.00
+35.60
 79.87
 Debra W. Haffner
 40.95
@@ -671,15 +669,15 @@ Mary Downing Hahn
 Roger Lea MacBride
 Steph Jagger
 Ian Jackman
-17.2
+17.20
 35.74
 Guru Jagat
 4.893
 74.05
 Carrington MacDuffie
 35.81
-66.2
-72.2
+66.20
+72.20
 Tony Macaulay
 74.64
 Cynthia Jabar
@@ -691,7 +689,7 @@ Michael Hale
 53.48
 David Jacobs
 John Hornor Jacobs
-17.5
+17.50
 53.48
 Ann-Marie MacDonald
 Jane MacDougall
@@ -733,7 +731,7 @@ Tracey Jackson
 Olivia Mace
 Shane Jacobson
 Don Hagen
-17.5
+17.50
 3.391
 Thomas Hackett
 55.34
@@ -742,7 +740,7 @@ Sarah Jacoby
 11.58
 39.78
 14.77
-8.36
+8.360
 Nafisa Haji
 Katharina Hagena
 Nasim Marie Jafry
@@ -751,7 +749,7 @@ M MacCallum
 Betty MacDonald
 Jessie Haas
 Andrew Macdonald
-87.6
+87.60
 Robert Jackson
 35.74
 72.19
@@ -786,12 +784,12 @@ Dana C. Jack
 7.213
 Mary MacCracken
 93.95
-99.9
+99.90
 Kevin MacAllister
 Simon Jacobson
 8.108
 Sheila Hale
-5.41
+5.410
 65.06
 Sara MacDonald
 Andrew Macdonald
@@ -802,7 +800,7 @@ Heather Hach
 Gene Hackman
 76.93
 Kennell Jackson
-40.1
+40.10
 Mary MacCracken
 Carla Hall
 35.81
@@ -810,7 +808,7 @@ Sophie Jaff
 26.54
 Joie Jager-Hyman
 Emma Jackson
-17.2
+17.20
 Jeremy Jackson
 50.88
 43.91
@@ -836,7 +834,7 @@ Marylin Hafner
 79.38
 72.19
 55.34
-17.5
+17.50
 Gene Hackman
 26.33
 53.79
@@ -855,7 +853,7 @@ Bethany Hagen
 Sara MacDonald
 10.31
 83.43
-17.5
+17.50
 79.09
 30.97
 Kathleen Hale
@@ -897,7 +895,7 @@ Cynthia Jabar
 Richard Jacoby
 Andrew Macdonald
 Daniel Hahn
-24.4
+24.40
 91.38
 45.39
 7.065
@@ -911,7 +909,7 @@ Margaret Peterson Haddix
 14.77
 62.17
 85.84
-75.0
+75.00
 79.87
 Ellen Jackson
 Catherine Macaulay
@@ -920,173 +918,6 @@ Annie Maccoby
 David Macfarlane
 10.42
 88.39
-Student doesn't exists...
-8.759
-40.1
-35.74
-51.43
-48.77
-Ann-Marie MacDonald
-87.6
-Ellie Macdonald
-Michael Hague
-11.58
-Ruby Jackson
-David Haig
-28.69
-53.48
-90.91
-Jennifer Haigh
-43.06
-92.0
-92.0
-Kevin MacAllister
-57.53
-Katharina Hagena
-50.88
-15.89
-Margaret Read MacDonald
-Carla Jablonski
-61.6
-Kate Jacoby
-Sylvie Haisman
-Tony Macaulay
-Saskia Maarleveld
-Kellie Hailes
-Steve Hagen
-H. JACKSON
-John Hale
-Korey Jackson
-3.336
-Betty Halbreich
-35.6
-Dana C. Jack
-Student doesn't exists...
-Elaine Hall
-Bonnie MacBird
-54.45
-61.6
-John Hornor Jacobs
-William Hague
-Marilyn Hagerty
-59.62
-Simon Jacobson
-98.87
-David Haig
-Myla Jackson
-46.81
-Guru Jagat
-June Hadley
-21.24
-Jeannette Haien
-76.48
-63.33
-40.43
-85.69
-Emma Jackson
-99.9
-35.74
-Kathryn Miller Haines
-93.97
-79.38
-Adele Jacques
-Baby Halder
-48.67
-75.18
-35.71
-Colin Jack
-28.06
-Andrew Jacobson
-8.759
-Carla Hall
-17.39
-Carla Jablonski
-52.12
-60.27
-Shelley Jackson
-Richard Jacoby
-Norm MacDonald
-6.364
-43.12
-David Halberstam
-17.54
-Nathan Hale
-11.63
-James B. Maas
-Kady MacDonald Denton
-Catherine Macaulay
-75.0
-Kate Jacoby
-Roger O.M.D. Jahnke
-63.33
-59.67
-Colin Jack
-David Macfarlane
-James Macdonald
-Richard Mabey
-79.58
-16.78
-Madhur Jaffrey
-32.81
-62.74
-17.39
-Jane MacDougall
-Bonnie MacBird
-14.77
-Heather Hach
-98.87
-Chuck Hagel
-90.69
-83.43
-John W. Jacobs
-David Hagedorn
-Todd Haberkorn
-Student doesn't exists...
-Mary Curran Hackett
-Catherine Macaulay
-Kinley MacGregor
-89.85
-Daniel Hahn
-Laura Holmes Haddad
-Joshilyn Jackson
-79.87
-89.85
-Kathryn Ma
-50.75
-John Hale
-3.876
-A.N.D Haksar
-16.5
-35.81
-48.67
-Keach Hagey
-89.61
-32.99
-39.78
-80.31
-Kristin Hahn
-53.48
-Richard Mabey
-Derek Jacobi
-Jerome A. Jackson
-5.41
-32.99
-45.09
-David Halberstam
-Bradley Jackson
-23.87
-47.48
-50.88
-William Hague
-Daniel Hahn
-T. T. Macan
-27.87
-91.92
-Fiona MacDonald
-87.26
-91.92
-Elaine Hall
-Robert Macfarlane
-John Hale
-53.79
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:35)
 ----------------------------------------
