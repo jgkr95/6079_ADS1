@@ -32,6 +32,10 @@ final class Solution {
         for (int i = 0; i < queries; i++) {
             String[] tokens = scan.nextLine().split(" ");
             String info = lpht.get(tokens[1]);
+            if(info.equals(null)) {
+                System.out.println("Student doesn't exists...");
+                continue;
+            }
             String[] sObj = info.split(",");
             boolean flag = lpht.contains(tokens[1]);
             switch (tokens[2]) {
