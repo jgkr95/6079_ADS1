@@ -29,6 +29,9 @@ class Student {
 	int rollNumber;
 	String name;
 	double totalMarks;
+	Student() {
+		
+	}
 	Student(int rollNumber1, String name1, double totalMarks1) {
 		rollNumber = rollNumber1;
 		name = name1;
@@ -54,12 +57,17 @@ class AddStudent {
 		sInfo[size++] = s;
 	}
 	public Student get(int rollNumber) {
+		Student s=new Student();
 		for (int i = 0; i < size; i++) {
 			if (sInfo[i].getRollNumber()==rollNumber) {
-				return sInfo[i];
+				if(s==null) {
+					s=sInfo[i];
+				} else if(sInfo[i].getTotal()>s.getTotal()) {
+					s=sInfo[i];
+				}
 			}
 		}
-		return null;
+		return s;
 	}
 
 }
