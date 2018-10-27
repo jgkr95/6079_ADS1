@@ -42,7 +42,7 @@ final class Solution {
 
                     break;
                 case "2":
-                    System.out.println(sObj[1]);
+                    System.out.println(Double.parseDouble(sObj[1]));
 
                     break;
                 default:

@@ -86,7 +86,7 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 7.213
 Michael Hale
@@ -605,7 +605,7 @@ Kady MacDonald Denton
 Kate Jacoby
 Charles B. Macdonald
 Laura Holmes Haddad
-36.40
+36.4
 Debra W. Haffner
 98.13
 17.86
@@ -634,7 +634,7 @@ Michael Hale
 Taylor Hackford
 36.24
 Katharina Hagena
-35.60
+35.6
 Gracie MacGregor
 David Halberstam
 Michael Haag
@@ -656,8 +656,8 @@ H3CZ
 18.28
 Olivia Mace
 45.32
-68.00
-35.60
+68.0
+35.6
 79.87
 Debra W. Haffner
 40.95
@@ -671,15 +671,15 @@ Mary Downing Hahn
 Roger Lea MacBride
 Steph Jagger
 Ian Jackman
-17.20
+17.2
 35.74
 Guru Jagat
 4.893
 74.05
 Carrington MacDuffie
 35.81
-66.20
-72.20
+66.2
+72.2
 Tony Macaulay
 74.64
 Cynthia Jabar
@@ -691,7 +691,7 @@ Michael Hale
 53.48
 David Jacobs
 John Hornor Jacobs
-17.50
+17.5
 53.48
 Ann-Marie MacDonald
 Jane MacDougall
@@ -733,7 +733,7 @@ Tracey Jackson
 Olivia Mace
 Shane Jacobson
 Don Hagen
-17.50
+17.5
 3.391
 Thomas Hackett
 55.34
@@ -742,7 +742,7 @@ Sarah Jacoby
 11.58
 39.78
 14.77
-8.360
+8.36
 Nafisa Haji
 Katharina Hagena
 Nasim Marie Jafry
@@ -751,7 +751,7 @@ M MacCallum
 Betty MacDonald
 Jessie Haas
 Andrew Macdonald
-87.60
+87.6
 Robert Jackson
 35.74
 72.19
@@ -786,12 +786,12 @@ Dana C. Jack
 7.213
 Mary MacCracken
 93.95
-99.90
+99.9
 Kevin MacAllister
 Simon Jacobson
 8.108
 Sheila Hale
-5.410
+5.41
 65.06
 Sara MacDonald
 Andrew Macdonald
@@ -802,7 +802,7 @@ Heather Hach
 Gene Hackman
 76.93
 Kennell Jackson
-40.10
+40.1
 Mary MacCracken
 Carla Hall
 35.81
@@ -810,7 +810,7 @@ Sophie Jaff
 26.54
 Joie Jager-Hyman
 Emma Jackson
-17.20
+17.2
 Jeremy Jackson
 50.88
 43.91
@@ -836,7 +836,7 @@ Marylin Hafner
 79.38
 72.19
 55.34
-17.50
+17.5
 Gene Hackman
 26.33
 53.79
@@ -855,7 +855,7 @@ Bethany Hagen
 Sara MacDonald
 10.31
 83.43
-17.50
+17.5
 79.09
 30.97
 Kathleen Hale
@@ -897,7 +897,7 @@ Cynthia Jabar
 Richard Jacoby
 Andrew Macdonald
 Daniel Hahn
-24.40
+24.4
 91.38
 45.39
 7.065
@@ -911,7 +911,7 @@ Margaret Peterson Haddix
 14.77
 62.17
 85.84
-75.00
+75.0
 79.87
 Ellen Jackson
 Catherine Macaulay
@@ -922,12 +922,12 @@ David Macfarlane
 88.39
 Student doesn't exists...
 8.759
-40.10
+40.1
 35.74
 51.43
 48.77
 Ann-Marie MacDonald
-87.60
+87.6
 Ellie Macdonald
 Michael Hague
 11.58
@@ -938,8 +938,8 @@ David Haig
 90.91
 Jennifer Haigh
 43.06
-92.00
-92.00
+92.0
+92.0
 Kevin MacAllister
 57.53
 Katharina Hagena
@@ -947,7 +947,7 @@ Katharina Hagena
 15.89
 Margaret Read MacDonald
 Carla Jablonski
-61.60
+61.6
 Kate Jacoby
 Sylvie Haisman
 Tony Macaulay
@@ -959,13 +959,13 @@ John Hale
 Korey Jackson
 3.336
 Betty Halbreich
-35.60
+35.6
 Dana C. Jack
 Student doesn't exists...
 Elaine Hall
 Bonnie MacBird
 54.45
-61.60
+61.6
 John Hornor Jacobs
 William Hague
 Marilyn Hagerty
@@ -984,7 +984,7 @@ Jeannette Haien
 40.43
 85.69
 Emma Jackson
-99.90
+99.9
 35.74
 Kathryn Miller Haines
 93.97
@@ -1015,7 +1015,7 @@ Nathan Hale
 James B. Maas
 Kady MacDonald Denton
 Catherine Macaulay
-75.00
+75.0
 Kate Jacoby
 Roger O.M.D. Jahnke
 63.33
@@ -1056,7 +1056,7 @@ Kathryn Ma
 John Hale
 3.876
 A.N.D Haksar
-16.50
+16.5
 35.81
 48.67
 Keach Hagey
@@ -1069,7 +1069,7 @@ Kristin Hahn
 Richard Mabey
 Derek Jacobi
 Jerome A. Jackson
-5.410
+5.41
 32.99
 45.09
 David Halberstam
