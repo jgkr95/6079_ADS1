@@ -1,9 +1,4 @@
 Starting audit...
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:12: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:24:16: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:56: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:60: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:64: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:81: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:24:28: ',' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.

@@ -10,7 +10,7 @@ final class Solution {
 
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */
@@ -21,7 +21,7 @@ final class Solution {
         for (int i = 0; i < size; i++) {
             String[] tokens = scan.nextLine().split(",");
             as.add(new Student(Integer.parseInt((tokens[0]))
-                , tokens[1], Double.parseDouble(tokens[2])));
+                            , tokens[1], Double.parseDouble(tokens[2])));
         }
         int queries = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < queries; i++) {
@@ -54,15 +54,15 @@ final class Solution {
  */
 class Student {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int rollNumber;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private String name;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private double totalMarks;
     /**
@@ -78,7 +78,8 @@ class Student {
      * @param      name1        The name 1
      * @param      totalMarks1  The total marks 1
      */
-    Student(final int rollNumber1, final String name1, final double totalMarks1) {
+    Student(final int rollNumber1, final String name1,
+        final double totalMarks1) {
         rollNumber = rollNumber1;
         name = name1;
         totalMarks = totalMarks1;
