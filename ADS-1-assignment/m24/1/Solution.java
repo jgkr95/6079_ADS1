@@ -4,17 +4,24 @@ import java.util.Scanner;
  */
 class Solution {
 	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+
+	}
+	/**
 	 * { function_description }
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int size = Integer.parseInt(scan.nextLine());
 		AddStudent as = new AddStudent(size);
 		for (int i = 0; i < size; i++) {
 			String[] tokens = scan.nextLine().split(",");
-			as.add(new Student(Integer.parseInt((tokens[0])), tokens[1], Double.parseDouble(tokens[2])));
+			as.add(new Student(Integer.parseInt((tokens[0]))
+				, tokens[1], Double.parseDouble(tokens[2])));
 		}
 		int queries = Integer.parseInt(scan.nextLine());
 		for (int i = 0; i < queries; i++) {
@@ -71,7 +78,7 @@ class Student {
 	 * @param      name1        The name 1
 	 * @param      totalMarks1  The total marks 1
 	 */
-	Student(int rollNumber1, String name1, double totalMarks1) {
+	Student(final int rollNumber1, final String name1, final double totalMarks1) {
 		rollNumber = rollNumber1;
 		name = name1;
 		totalMarks = totalMarks1;
@@ -118,7 +125,7 @@ class AddStudent {
 	 *
 	 * @param      size1  The size 1
 	 */
-	AddStudent(int size1) {
+	AddStudent(final int size1) {
 		sInfo = new Student[size1];
 	}
 	/**
@@ -126,7 +133,7 @@ class AddStudent {
 	 *
 	 * @param      s     { parameter_description }
 	 */
-	public void add(Student s) {
+	public void add(final Student s) {
 		sInfo[size++] = s;
 	}
 	/**
@@ -136,7 +143,7 @@ class AddStudent {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Student get(int rollNumber) {
+	public Student get(final int rollNumber) {
 		Student s = new Student();
 		for (int i = 0; i < size; i++) {
 			if (sInfo[i].getRollNumber() == rollNumber) {
@@ -156,7 +163,7 @@ class AddStudent {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public boolean contains(int roll) {
+	public boolean contains(final int roll) {
 		for (int i = 0; i < size; i++) {
 			if (sInfo[i].getRollNumber() == roll) {
 				return true;
