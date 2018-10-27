@@ -20,8 +20,8 @@ final class Solution {
         AddStudent as = new AddStudent(size);
         for (int i = 0; i < size; i++) {
             String[] tokens = scan.nextLine().split(",");
-            as.add(new Student(Integer.parseInt((tokens[0]))
-                            , tokens[1], Double.parseDouble(tokens[2])));
+            as.add(new Student(Integer.parseInt((tokens[0])),
+                            tokens[1], Double.parseDouble(tokens[2])));
         }
         int queries = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < queries; i++) {
