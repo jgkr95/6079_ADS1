@@ -1,5 +1,13 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int size = Integer.parseInt(scan.nextLine());
@@ -12,7 +20,7 @@ class Solution {
 		for (int i = 0; i < queries; i++) {
 			String[] tokens = scan.nextLine().split(" ");
 			Student sObj = as.get(Integer.parseInt(tokens[1]));
-			boolean flag=as.contains(Integer.parseInt(tokens[1]));
+			boolean flag = as.contains(Integer.parseInt(tokens[1]));
 			switch (tokens[2]) {
 			case "1":
 				if (flag) {
@@ -20,16 +28,13 @@ class Solution {
 				} else {
 					System.out.println("Student doesn't exists...");
 				}
-
-					break;
-				
+				break;
 			case "2":
 				if (flag) {
 					System.out.println(sObj.getTotal());
-				}else{
+				} else {
 					System.out.println("Student doesn't exists...");
 				}
-
 				break;
 			default:
 				break;
@@ -37,37 +42,100 @@ class Solution {
 		}
 	}
 }
+/**
+ * Class for student.
+ */
 class Student {
+	/**
+	 * { var_description }
+	 */
 	int rollNumber;
+	/**
+	 * { var_description }
+	 */
 	String name;
+	/**
+	 * { var_description }
+	 */
 	double totalMarks;
+	/**
+	 * Constructs the object.
+	 */
 	Student() {
 
 	}
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      rollNumber1  The roll number 1
+	 * @param      name1        The name 1
+	 * @param      totalMarks1  The total marks 1
+	 */
 	Student(int rollNumber1, String name1, double totalMarks1) {
 		rollNumber = rollNumber1;
 		name = name1;
 		totalMarks = totalMarks1;
 	}
+	/**
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
 	public String getName() {
 		return name;
 	}
+	/**
+	 * Gets the total.
+	 *
+	 * @return     The total.
+	 */
 	public double getTotal() {
 		return totalMarks;
 	}
+	/**
+	 * Gets the roll number.
+	 *
+	 * @return     The roll number.
+	 */
 	public int getRollNumber() {
 		return rollNumber;
 	}
 }
+/**
+ * Class for add student.
+ */
 class AddStudent {
+	/**
+	 * { var_description }.
+	 */
 	Student[] sInfo;
+	/**
+	 * { var_description }.
+	 */
 	int size;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      size1  The size 1
+	 */
 	AddStudent(int size1) {
 		sInfo = new Student[size1];
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      s     { parameter_description }
+	 */
 	public void add(Student s) {
 		sInfo[size++] = s;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      rollNumber  The roll number
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Student get(int rollNumber) {
 		Student s = new Student();
 		for (int i = 0; i < size; i++) {
@@ -81,6 +149,13 @@ class AddStudent {
 		}
 		return s;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      roll  The roll
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public boolean contains(int roll) {
 		for (int i = 0; i < size; i++) {
 			if (sInfo[i].getRollNumber() == roll) {
@@ -89,5 +164,4 @@ class AddStudent {
 		}
 		return false;
 	}
-
 }
