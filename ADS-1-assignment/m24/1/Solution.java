@@ -25,36 +25,31 @@ final class Solution {
             String[] tokens = scan.nextLine().split(",");
             // as.add(new Student(Integer.parseInt((tokens[0])),
             //                 tokens[1], Double.parseDouble(tokens[2])));
-            String str = tokens[1]+","+tokens[2];
-            lpht.put(tokens[0],str);
+            String str = tokens[1] + "," + tokens[2];
+            lpht.put(tokens[0], str);
         }
         int queries = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < queries; i++) {
-            String[] tokens = scan.nextLine().split(" ");
-            String info = lpht.get(tokens[1]);
-            if(info.equals(null)) {
-                System.out.println("Student doesn't exists...");
-                continue;
-            }
-            String[] sObj = info.split(",");
-            boolean flag = lpht.contains(tokens[1]);
-            switch (tokens[2]) {
-            case "1":
-                if (flag) {
+            try {
+                String[] tokens = scan.nextLine().split(" ");
+                String info = lpht.get(tokens[1]);
+
+                String[] sObj = info.split(",");
+                boolean flag = lpht.contains(tokens[1]);
+                switch (tokens[2]) {
+                case "1":
                     System.out.println(sObj[0]);
-                } else {
-                    System.out.println("Student doesn't exists...");
-                }
-                break;
-            case "2":
-                if (flag) {
+
+                    break;
+                case "2":
                     System.out.println(sObj[1]);
-                } else {
-                    System.out.println("Student doesn't exists...");
+
+                    break;
+                default:
+                    break;
                 }
-                break;
-            default:
-                break;
+            } catch (Exception e) {
+                System.out.println("Student doesn't exists...");
             }
         }
     }
@@ -89,7 +84,7 @@ class Student {
      * @param      totalMarks1  The total marks 1
      */
     Student(final int rollNumber1, final String name1,
-        final double totalMarks1) {
+            final double totalMarks1) {
         rollNumber = rollNumber1;
         name = name1;
         totalMarks = totalMarks1;
@@ -293,7 +288,7 @@ class LinearProbingHashST<Key, Value> {
      */
     private void resize(final int capacity) {
         LinearProbingHashST<Key, Value> temp
-        = new LinearProbingHashST<Key, Value>(capacity);
+            = new LinearProbingHashST<Key, Value>(capacity);
         for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
                 temp.put(keys[i], vals[i]);
@@ -335,7 +330,7 @@ class LinearProbingHashST<Key, Value> {
 
         int i;
         for (i = hash(key); keys[i] != null;
-            i = (i + 1) % m) {
+                i = (i + 1) % m) {
             if (keys[i].equals(key)) {
                 vals[i] = val;
                 return;
@@ -360,7 +355,7 @@ class LinearProbingHashST<Key, Value> {
                 "argument to get() is null");
         }
         for (int i = hash(key); keys[i] != null;
-            i = (i + 1) % m) {
+                i = (i + 1) % m) {
             if (keys[i].equals(key)) {
                 return vals[i];
             }
@@ -423,7 +418,7 @@ class LinearProbingHashST<Key, Value> {
         for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
                 str = str + keys[i] + ":"
-                + get(keys[i]) + ", ";
+                      + get(keys[i]) + ", ";
             }
         }
         return str.substring(0, str.length() - 2) + "}";
