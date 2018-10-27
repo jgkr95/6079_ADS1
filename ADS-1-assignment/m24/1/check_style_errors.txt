@@ -2,13 +2,8 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:12: First sentence should end with a period. [JavadocStyle]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:24:16: ',' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:56: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:59:9: Variable 'rollNumber' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:60: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:63:12: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:64: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:67:12: Variable 'totalMarks' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:81: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:118:15: Variable 'sInfo' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] /Users/tarunj/6079_ADS1/ADS-1-assignment/m24/1/Solution.java:122:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.

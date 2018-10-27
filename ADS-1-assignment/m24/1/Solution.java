@@ -56,15 +56,15 @@ class Student {
     /**
      * { var_description }
      */
-    int rollNumber;
+    private int rollNumber;
     /**
      * { var_description }
      */
-    String name;
+    private String name;
     /**
      * { var_description }
      */
-    double totalMarks;
+    private double totalMarks;
     /**
      * Constructs the object.
      */
@@ -115,11 +115,11 @@ class AddStudent {
     /**
      * { var_description }.
      */
-    Student[] sInfo;
+    private Student[] sInfo;
     /**
      * { var_description }.
      */
-    int size;
+    private int size;
     /**
      * Constructs the object.
      *
